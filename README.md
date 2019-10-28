@@ -1,8 +1,8 @@
 # Hackathon Challenges and Resources
 
-These are notebooks and other resources to use as challenges for Callysto hackthons. You're also welcome to use them for other non-commercial purposes.
+These are notebooks and other resources to use as challenges for Callysto hackthons. You're also welcome to use them for other purposes, with attribution.
 
-All notebooks were tested oon Google Colab.
+All notebooks were tested on [Google Colab](https://colab.research.google.com).
 
 ## Colab basics
 Colaboratory is a free Jupyter notebook environment provided by Google.   

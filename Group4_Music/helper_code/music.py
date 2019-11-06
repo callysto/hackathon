@@ -1,4 +1,5 @@
-import chart_studio.plotly as py 
+import chart_studio.plotly as py
+import pandas as pd
 
 def get_average_by_artist(df,year,artist_list):
     music = df[df["year"]==year]

@@ -1,4 +1,5 @@
 import chart_studio.plotly as py
+import pandas as pd
 
 
 def get_counts_by_group(df, value):

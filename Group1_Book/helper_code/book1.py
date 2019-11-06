@@ -2,6 +2,7 @@ import re
 import spacy
 import urllib
 import numpy as np
+import pandas as pd
 
 nlp = spacy.load('en')
 

@@ -2,30 +2,8 @@ import re
 import spacy
 import urllib
 import numpy as np
-import pandas as pd
-
-import cufflinks as cf
-import IPython
-from plotly.offline import init_notebook_mode
-cf.go_offline()
-
-colors20 = ['#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', 
-          '#f032e6', '#bcf60c', '#fabebe', '#008080', '#e6beff', '#9a6324', '#fffac8', 
-          '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075', '#808080', '#ffffff', '#000000']
-
-#to enable plotting in colab
-def enable_plotly_in_cell():
-    display(IPython.core.display.HTML('''
-        <script src="/static/components/requirejs/require.js"></script>
-  '''))
-    init_notebook_mode(connected=False)
-    
-get_ipython().events.register('pre_run_cell', enable_plotly_in_cell)
-    
 
 nlp = spacy.load('en')
-
-
 
 def get_book_df(chapters):
     book_df = pd.DataFrame(columns=["text", "part-of-speech","lemma","chapter"])

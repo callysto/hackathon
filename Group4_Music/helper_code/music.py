@@ -1,9 +1,4 @@
-import pandas as pd
-import urllib
-
-import plotly.plotly as py
-import cufflinks as cf
-from IPython.display import YouTubeVideo
+import chart_studio.plotly as py 
 
 def get_average_by_artist(df,year,artist_list):
     music = df[df["year"]==year]

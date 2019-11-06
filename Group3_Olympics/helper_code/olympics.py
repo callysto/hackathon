@@ -1,13 +1,5 @@
-import pandas as pd
-import urllib
+import chart_studio.plotly as py
 
-import plotly.plotly as py
-import cufflinks as cf
-
-
-colors20 = ['#e6194b', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#46f0f0', 
-          '#f032e6', '#bcf60c', '#fabebe', '#008080', '#e6beff', '#9a6324', '#fffac8', 
-          '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075', '#808080', '#ffffff', '#000000']
 
 def get_counts_by_group(df, value):
     result = df.groupby(["Year",value]).size().reset_index(name="count")

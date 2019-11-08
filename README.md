@@ -57,7 +57,7 @@ In order to create a new cell:
 
 ### Delete cell
   
-In order to delete a cell:
+In order to delete the cell:
 
  - select the cell you are planning to delete
  - click `Edit` -> `Delete Cells`

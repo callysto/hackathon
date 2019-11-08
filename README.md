@@ -23,7 +23,7 @@ Once you have logged in first time - your personal environment will be created, 
 - in the terminal window type `git clone https://github.com/callysto/hackathon -b jupyter` 
 - close the web page with terminal once the repository is copied
   
-![](https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_d22d1e3f28be45209ba8f660295c84cf/hackaton/terminal.png))
+![](https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_d22d1e3f28be45209ba8f660295c84cf/hackaton/terminal.png)
   
 ### Open Notebooks in Callysto Hub
   
@@ -32,7 +32,7 @@ In order to open hackathon notebooks on Callysto Hub(after they are copied):
 - click on Jupyter logo in the top left corner - it will redirect you to the home screen  
 - click on `hackathon` repository, choose the group and notebook you are planning to work on  
 
-![](https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_d22d1e3f28be45209ba8f660295c84cf/hackaton/jupyter_logo.png))
+![](https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_d22d1e3f28be45209ba8f660295c84cf/hackaton/jupyter_logo.png)
 
 
 ### Download notebook
@@ -52,7 +52,8 @@ In order to create a new cell:
    
 - select `Insert` -> `Insert Cell Above`  or  `Insert Cell Below`  
 - click on plus button in the top left corner   
-
+  
+![](https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_d22d1e3f28be45209ba8f660295c84cf/hackaton/plus.png)
 
 ### Delete cell
   

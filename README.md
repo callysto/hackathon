@@ -2,13 +2,11 @@
 
 These are notebooks and other resources to use as challenges for Callysto hackathons or related events. You're also welcome to use them for other non-commercial purposes.
 
-Notebooks in this branch were tested on [Callysto Hub](https://hub.callysto.ca)
+Notebooks in this branch were tested on [Callysto Hub](https://hub.callysto.ca).
 
 ### Callysto Hub basics
   
-Callysto Hub is a free Jupyter notebook environment provided by Cybera.   
-
-It's available [here](https://hub.callysto.ca). 
+Callysto Hub is a free Jupyter notebook environment provided by [Cybera](https://www.cybera.ca/) and [PIMS](https://www.pims.math.ca/), and it's available [here](https://hub.callysto.ca). 
 
 In order to log in to Callysto  - you can  use your Google account, Microsoft account or Institution account.  
      
@@ -46,7 +44,7 @@ In order to open the hackathon notebooks on the Callysto Hub (after they are cop
 ## Some Jupyter Notebook Basics
 ### Run cell
     
-In order to run the cell, select the cell of interest then:
+In order to run a cell, select the cell of interest then:
 
  - select `Cell` -> `Run Cells`
  - or hit `Shift-Enter`

@@ -8,6 +8,12 @@ from io import BytesIO
 from urllib.request import urlopen
 import os, sys
 
+#load "cufflinks" library under short name "cf"
+import cufflinks as cf
+
+#command to display graphics correctly in Jupyter notebook
+cf.go_offline()
+
 """Override RuntimeWarning: numpy.dtype size changed, may indicate binary incompatibility """
 import warnings
 warnings.filterwarnings("ignore", message="numpy.dtype size changed")
@@ -16,6 +22,18 @@ warnings.filterwarnings("ignore", message="numpy.ufunc size changed")
 """Pandas settings""" 
 pd.set_option('display.max_rows', 800)
 pd.set_option('display.max_columns', 800)
+
+# Fancy user interface to explore datasets
+def rerun_cell( b ):
+    
+    display(Javascript('IPython.notebook.execute_cell_range(IPython.notebook.get_selected_index()+1,IPython.notebook.get_selected_index()+3)'))    
+
+    
+def run_4cell( b ):
+    
+    display(Javascript('IPython.notebook.execute_cell_range(IPython.notebook.get_selected_index()+1,IPython.notebook.get_selected_index()+5)'))    
+
+style = {'description_width': 'initial'}
 
 
 #**** DATA SUBSETS *****#
@@ -643,23 +661,6 @@ home_language_data = [
  'French and non-official language',
  'English, French and non-official language']
 
-level_educ_data = [
-    'Total - Highest certificate, diploma or degree for the population aged 25 to 64 years in private households - 25% sample data',
- 'No certificate, diploma or degree',
- 'Secondary (high) school diploma or equivalency certificate',
- 'Postsecondary certificate, diploma or degree',
- 'Apprenticeship or trades certificate or diploma',
- 'Trades certificate or diploma other than Certificate of Apprenticeship or Certificate of Qualification',
- 'Certificate of Apprenticeship or Certificate of Qualification',
- 'College, CEGEP or other non-university certificate or diploma',
- 'University certificate or diploma below bachelor level',
- 'University certificate, diploma or degree at bachelor level or above',
- "Bachelor's degree",
- 'University certificate or diploma above bachelor level',
- 'Degree in medicine, dentistry, veterinary medicine or optometry',
- "Master's degree",
- 'Earned doctorate',
-]
 
 labor_force_data = [
     
@@ -677,8 +678,10 @@ work_activity_data  = [
  'Did not work',
  'Worked',
  'Worked full year, full time',
- 'Worked part year and/or part time',
- 'Average weeks worked in reference year',
+ 'Worked part year and/or part time']
+ #'Average weeks worked in reference year']
+
+class_of_worker = [
  'Total labour force aged 15 years and over by class of worker - 25% sample data',
  'Class of worker - not applicable',
  'All classes of workers',
@@ -688,7 +691,7 @@ work_activity_data  = [
 occupation_data = [
  'Total labour force population aged 15 years and over by occupation - National Occupational Classification (NOC) 2016 - 25% sample data',
  'Occupation - not applicable',
- 'All occupations',
+ #'All occupations',
  '0 Management occupations',
  '1 Business, finance and administration occupations',
  '2 Natural and applied sciences and related occupations',
@@ -703,7 +706,7 @@ occupation_data = [
 industry_data = [
  'Total Labour Force population aged 15 years and over by Industry - North American Industry Classification System (NAICS) 2012 - 25% sample data',
  'Industry - NAICS2012 - not applicable',
- 'All industry categories',
+ #'All industry categories',
  '11 Agriculture, forestry, fishing and hunting',
  '21 Mining, quarrying, and oil and gas extraction',
  '22 Utilities',
@@ -765,3 +768,62 @@ leave_for_work_data = [
  'Between 9 a.m. and 11:59 a.m.',
  'Between 12 p.m. and 4:59 a.m.'
 ]
+
+######### Combo datasets
+
+work_force_dictionary ={
+                 "Labour force": labor_force_data, 
+                  "Class of worker":class_of_worker,
+                  "Occupation data":occupation_data,
+                  "Industry data": industry_data}
+
+work_environment_dictionary = {"Place of work":place_of_work_data,
+                              "Commuting":commuting_employed_data,
+                              "Mode of commute":mode_commute_data,
+                              "Commuting duration":commuting_duration_data,
+                              "Leaving for work time":leave_for_work_data}
+
+languages_dictionary={"Official languages":languages_data,
+                       "First official language":first_official_language_data,
+                       "Mother tongue": mother_tongue_data,
+                       "Home language" : home_language_data}
+
+personal_dictionary = {"Age":age_data,
+                       "Age distribution": age_distribution,
+                       "Household members": house_data,
+                       "Marital status":marital_data}
+
+if __name__ == '__main__':
+    
+    print("Setting up our environment...count until 20 :)")
+
+    # Link to zipped data
+    link_csv = "https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/prof/details/download-telecharger/comp/GetFile.cfm?Lang=E&FILETYPE=CSV&GEONO=069"
+    
+    # Unzip data in local directory
+    r = urlopen(link_csv).read()
+    z = zipfile.ZipFile(BytesIO(r))
+    z.extractall()
+
+    # Get CSV files only from extracted data sets
+    import glob, os
+    os.chdir("./")
+    csv_file = []
+    for file in glob.glob("*.csv"):
+        csv_file.append(file)
+
+     ######### Build widgets
+    all_the_widgets = []
+
+    # Button widget
+    CD_button = widgets.Button(
+        button_style='success',
+        description="Preview Dataset", 
+        layout=Layout(width='15%', height='30px'),
+        style=style
+    )    
+
+    # Connect widget to function - run subsequent cells
+    CD_button.on_click( rerun_cell )
+    
+    print("DONE! Ready to use notebook")

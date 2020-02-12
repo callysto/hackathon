@@ -796,6 +796,10 @@ personal_dictionary = {"Age":age_data,
 if __name__ == '__main__':
     
     print("Setting up our environment...count until 20 :)")
+    print("1")
+    print("2")
+    print("3")
+    print("...")
 
     # Link to zipped data
     link_csv = "https://www12.statcan.gc.ca/census-recensement/2016/dp-pd/prof/details/download-telecharger/comp/GetFile.cfm?Lang=E&FILETYPE=CSV&GEONO=069"
@@ -825,5 +829,5 @@ if __name__ == '__main__':
 
     # Connect widget to function - run subsequent cells
     CD_button.on_click( rerun_cell )
-    
+    print("20")
     print("DONE! Ready to use notebook")

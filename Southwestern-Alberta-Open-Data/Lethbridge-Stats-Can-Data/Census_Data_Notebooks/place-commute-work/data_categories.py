@@ -664,7 +664,7 @@ home_language_data = [
 
 labor_force_data = [
     
-    'Total - Population aged 15 years and over by Labour force status - 25% sample data',
+#    'Total - Population aged 15 years and over by Labour force status - 25% sample data',
  'In the labour force',
  'Employed',
  'Unemployed',
@@ -674,7 +674,7 @@ labor_force_data = [
  'Unemployment rate']
 
 work_activity_data  = [
- 'Total population aged 15 years and over by work activity during the reference year - 25% sample data',
+# 'Total population aged 15 years and over by work activity during the reference year - 25% sample data',
  'Did not work',
  'Worked',
  'Worked full year, full time',
@@ -682,14 +682,14 @@ work_activity_data  = [
  #'Average weeks worked in reference year']
 
 class_of_worker = [
- 'Total labour force aged 15 years and over by class of worker - 25% sample data',
+# 'Total labour force aged 15 years and over by class of worker - 25% sample data',
  'Class of worker - not applicable',
  'All classes of workers',
  'Employee',
  'Self-employed']
 
 occupation_data = [
- 'Total labour force population aged 15 years and over by occupation - National Occupational Classification (NOC) 2016 - 25% sample data',
+# 'Total labour force population aged 15 years and over by occupation - National Occupational Classification (NOC) 2016 - 25% sample data',
  'Occupation - not applicable',
  #'All occupations',
  '0 Management occupations',
@@ -704,7 +704,7 @@ occupation_data = [
  '9 Occupations in manufacturing and utilities']
 
 industry_data = [
- 'Total Labour Force population aged 15 years and over by Industry - North American Industry Classification System (NAICS) 2012 - 25% sample data',
+# 'Total Labour Force population aged 15 years and over by Industry - North American Industry Classification System (NAICS) 2012 - 25% sample data',
  'Industry - NAICS2012 - not applicable',
  #'All industry categories',
  '11 Agriculture, forestry, fishing and hunting',
@@ -729,21 +729,21 @@ industry_data = [
  '91 Public administration']
 
 place_of_work_data = [
- 'Total - Place of work status for the employed labour force aged 15 years and over in private households - 25% sample data',
+# 'Total - Place of work status for the employed labour force aged 15 years and over in private households - 25% sample data',
  'Worked at home',
  'Worked outside Canada',
  'No fixed workplace address',
  'Worked at usual place']
 
 commuting_employed_data = [
- 'Total - Commuting destination for the employed labour force aged 15 years and over in private households with a usual place of work - 25% sample data',
+# 'Total - Commuting destination for the employed labour force aged 15 years and over in private households with a usual place of work - 25% sample data',
  'Commute within census subdivision (CSD) of residence',
  'Commute to a different census subdivision (CSD) within census division (CD) of residence',
  'Commute to a different census subdivision (CSD) and census division (CD) within province or territory of residence',
  'Commute to a different province or territory']
 
 mode_commute_data = [
- 'Total - Main mode of commuting for the employed labour force aged 15 years and over in private households with a usual place of work or no fixed workplace address - 25% sample data',
+# 'Total - Main mode of commuting for the employed labour force aged 15 years and over in private households with a usual place of work or no fixed workplace address - 25% sample data',
  'Car, truck, van - as a driver',
  'Car, truck, van - as a passenger',
  'Public transit',
@@ -752,7 +752,7 @@ mode_commute_data = [
  'Other method']
 
 commuting_duration_data =[
- 'Total - Commuting duration for the employed labour force aged 15 years and over in private households with a usual place of work or no fixed workplace address - 25% sample data',
+# 'Total - Commuting duration for the employed labour force aged 15 years and over in private households with a usual place of work or no fixed workplace address - 25% sample data',
  'Less than 15 minutes',
  '15 to 29 minutes',
  '30 to 44 minutes',
@@ -760,7 +760,7 @@ commuting_duration_data =[
  '60 minutes and over']
 
 leave_for_work_data = [
- 'Total - Time leaving for work for the employed labour force aged 15 years and over in private households with a usual place of work or no fixed workplace address - 25% sample data',
+# 'Total - Time leaving for work for the employed labour force aged 15 years and over in private households with a usual place of work or no fixed workplace address - 25% sample data',
  'Between 5 a.m. and 5:59 a.m.',
  'Between 6 a.m. and 6:59 a.m.',
  'Between 7 a.m. and 7:59 a.m.',

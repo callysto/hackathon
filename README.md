@@ -15,7 +15,7 @@ Once you have logged in first time - your personal environment will be created, 
 
 ### Copy notebooks to Callysto Hub
    
- Hackathon notebooks can be automatically copied to the Callysto Hub using this [bitly link](http://bit.ly/callysto-prep-materials).
+ Hackathon notebooks can be automatically copied to the Callysto Hub using this [link](https://hub.callysto.ca/jupyter/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&urlpath=tree%2Fhackathon%2F&branch=SciWorld)
    
  Alternatively, to copy them  manually:
  

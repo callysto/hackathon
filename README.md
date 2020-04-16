@@ -15,12 +15,12 @@ Once you have logged in first time - your personal environment will be created, 
 
 ### Copy notebooks to Callysto Hub
    
- Hackathon notebooks can be automatically copied to the Callysto Hub using this [bitly link](http://bit.ly/callysto-prep-materials).
+ Hackathon notebooks can be automatically copied to the Callysto Hub using this [link](https://hub.callysto.ca/jupyter/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&urlpath=tree%2Fhackathon%2F&branch=jupyter)
    
  Alternatively, to copy them  manually:
  
 - select `New` -> `Terminal` in the top right corner  
-- in the terminal window type `git clone https://github.com/callysto/hackathon -b jupyter` 
+- in the terminal window type `git clone https://github.com/callysto/hackathon -b SciWorld` 
 - close the web page with terminal once the repository is copied
   
 ![](https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_d22d1e3f28be45209ba8f660295c84cf/hackaton/terminal.png)
@@ -53,7 +53,7 @@ In order to run a cell, select the cell of interest then:
  ![](https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_d22d1e3f28be45209ba8f660295c84cf/hackaton/run_button.png)
  
  
- ### Create new cell
+### Create new cell
 
 In order to create a new cell:
    
@@ -74,7 +74,7 @@ In order to delete the cell:
 
 ![](https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_d22d1e3f28be45209ba8f660295c84cf/hackaton/scisors.png)
  
- ### Undo deleting cells
+### Undo deleting cells
     
  If you accidentally deleted an incorrect cell, you can always bring it back:
  - select `Edit` -> `Undo Delete Cells`
@@ -87,7 +87,7 @@ In order to delete the cell:
 If you want to download the notebook in ipynb format to your local machine:
 
 - save the notebook first:
-    - Click on `Save and checkpoint` button in the top left corner
+- Click on `Save and checkpoint` button in the top left corner
 - select `File` -> `Download as` ->`Notebook(.ipynb)`  
 
 ![](https://swift-yeg.cloud.cybera.ca:8080/v1/AUTH_d22d1e3f28be45209ba8f660295c84cf/hackaton/save_and_checkpoint.png)

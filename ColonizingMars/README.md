@@ -1,6 +1,6 @@
 # Links to Important Resources
 
-## Tutorials: Pandas DataFrames, Plot-ly and Cufflinks
+## Tutorials: Pandas DataFrames, matplotlib and Cufflinks
 
 <a href="http://tinyurl.com/ya3jgsd7" target="_blank"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a> Press this button to get started with reading, parsing and formatting data using Pandas DataFrames, as well as visualizing using Cufflinks and matplotlib. 
 

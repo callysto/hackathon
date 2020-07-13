@@ -62,3 +62,16 @@ def challenge1B():
     print("\nRover: Now, type that exact code in the empty cell below and run it, just like before")
     return
     
+
+# Question 2 A
+def challenge2A(): 
+    codeword = input("What would you like your codeword's value to be?\nHint: It can be anything! ")
+    def Q2A():
+        code = str(input("Now, enter the word \"codeword\" "))
+        if code == "codeword":
+            print(codeword)
+            correct_answer()
+        else:
+            print("Try typing \"codeword\" ")
+            Q2A()
+    Q2A()

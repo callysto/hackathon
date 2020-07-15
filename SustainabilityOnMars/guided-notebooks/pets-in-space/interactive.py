@@ -8,70 +8,82 @@ Created on Mon Jul 13 07:44:25 2020
 
 import random
 
+#colour encoding
+Rover = "\033[1;37;40m Rover: \033[1;0m"
+
+green = "\033[1;32m"
+normal = "\033[1;0m"
+purple = "\033[1;35m"
+blue = "\033[1;36m"
+
 # get user's name
 def userinfo():
-    name = input("Rover: Nice to meet you! What's your name? ")
-    print("Rover: Nice to meet you, ",name,"!")
+    name = input("\033[1;37;40m Rover: \033[1;0m Heya! I guess we'll be working together from now on! What's your name? ")
+    print(Rover, "Nice to meet you, ",name,"!")
     
 # positive feedback for correct answers
 def correct_answer(): 
-    list = ["Nice job!", "Right on!", "You rock!", "I wish I was this good!", "What a rockstar coder!", "Correct!", "Glad we have you around!", "That was great!", "You're picking up on this really well!", "Even Rover is impressed!"]
+    list = ["\033[1;35mNice job!", "\033[1;35mRight on!", "\033[1;35mYou rock!", "\033[1;35mI wish I was this good!", "\033[1;35mWhat a rockstar coder!", "\033[1;35mCorrect!", "\033[1;35mGlad we have you around!", "\033[1;35mThat was great!", "\033[1;35mYou're picking up on this really well!", "\033[1;35mEven Rover is impressed!"]
     nice = print(random.choice(list))
     return nice 
 
 # Question 1 A
 def challenge1A():
-    print("Rover: According to the documents, if we want to use pandas we need to \"bring in\" a library called \"pandas\" into the notebook using some code. Try to fill in the import command.")
+    print(Rover, "According to the documents, if we want to use the commands we need to bring in a library called \033[1;32mpandas\033[1;0m into the notebook using some code. \033[1;36mTry to fill in the import command.\033[1;0m")
     def Q1A(): 
-        ans = str(input("import "))
+        ans = str(input("\033[1;32m import \033[1;0m"))
         if ans == "pandas":
-            print("Rover: Nice Job!\n\nRover: Now, type the command in the empty cell below. We also need the libraries \"numpy\" and \"matplotlib\", can you import them as well?. Each library will need its own import line. Remember to hit the run button above after you're done! :3")
+            correct_answer()
+            print(Rover, "Now, \033[1;36m type the command in the empty cell below.\033[1;0mWe also need the libraries \033[1;32mnumpy\033[1;0m and \033[1;32mmatplotlib\033[1;0m, can you import them as well?. Each library will need its own import line. Remember to \033[1;36mhit the run button above after you're done!\033[1;0m")
         else:
-            print("Rover: Hmm.. not quite. Try \"pandas\"")
+            print(Rover, "Hmm.. not quite. Try \033[1;32mpandas\033[1;0m")
             Q1A()
     Q1A()
     return 
 
 # Question 1 B
 def challenge1B(): 
-    print("Answer the questions correctly below to check your understanding.\n")
+    print("\033[1;36mAnswer the questions correctly to check your understanding.\033[1;0m\n")
     def Q1B_1():
-        ans1 = str(input("The file we want to use the read_csv function on is: "))
+        ans1 = str(input("The file we want to use the \033[1;32mread_csv\033[1;0m function on is: "))
         if ans1 == "pets_from_bootstrap_world.csv": 
             correct_answer()
         else: 
-            print("Rover: Try again. Make sure you spelled everything correctly and includes the file extension")
+            print(Rover, "Try again. Make sure you spelled everything correctly and includes the file extension")
             Q1B_1()
     def Q1B_2(): 
-        ans2 = str(input("The library we want to use that contains the read_csv function is: "))
+        ans2 = str(input("The library we want to use that contains the \033[1;32mread_csv\033[1;0m function is: "))
         if ans2 == "pandas":
             correct_answer()
         else: 
-            print("Rover: Try again. Remember it is case sensitive.")
+            print(Rover, "Try again. Remember it is case sensitive.")
             Q1B_2()
     def Q1B_3(): 
-        ans3 = str(input("If I wanted to write code to access the Pets Archives from Earth, I would write: "))
+        ans3 = str(input("\033[1;36mIf I wanted to write code to access the Pets Archives from Earth, I would write:\033[1;0m "))
         if ans3 == "pandas.read_csv(\"pets_from_bootstrap_world.csv\")":
             correct_answer()
         else:
-            print("Rover: Hmm, not quite. Try following the format library.function(\"file.csv\"), or double check your spelling.")
+            print(Rover, "Hmm, not quite. Try following the format \033[1;32mlibrary.function(\"file.csv\")\033[1;0m, or double check your spelling.")
             Q1B_3()
     Q1B_1()
     Q1B_2()
     Q1B_3()
-    print("\nRover: Now, type that exact code in the empty cell below and run it, just like before")
+    print(Rover, "Now, \033[1;36mtype that exact code in the empty cell below and run it\033[1;0m, just like before")
     return
     
 
 # Question 2 A
 def challenge2A(): 
-    codeword = input("What would you like your codeword's value to be?\nHint: It can be anything! ")
+    codeword = input("\033[1;36m Enter a codeword (also known as a variable name):\n" + Rover + "It can be anything! ")
+    value = input("Now, \033[1;36menter a value for the variable\033[1;0m , it can also be anything!\n \033[1;32m" + str(codeword) + " = \033[1;0m")
     def Q2A():
-        code = str(input("Now, enter the word \"codeword\" "))
-        if code == "codeword":
-            print(codeword)
+        code = str(input("Now, \033[1;36menter your codeword again\033[1;0m "))
+        if code == str(codeword) :
+            print(value)
             correct_answer()
+            print(Rover, "Notice how when you entered the variable name, it gave you the value instead? This is handy for saving time writing long pieces of code each time")
         else:
-            print("Try typing \"codeword\" ")
+            print(Rover, "Try typing the codeword from above, remember to make sure your spelling and capitalization is the same too. ")
             Q2A()
     Q2A()
+    

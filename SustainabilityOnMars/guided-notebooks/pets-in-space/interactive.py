@@ -10,11 +10,10 @@ import random
 
 #colour encoding
 Rover = "\033[1;37;40m Rover: \033[1;0m"
-
-green = "\033[1;32m"
-normal = "\033[1;0m"
-purple = "\033[1;35m"
-blue = "\033[1;36m"
+__green__ = "\033[1;32m"
+__normal__ = "\033[1;0m"
+__purple__ = "\033[1;35m"
+__blue__ = "\033[1;36m"
 
 # get user's name
 def userinfo():
@@ -27,6 +26,7 @@ def correct_answer():
     nice = print(random.choice(list))
     return nice 
 
+################################ CHALLENGE 1
 # Question 1 A
 def challenge1A():
     print(Rover, "According to the documents, if we want to use the commands we need to bring in a library called \033[1;32mpandas\033[1;0m into the notebook using some code. \033[1;36mTry to fill in the import command.\033[1;0m")
@@ -71,7 +71,7 @@ def challenge1B():
     print(Rover, "Now, \033[1;36mtype that exact code in the empty cell below and run it\033[1;0m, just like before")
     return
     
-
+################################ CHALLENGE 2
 # Question 2 A
 def challenge2A(): 
     codeword = input("\033[1;36m Enter a codeword (also known as a variable name):\n" + Rover + "It can be anything! ")

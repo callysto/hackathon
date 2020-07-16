@@ -86,4 +86,16 @@ def challenge2A():
             print(Rover, "Try typing the codeword from above, remember to make sure your spelling and capitalization is the same too. ")
             Q2A()
     Q2A()
-    
+
+# Question 2 B
+def challenge2b(): 
+    print("First, we will need to know what columns are in the data. We can do this by either looking at the dataset again, or use \033[1;32mdataset_variable_name.columns()\033[1;0m")
+    def Q2B():
+        ans = str(input(" \033[1;36mTry filling in the command: \n \033[1;32mpets.\033[1;0m"))
+        if ans == "columns()": 
+            correct_answer() 
+        else: 
+            print(Rover, "Hmm, not quite. Make sure you have the brackets at the end and the right spelling")
+            Q2B()
+    Q2B()
+    print("\033[1;0mFantastic! Now type \033[1;32mpets.columns()\033[1;0m in the cell below and run it.")

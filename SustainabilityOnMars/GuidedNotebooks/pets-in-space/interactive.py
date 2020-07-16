@@ -9,7 +9,7 @@ Created on Mon Jul 13 07:44:25 2020
 import random
 
 #colour encoding
-Rover = "\033[1;37;40m Rover: \033[1;0m"
+Rover = "\033[1;37;40m Rover: \033[0;30m"
 __green__ = "\033[1;32m"
 __normal__ = "\033[1;0m"
 __purple__ = "\033[1;35m"
@@ -17,7 +17,7 @@ __blue__ = "\033[1;36m"
 
 # get user's name
 def userinfo():
-    name = input("\033[1;37;40m Rover: \033[1;0m Heya! I guess we'll be working together from now on! What's your name? ")
+    name = input(Rover + "Heya! I guess we'll be working together from now on! What's your name? ")
     print(Rover, "Nice to meet you, ",name,"!")
     
 # positive feedback for correct answers
@@ -89,13 +89,14 @@ def challenge2A():
 
 # Question 2 B
 def challenge2b(): 
-    print("First, we will need to know what columns are in the data. We can do this by either looking at the dataset again, or use \033[1;32mdataset_variable_name.columns()\033[1;0m")
+    print("First, we will need to know what columns are in the data. We can do this by either looking at the dataset again, or use \033[1;32mlist(dataset_variable_name.columns)\033[1;0m")
     def Q2B():
-        ans = str(input(" \033[1;36mTry filling in the command: \n \033[1;32mpets.\033[1;0m"))
-        if ans == "columns()": 
+        ans = str(input(" \033[1;36mTry filling in the command: \n \033[1;32mlist\033[1;0m"))
+        if ans == "(pets.columns)": 
             correct_answer() 
         else: 
-            print(Rover, "Hmm, not quite. Make sure you have the brackets at the end and the right spelling")
+            print(Rover, "Hmm, not quite. Make sure you have the brackets at the end and the right spelling, and include the brackets!\033[1;0m")
             Q2B()
     Q2B()
-    print("\033[1;0mFantastic! Now type \033[1;32mpets.columns()\033[1;0m in the cell below and run it.")
+    print("\033[1;0mFantastic! Now type \033[1;32mlist(pets.columns)\033[1;0m in the cell below and run it.")
+    

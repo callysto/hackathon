@@ -100,3 +100,18 @@ def challenge2b():
     Q2B()
     print("\033[1;0mFantastic! Now type \033[1;32mlist(pets.columns)\033[1;0m in the cell below and run it.")
     
+# Question 2 C 
+def challenge2c():
+    print("Now that we have all the column names, let's choose a couple to look at. How about the \033[1;32m'Name'\033[1;0m column?\n \033[1;36mSelect the column using \033[1;32mdataset_variable_name[\"column_name\"]\033[1;0m.")
+    def Q2C():
+        ans = str(input("\033[1;32mpets\033[1;0m"))
+        if ans == "['Name']" or ans == "[\"Name\"]":
+            correct_answer()
+        else: 
+            print(Rover, "Remember, it has to be the exact same spelling and case as in the list. Did you double check to use \033[1;32m[ ]\033[1;0m instead of \033[1;32m( )\033[1;0m?")
+            Q2C()
+    Q2C()
+    print("\033[1;0mNice! Now type the command in the cell below and run it. Can you assign it a variable name?")
+    
+# Question 2 D
+

@@ -111,7 +111,7 @@ def challenge2c():
             print(Rover, "Remember, it has to be the exact same spelling and case as in the list. Did you double check to use \033[1;32m[ ]\033[1;0m instead of \033[1;32m( )\033[1;0m?")
             Q2C()
     Q2C()
-    print("\033[1;0mNice! Now type the command in the cell below and run it. Can you assign it a variable name?")
+    print("\033[1;36mNice! Now type the command in the cell below and run it. Can you assign it a variable name?\033[1;0m")
     
 # Question 2 D
 

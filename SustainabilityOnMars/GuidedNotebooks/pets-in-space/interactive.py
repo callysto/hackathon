@@ -114,4 +114,17 @@ def challenge2c():
     print("\033[1;36mNice! Now type the command in the cell below and run it. Can you assign it a variable name?\033[1;0m")
     
 # Question 2 D
+def challenge2d():
+    print("Now, because all the pet names are unique we should try using another column of data.")
+    print(Rover, "Hmm, how about animal types? Or better yet, the number of legs on each animal!")
+    def Q2D():
+        ans = str(input("\033[1;36mFill in the command to get the unique values for the number of legs in the pets data\n\033[1;32mpets[\"Legs\"]\033[1;0m"))
+        if ans == ".unique()": 
+            correct_answer()
+        else: 
+            print(Rover, "Close! Make sure you remember the period and brackets \033[1;32m.\033[1;0munique\033[1;32m()")
+            Q2D()
+    Q2D()
+    print("\033[1;36mNice! Now type the command in the cell below and run it. Try giving it a variable name\033[1;0m")
+
 

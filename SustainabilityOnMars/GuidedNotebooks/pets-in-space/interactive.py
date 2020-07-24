@@ -14,15 +14,42 @@ from IPython.display import clear_output
 #import data 
 pets = pandas.read_csv("pets_from_bootstrap_world.csv")
 
-#colour encoding
+################################ TEXT ENCODING
 Rover = "\033[1;37;40m Rover: \033[0;30m"
-__green__ = "\033[1;32m"
-__normal__ = "\033[1;0m"
-__purple__ = "\033[1;35m"
-__blue__ = "\033[1;36m"
+
+def rover(text): 
+    rvr = "\033[1;37;40m 🐶 Rover: \033[0;30m" + text + "\033[1;0m"
+    return rvr
+
+def task(text): 
+     blu = "\033[1;36m" + text + "\033[1;0m"
+     return blu
+
+def purple(text): 
+     prl = "\033[1;35m" + text + "\033[1;0m"
+     return prl
+   
+def normal(text): 
+     nrl = "\033[1;0m" + text + "\033[1;0m"
+     return nrl
+ 
+def code(text): 
+     gr = "\033[1;32m" + text + "\033[1;0m"
+     return gr
+ 
+def tryagain(text):
+    red = "\033[1;31m ❗️" + text + "\033[1;0m"
+    return red
+
+# positive feedback for correct answers
+def correct_answer(): 
+    list = ["\033[1;35mNice job!", "\033[1;35mRight on!", "\033[1;35mYou rock!", "\033[1;35mI wish I was this good!", "\033[1;35mWhat a rockstar coder!", "\033[1;35mCorrect!", "\033[1;35mGlad we have you around!", "\033[1;35mThat was great!", "\033[1;35mYou're picking up on this really well!", "\033[1;35mEven Rover is impressed!"]
+    nice = print(random.choice(list), "\033[1;0m")
+    return nice 
+
+################################ GREETING
 
 # get user's name
-
 def greet(): 
     name = input(Rover + "Heya! I guess we'll be working together from now on! What's your name? ")
     print(Rover, "Nice to meet you, ",name,"!")
@@ -30,12 +57,6 @@ def greet():
     
 def userinfo():
     greet()
-    
-# positive feedback for correct answers
-def correct_answer(): 
-    list = ["\033[1;35mNice job!", "\033[1;35mRight on!", "\033[1;35mYou rock!", "\033[1;35mI wish I was this good!", "\033[1;35mWhat a rockstar coder!", "\033[1;35mCorrect!", "\033[1;35mGlad we have you around!", "\033[1;35mThat was great!", "\033[1;35mYou're picking up on this really well!", "\033[1;35mEven Rover is impressed!"]
-    nice = print(random.choice(list), __normal__)
-    return nice 
 
 ################################ CHALLENGE 1
 # Question 1 A

@@ -15,18 +15,22 @@ from IPython.display import clear_output
 pets = pandas.read_csv("pets_from_bootstrap_world.csv")
 
 ################################ TEXT ENCODING
-Rover = "\033[1;37;40m Rover: \033[0;30m"
 
 def rover(text): 
-    rvr = "\033[1;37;40m 🐶 Rover: \033[0;30m" + text + "\033[1;0m"
+    rvr = "\033[1;37;40m 🐶 Rover: \033[1;0m" + text + "\033[1;0m"
     return rvr
 
-def task(text): 
-     blu = "\033[1;36m" + text + "\033[1;0m"
-     return blu
+def task(text, check = False): 
+    if check == True:
+        blu = "\033[1;36m" + "✅ " + text + "\033[1;0m"
+        return blu
+    else:
+        blu = "\033[1;36m" + text + "\033[1;0m"
+        return blu
 
-def purple(text): 
-     prl = "\033[1;35m" + text + "\033[1;0m"
+def bedazzle(text): 
+     sparkle = ["✨ ", "🌟 ", "🎉 ", "🥳 ", "🤩 ", "🎊 ", "🚀 ", "😎 "]
+     prl = "\033[1;35m" + random.choice(sparkle) + text + "\033[1;0m"
      return prl
    
 def normal(text): 
@@ -34,25 +38,29 @@ def normal(text):
      return nrl
  
 def code(text): 
-     gr = "\033[1;32m" + text + "\033[1;0m"
-     return gr
+     grn = "\033[1;32m" + text + "\033[1;0m"
+     return grn
  
-def tryagain(text):
-    red = "\033[1;31m ❗️" + text + "\033[1;0m"
-    return red
+def tryagain(text, exclaim = True):
+    if exclaim == False:
+        red = "\033[1;31m" + text + "\033[1;0m"
+        return red
+    else:
+        red = "\033[1;31m" + "❗️ " + text + "\033[1;0m"
+        return red
 
 # positive feedback for correct answers
 def correct_answer(): 
-    list = ["\033[1;35mNice job!", "\033[1;35mRight on!", "\033[1;35mYou rock!", "\033[1;35mI wish I was this good!", "\033[1;35mWhat a rockstar coder!", "\033[1;35mCorrect!", "\033[1;35mGlad we have you around!", "\033[1;35mThat was great!", "\033[1;35mYou're picking up on this really well!", "\033[1;35mEven Rover is impressed!"]
-    nice = print(random.choice(list), "\033[1;0m")
+    compliment = ["Amazing work!", "Nice job!", "Right on!", "You rock!", "I wish I was this good!", "What a rockstar coder!", "Correct!", "Glad we have you around!", "That was great!", "You're picking up on this really well!", "Even Rover is impressed!"]
+    nice = print(bedazzle(random.choice(compliment)))
     return nice 
 
 ################################ GREETING
 
 # get user's name
-def greet(): 
-    name = input(Rover + "Heya! I guess we'll be working together from now on! What's your name? ")
-    print(Rover, "Nice to meet you, ",name,"!")
+def greet():
+    name = input(rover("Heya! I guess we'll be working together from now on! What's your name? "))
+    print(rover("Nice to meet you, "),name,"!")
     return name
     
 def userinfo():
@@ -61,45 +69,45 @@ def userinfo():
 ################################ CHALLENGE 1
 # Question 1 A
 def challenge1a():
-    print(Rover, "According to the documents, if we want to use the commands we need to bring in a library called \033[1;32mpandas\033[1;0m into the notebook using some code. \033[1;36mTry to fill in the import command.\033[1;0m")
+    print(rover("According to the documents, if we want to use the commands we need to bring in a library called"), code("pandas"), normal("into the notebook using some code.\n"), task("Try to fill in the", check = True), code("import"), task("command."))
     def Q1A(): 
-        ans = str(input("\033[1;32m import \033[1;0m"))
+        ans = str(input(code("import ")))
         if ans == "pandas":
             correct_answer()
         else:
-            print(Rover, "Hmm.. not quite. Try \033[1;32mpandas\033[1;0m")
+            print(tryagain("Hmm.. not quite. Try"), code("pandas"))
             Q1A()
     Q1A()
     return 
 
 # Question 1 B
 def challenge1b(): 
-    print("\033[1;36mAnswer the questions correctly to check your understanding.\033[1;0m\n")
+    print(task("Answer the questions correctly to check your understanding.\n", check = True))
     
     def Q1B_1():
-        ans1 = str(input("The file we want to use the \033[1;32mread_csv\033[1;0m function on is: "))
+        ans1 = str(input(rover("The file we want to use the ") + code("read_csv() ") + normal("function on is: ")))
         if ans1 == "pets_from_bootstrap_world.csv" or ans1 == "\"pets_from_bootstrap_world.csv\"": 
             correct_answer()
         else: 
-            print(Rover, "Try again. Make sure you spelled everything correctly and includes the file extension")
+            print(tryagain("Try again. Make sure you spelled everything correctly and includes the file extension"))
             Q1B_1()
         clear_output(wait = True)
         
     def Q1B_2(): 
-        ans2 = str(input("The library we want to use that contains the \033[1;32mread_csv\033[1;0m function is: "))
+        ans2 = str(input(rover("The library we want to use that contains the ")  + code("read_csv() ")  + normal("function is: ")))
         if ans2 == "pandas":
             correct_answer()
         else: 
-            print(Rover, "Try again. Remember it is case sensitive.")
+            print(tryagain("Try again. Remember it is case sensitive."))
             Q1B_2()
         clear_output(wait = True)
         
     def Q1B_3(): 
-        ans3 = str(input("\033[1;36mIf I wanted to write code to access the Pets Archives from Earth, I would write:\033[1;0m "))
+        ans3 = str(input(task("Try writing code to access the Pets Archives from Earth: ", check = True)))
         if ans3 == "pandas.read_csv(\"pets_from_bootstrap_world.csv\")":
             correct_answer()
         else:
-            print(Rover, "Hmm, not quite. Try following the format \033[1;32mlibrary.function(\"file.csv\")\033[1;0m, or double check your spelling.")
+            print(tryagain("Hmm, not quite. Try following the format"), code("library.function(\"file.csv\")"), tryagain("or double check your spelling.", exclaim = False))
             Q1B_3()
     Q1B_1()
     Q1B_2()
@@ -108,33 +116,40 @@ def challenge1b():
 
 # Question 1 C
 def challenge1c(): 
-    codeword = input("\033[1;36m Enter a codeword (also known as a variable name):\n" + Rover + "It can be anything! ")
-    value = input("Now, \033[1;36menter a value for the variable\033[1;0m , it can also be anything!\n \033[1;32m" + str(codeword) + " = \033[1;0m")
+    codeword = input(task("Enter a codeword (also known as a variable name):\n", check = True) + rover("It can be anything! "))
+    value = input(task("Now, enter a value for the variable, it can also be anything!\n ", check = True) + code(str(codeword)) + code(" = "))
     pets = pandas.read_csv("pets_from_bootstrap_world.csv") 
     def Q1C_1():
-        code = str(input("Now, \033[1;36menter your codeword again\033[1;0m "))
+        code = str(input(task("Now, enter your codeword again ", check = True)))
         if code == str(codeword) :
             print(value)
             correct_answer()
-            print(Rover, "Notice how when you entered the variable name, it gave you the value instead? This is handy for saving time by making long pieces of code short!")
+            print(rover("Notice how when you entered the variable name, it gave you the value instead? This is handy for saving time by making long pieces of code short!"))
         else:
-            print(Rover, "Try typing the codeword from above, remember to make sure your spelling and capitalization is the same too. ")
+            print(tryagain("Try typing the codeword from above, remember to make sure your spelling and capitalization is the same too. "))
             Q1C_1()
         clear_output(wait = True)
             
     def Q1C_2(): 
-        ans = str(input("Now, let's try assigning the dataset to as a variable!\n\033[1;32m pets =  \033[1;0m"))
-        if ans == "pandas.read_csv(\"pets_from_bootstrap_world.csv\")":
+        ans = str(input(task("Now, let's try assigning the dataset to as a variable!\n", check = True) + code("pets =  ")))
+        if ans == "pandas.read_csv(\"pets_from_bootstrap_world.csv\")" or ans == "pandas.read_csv('pets_from_bootstrap_world.csv')":
             correct_answer() 
-            ans2 = input("Now, type \033[1;32mpets\033[1;0m to access the data")
-            if ans2 == "pets": 
-                correct_answer()
         else:
-            print(Rover, "Try the code from the last question!")
+            print(tryagain("Try the code from the last question!", exclaim = True))
             Q1C_2()
+        clear_output(wait = True)
+        
+    def Q1C_3(): 
+        ans2 = input(task("Now, type ", check = True) + code("pets ") + task(" to access the data\n"))
+        if ans2 == "pets": 
+            correct_answer()
+        else:
+            print(tryagain("Try typing ", exclaim = True) + code("pets "))
+            Q1C_3()
     # execute 
     Q1C_1()
     Q1C_2()
+    Q1C_3()
     return pets
     
     
@@ -143,19 +158,20 @@ def challenge1c():
 # Question 2 A
 def challenge2a():
     def Q2A_1():
-        ans = str(input("If I only wanted to see the top of the dataset I would write:\n\033[1;32mpets\033[1;0m"))
+        ans = str(input(rover("If I only wanted to see the top of the dataset I would write: \n") + code("pets")))
         if ans == ".head()": 
             correct_answer() 
         else: 
-            print(Rover, "Not quite, try \033[1;32m.head()\033[1;0m")
+            print(tryagain("Not quite, try "), code(".head()"))
+            Q2A_1()
         clear_output(wait = True)
         return pets.head()
     def Q2A_2(): 
-        ans2 = str(input("If I only wanted to see the bottom of a dataset I would write:\n\033[1;32mpets\033[1;0m"))
+        ans2 = str(input(rover("If I only wanted to see the bottom of a dataset I would write: \n") + code("pets")))
         if ans2 == ".tail()": 
             correct_answer()
         else: 
-             print(Rover, "Not quite, try \033[1;32m.tail()\033[1;0m")  
+             print(tryagain("Not quite, try"), code(".tail()"))  
              Q2A_2()
         return pets.tail()       
     print(Q2A_1())
@@ -164,26 +180,26 @@ def challenge2a():
     
 # Question 2 B
 def challenge2b(): 
-    print("First, we will need to know what columns are in the data. We can do this by either looking at the dataset again, or use \033[1;32mlist(dataset_variable_name.columns)\033[1;0m")
+    print(rover("First, we will need to know what columns are in the data. We can do this by either looking at the dataset again, or use "), code("dataset_variable_name.columns"))
     def Q2B():
-        ans = str(input(" \033[1;36mTry filling in the command: \n \033[1;32mlist\033[1;0m"))
-        if ans == "(pets.columns)": 
+        ans = str(input(task("Try filling in the command: \n", check = True) + code("list")))
+        if ans == "pets.columns": 
             correct_answer() 
         else: 
-            print(Rover, "Hmm, not quite. Make sure you have the brackets at the end and the right spelling, and include the brackets!\033[1;0m")
+            print(tryagain("Hmm, not quite. Make sure you have the right spelling!"))
             Q2B()
     Q2B()
     return list(pets.columns)
     
 # Question 2 C 
 def challenge2c():
-    print("Now that we have all the column names, let's choose a couple to look at. How about the \033[1;32m'Name'\033[1;0m column?\n \033[1;36mSelect the column using \033[1;32mdataset_variable_name[\"column_name\"]\033[1;0m.")
+    print(rover("Now that we have all the column names, let's choose a couple to look at. How about the "), code("'Name' "), normal("column?\n"), task("Select the column using ", check = True), code("dataset_variable_name[\"column_name\"]"))
     def Q2C():
-        ans = str(input("\033[1;32mpets\033[1;0m"))
+        ans = str(input(code("pets")))
         if ans == "['Name']" or ans == "[\"Name\"]":
             correct_answer()
         else: 
-            print(Rover, "Remember, it has to be the exact same spelling and case as in the list. Did you double check to use \033[1;32m[ ]\033[1;0m instead of \033[1;32m( )\033[1;0m?")
+            print(rover("Remember, it has to be the exact same spelling and case as in the list. Did you double check to use "), code("[ ] "), normal("instead of "), code("( )"), normal("?"))
             Q2C()
     Q2C()
     return pets['Name']
@@ -191,14 +207,13 @@ def challenge2c():
 ################################ CHALLENGE 3
 # Question 3 A
 def challenge3a():
-    print("Now, because all the pet names are unique we should try using another column of data.")
-    print(Rover, "Hmm, how about animal types? Or better yet, the number of legs on each animal!")
+    print(rover("Now, because all the pet names are unique we should try using another column of data.\nHmm, how about animal types? Or better yet, the number of legs on each animal!"))
     def Q3A():
-        ans = str(input("\033[1;36mFill in the command to get the unique values for the number of legs in the pets data\n\033[1;32mpetlegs = pets[\"Legs\"]\033[1;0m"))
+        ans = str(input(task("Fill in the command to get the unique values for the number of legs in the pets data\n", check = True) + code("petlegs = pets[\"Legs\"]")))
         if ans == ".unique()": 
             correct_answer()
         else: 
-            print(Rover, "Close! Make sure you remember the period and brackets \033[1;32m.\033[1;0munique\033[1;32m()")
+            print(tryagain("Close! Make sure you remember the period and brackets. Use "), code("dataset['columnname'].unique()"))
             Q3A()
     Q3A()
     petlegs = pets['Legs'].unique()
@@ -206,23 +221,23 @@ def challenge3a():
     
 # Question 3 B
 def challenge3b(): 
-    print("Based on the last challenge, it seems we have a 3 legged animal! Do you know any reason why that might be?\nLet's try and find out which animals are 3 legged.")
-    print("\033[1;36mFirst, we'll need to use a basic operator on the 'Legs' column to find the ones that equal to 3.\033[1;0m")
+    print(rover("Based on the last challenge, it seems we have a 3 legged animal! Do you know any reason why that might be?\nLet's try and find out which animals are 3 legged."))
+    print(rover("First, we'll need to use a basic operator on the 'Legs' column to find the ones that equal to 3."))
     def Q3B():
-        ans = int(input("\033[1;36mTry filling in the command\n\033[1;32mpets['Legs'] == \033[1;0m"))
-        if ans == 3: 
+        ans = str(input(task("Try filling in the command\n", check = True) + code("pets['Legs'] == ")))
+        if ans == "3": 
             correct_answer()
         else: 
-            print(Rover, "Try the number of legs")
+            print(tryagain("Try the number of legs"))
             Q3B()
         return pets['Legs'] == 3
     print(Q3B())
   
 # Question 3 C
 def challenge3c():
-    print("Looks like there's only one row that returns \033[1;32mTrue\033[1;0m, can you use \033[1;32m.loc\033[1;0m to find out more?")
+    print(rover("Looks like there's only one row that returns "), code("True "), normal("can you use "), code(".loc"), normal(" to find out more?"))
     def Q3B(): 
-        ans = str(input("Fill in the command:\n\033[1;32mpets"))
+        ans = str(input(task("Fill in the command:\n", check = True) + code("pets")))
         if ans == ".loc[19]":
             correct_answer()
             return print(pets.loc[19])
@@ -230,13 +245,22 @@ def challenge3c():
             correct_answer()
             return print(pets.loc[[19]])
         else:
-            print(Rover, "Try using \033[1;32m.loc[rownumber]\033[1;0m or \033[1;32m.loc[[rownumber]]\033[1;0m, the second outputs as a row!")
+            print(tryagain("Try using "), code(".loc[rownumber]"), tryagain(" or ", exclaim = False), code(".loc[[rownumber]]"), tryagain(", the second outputs as a row!", exclaim = False))
             Q3B()
     print(Q3B())
     
 ################################ CHALLENGE 4
     
 def challenge4a():
-    print("Try filling in the command ")
-    
-    
+    print("Try filling in the command to sort values by", code("'Time to Adoption (weeks)'"))
+    def Q4A(): 
+        ans = str(input(code("pets")))
+        if ans == ".sort_values(by = 'Time to Adoption (weeks)')":
+            correct_answer()
+        else: 
+            print(rover("Not quite!\n"), tryagain("Try .sort_values(by = 'Time to Adoption (weeks)')"))
+            Q4A()
+    Q4A()
+    return pets.sort_values(by = 'Time to Adoption (weeks)')
+        
+              

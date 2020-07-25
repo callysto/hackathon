@@ -205,6 +205,12 @@ def challenge2c():
     return pets['Name']
     
 ################################ CHALLENGE 3
+
+# plot example 
+def challengeplotall(): 
+    
+    
+
 # Question 3 A
 def challenge3a():
     print(rover("Now, because all the pet names are unique we should try using another column of data.\nHmm, how about animal types? Or better yet, the number of legs on each animal!"))
@@ -249,18 +255,61 @@ def challenge3c():
             Q3B()
     print(Q3B())
     
+def challenge3d(): 
+    print(rover("Good work!! Let's try to do some other examples. Since I'm a dog that's over 100lbs, I want to see if there are any other dogs like me! Can you try and find out?"))
+    def Q3D_1(): 
+        ans1 = str(input(task("Try to find the all the dogs with the first operator below!\n", check = True) + code("pets.loc")))
+        if ans1 == "[(pets[\"Species\"] == \"dog\")]" or ans1 == "[(pets['Species'] == 'dog')]":
+            correct_answer()
+            print(pets.loc[(pets["Species"] == "dog")])
+        else:
+            print(tryagain("Very close! Why don't you try "), code("[(pets[\"column_name\"] == \"filter_word\")] "), tryagain("where the column is 'Species' and filter is 'dog'? Remember: capitalization matters!", exclaim = False))
+            Q3D_1()
+        clear_output(wait = True)
+ 
+    def Q3D_2(): 
+        ans2 = str(input(task("Awesome! Now try to write an operator that can find all animals over 100 pounds!\n", check = True) + code("pets.loc")))
+        if ans2 == "[(pets['Weight (lbs)'] > 100)]" or ans2 == "[(pets[\"Weight (lbs)\"] > 100)]":
+            correct_answer()
+            print(pets.loc[(pets["Weight (lbs)"] > 100)])
+        else: 
+            print(tryagain("Try "), code("[(pets[\"column_name\"] > number_of_lbs)] "), tryagain("where the column is 'Weight (lbs)' and number of lbs is 100 Remember: spelling and spaces matter!", exclaim = False))
+            Q3D_2()
+        clear_output(wait = True)
+  
+    def Q3D_3(): 
+        print(rover("Wow! You're really good. I always had trouble with doing that stuff. How about we try to do both at once? I think the format was "), code("pets.loc[(operator1) & (operator2)]"))
+        def Q3D_3A():
+            ans3 = str(input(task("Try to combine the two operators you wrote previously. Remember to always have matching brackets!\n", check = True) + code("pets.loc")))
+            #alternatively can potentially use regex to parse this 
+            if ans3 == "[(pets[\"Weight (lbs)\"] > 100) & (pets[\"Species\"] == \"dog\")]" or ans3 == "[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')]": 
+                correct_answer()
+                return pets.loc[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')]
+            else:
+                print(tryagain("This one is definitely tricky! Try seeing what you may have missed by comparing your answer to this: \n"), code("pets.loc[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')] "))
+                Q3D_3A()
+        Q3D_3A()
+    Q3D_1()
+    Q3D_2()
+    Q3D_3()
+    return pets.loc[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')]
+    
 ################################ CHALLENGE 4
     
 def challenge4a():
-    print("Try filling in the command to sort values by", code("'Time to Adoption (weeks)'"))
+    print(rover("I wonder how many pets are planning to be adopted soon! Should that be considered?"))
+    print(task("Try filling in the command to sort values by", check = True), code("'Time to Adoption (weeks)'"))
     def Q4A(): 
         ans = str(input(code("pets")))
-        if ans == ".sort_values(by = 'Time to Adoption (weeks)')":
+        if ans == ".sort_values(by='Time to Adoption (weeks)')" or ans == ".sort_values(by=\"Time to Adoption (weeks)\")":
             correct_answer()
         else: 
-            print(rover("Not quite!\n"), tryagain("Try .sort_values(by = 'Time to Adoption (weeks)')"))
+            print(rover("Better than I could have done!\n"), tryagain("Try .sort_values(by='Time to Adoption (weeks)')"))
             Q4A()
     Q4A()
     return pets.sort_values(by = 'Time to Adoption (weeks)')
-        
+
+def challenge4b():
+    print(rover(""))
+
               

@@ -373,7 +373,7 @@ def challenge4b():
            
 
 # Question 4 C
-def Q4C(): # slice dataframe 
+def challenge4c(): # slice dataframe 
     pets_subset = pets[["Name", "Species", "Gender", "Age (years)"]]
     def Q4C_1(): #slice pets to rows 6 - 17
         ans = str(input(task("Now, let's try getting some rows! Fill in the command and try to access rows 6 - 17! \n", check = True) + code("pets")))
@@ -431,11 +431,11 @@ def Q4D(): # use basic statistics methods
                     return display(pets.describe())
                 else:
                     print(tryagain("Try again!"))
+            clear_output(wait = True)
             Q4D_2()
     #execute 
     Q4D_1()
     Q4D_cont()
-
 
 ################################ CHALLENGE 5
     

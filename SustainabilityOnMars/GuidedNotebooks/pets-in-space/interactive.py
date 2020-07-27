@@ -338,6 +338,7 @@ def challenge4b():
         else: 
             print(tryagain("Make sure it looks something like "), code("[['Name', 'Species', 'Gender', 'Age (years)']]"), tryagain("Remember case and spacing matters!", exclaim=False))
             Q4B_1()
+        clear_output(wait = True)
         return 
             
     #question to access with variable name
@@ -348,6 +349,7 @@ def challenge4b():
         else: 
             print(tryagain("Try again!"))
             Q4B_1A()
+        clear_output(wait = True)
         return display(pets_subset)
             
             
@@ -359,6 +361,7 @@ def challenge4b():
         else:             
             print(tryagain("Try pets_subset"), code(".sort_values(by = 'Age (years)')"))      
             Q4B_1B()
+        clear_output(wait = True)
         return display(pets_subset.sort_values(by = 'Age (years)'))
     
     #execute
@@ -366,10 +369,48 @@ def challenge4b():
     Q4B_1A()
     Q4B_1B()
            
-            
+
+# Question 4 C
 def Q4C():
     ans2 = str(input(task("Now, let's try getting some rows! Fill in the command and try to access rows \n")))
     Q4C()
     
+
+# Question 4 D
+def Q4D(): 
+    def Q4D_1():
+        ans = str(input(task("Try out the different statistics methods on the Weight column!\n", check = True) + code("pets['Weight (lbs)']")))
+        #case handling 
+        if ans == ".max()":
+            correct_answer()
+            return display(pets['Weight (lbs)'].max()), print(rover("That's pretty heavy!"))
+        elif ans == ".min()":
+            correct_answer()
+            return display(pets['Weight (lbs)'].min())
+        elif ans == ".mean()": 
+            correct_answer()
+            return display(pets['Weight (lbs)'].mean())
+        elif ans == ".describe()": 
+            correct_answer()
+            return display(pets['Weight (lbs)'].describe())
+        else: 
+            print(tryagain("That doesn't seem to be a valid method!"))
+            Q4D_1()  
+    def Q4D_cont(): 
+        cont = input("Would you like to try another method? (y/n)")
+        if cont == "y": 
+            Q4D()
+            clear_output(wait = True)
+        else: 
+            def Q4D_2():
+                ans2 = str(input(task("Try to use ", check = True) + code(".describe()") + task(" on the dataset now!\n") + code("pets")))
+                if ans2 == ".describe()": 
+                    correct_answer()
+                    return display(pets.describe())
+                else:
+                    print(tryagain("Try again!"))
+            Q4D_2()
+    Q4D_1()
+    Q4D_cont()
     
     

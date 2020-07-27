@@ -372,9 +372,25 @@ def challenge4b():
 
 # Question 4 C
 def Q4C():
-    ans2 = str(input(task("Now, let's try getting some rows! Fill in the command and try to access rows \n")))
-    Q4C()
-    
+    pets_subset = pets[["Name", "Species", "Gender", "Age (years)"]]
+    def Q4C_1():
+        ans = str(input(task("Now, let's try getting some rows! Fill in the command and try to access rows 6 - 17! \n", check = True) + code("pets")))
+        if ans == ".loc[6:17]":
+            correct_answer()
+            return display(pets.loc[6:17])
+        else: 
+            print(tryagain("Try again! Remember we are using "), code(".loc[1:2]"))
+            Q4C_1()
+            
+    def Q4C_2(): 
+        ans2 = str(input(task("Now let's try getting rows 15-12 from the data we subsetted in the last question!\n", check = True) + code("pets_subset")))
+        if ans2 == ".loc[5:12]":
+            correct_answer()
+            return display(pets_subset.loc[5:12])
+        else:
+            print(tryagain("Try again! Remember we are using "), code(".loc[1:2]"))
+            Q4C_2()
+            
 
 # Question 4 D
 def Q4D(): 
@@ -396,12 +412,14 @@ def Q4D():
         else: 
             print(tryagain("That doesn't seem to be a valid method!"))
             Q4D_1()  
+            
     def Q4D_cont(): 
         cont = input("Would you like to try another method? (y/n)")
         if cont == "y": 
             Q4D()
             clear_output(wait = True)
         else: 
+            #nested describe function
             def Q4D_2():
                 ans2 = str(input(task("Try to use ", check = True) + code(".describe()") + task(" on the dataset now!\n") + code("pets")))
                 if ans2 == ".describe()": 
@@ -412,5 +430,7 @@ def Q4D():
             Q4D_2()
     Q4D_1()
     Q4D_cont()
-    
+
+
+################################ CHALLENGE 5
     

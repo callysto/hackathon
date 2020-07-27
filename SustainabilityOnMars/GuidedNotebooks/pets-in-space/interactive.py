@@ -382,7 +382,8 @@ def challenge4c(): # slice dataframe
             return display(pets.loc[6:17])
         else: 
             print(tryagain("Try again! Remember we are using "), code(".loc[1:2]"))
-            Q4C_1()  
+            Q4C_1() 
+        clear_output(wait = True)
             
     def Q4C_2(): # slicepets_subset to rows 5 - 12
         ans2 = str(input(task("Now let's try getting rows 5-12 from the data we subsetted in the last question!\n", check = True) + code("pets_subset")))
@@ -398,7 +399,7 @@ def challenge4c(): # slice dataframe
             
 
 # Question 4 D
-def Q4D(): # use basic statistics methods
+def challenge4d(): # use basic statistics methods
     def Q4D_1(): # try out commands on weight column
         ans = str(input(task("Try out the different statistics methods on the Weight column!\n", check = True) + code("pets['Weight (lbs)']")))
         # case handling 
@@ -421,7 +422,7 @@ def Q4D(): # use basic statistics methods
     def Q4D_cont(): # recursive try agains 
         cont = input("Would you like to try another method? (y/n)")
         if cont == "y": 
-            Q4D()
+            challenge4d()
             clear_output(wait = True)
         else: 
             def Q4D_2(): # nested describe function

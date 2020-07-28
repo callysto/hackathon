@@ -421,7 +421,7 @@ def challenge4d(): # use basic statistics methods
             
     def Q4D_cont(): # recursive try agains 
         cont = input("Would you like to try another method? (y/n)")
-        if cont == "y": 
+        if cont == "y" or cont == "yes" or cont == "Yes": 
             challenge4d()
             clear_output(wait = True)
         else: 
@@ -465,13 +465,15 @@ def challenge5b():
     print(rover("Now that we've imported the package. let's try making some graphs! I'm so excited!!"))
     # make a plot bar
     def Q5B_1():
-        ans1 = str(input(task("Try making a bar plot of the Species as the x column, and the lets as the Y column. Let's see what we find!\n", check = True) + code(plt)))
-        if ans1 == ".bar(pets['Species'], pets['Legs'])" or ans1 == "plt.bar(pets[\"Species\"], pets[\"Legs\"])":
+        ans = str(input(task("Try making a bar plot of the Species as the x column, and the lets as the Y column. Let's see what we find!\n", check = True) + code(plt)))
+        if ans == ".bar(pets['Species'], pets['Legs'])" or ans == "bar(pets[\"Species\"], pets[\"Legs\"])":
             correct_answer()
+            display(plt.bar(pets['Species'], pets['Legs']))
             # custom plotting function
             def pltbr():
                 pltbr = str(input(rover("Do you want to try using different columns? (y/n)")))
-                if pltbr == "y": 
+                if pltbr == "y" or pltbr == "yes" or pltbr == "Yes": 
+                    clear_output(wait = True)
                     xcol = str(input("Please enter a valid column for x: ", check = True))
                     ycol = str(input("Please enter a valid column for y: ", check = True))
                     pltbr_plt = plt.bar(xcol, ycol)
@@ -479,40 +481,59 @@ def challenge5b():
                     #recursive try again
                     def pltbr_retry(): 
                         rtry = str(input("Do you want to try again? (y/n)"))
-                        if rtry == "y": 
+                        if rtry == "y" or rtry == "yes" or rtry == "Yes": 
                             pltbr()
                         else:
-                            Q5B_2()
+                            print(task("Continue to the next question", check = True))
                     #execute
                     pltbr_retry
                     clear_output(wait = True)
                 else:
-                    Q5B_2()
+                    print(task("Continue to the next question", check = True))
             #execute
             pltbr()         
         else: 
             print(tryagain("Hmm, not quite. How about trying "), code("plt.bar(pets['Species'], pets['Legs'])"))
             Q5B_1()
-            
-    # make a histogram        
-    def Q5B_2(): 
-        ans2 = str(input(task("Let's try making a histogram now! Can you fill in this command to create a histogram of the Species column? \n", check = True) + code("plt")))
-        if ans2 == ".hist(pets['Species'])" or ans2 == ".hist(pets[\"Species\"])":
-            correct_answer()
-        
-    
-    
-        
     #execute
     Q5B_1()
-    
-    
-    
-# bar plot
-plt.bar(pets['Species'], pets['Legs'])
-#histogram 
-plt.hist(pets['Age (years)'])
-plt.hist(pets['Species'])
+            
+# make a histogram        
+def challenge5c(): 
+    print(rover("Let's try making a histogram now! "))
+    def Q5C():
+        ans = str(input(task("Let's try making a histogram now! Can you fill in this command to create a histogram of the Species column? \n", check = True) + code("plt")))
+        if ans == ".hist(pets['Species'])" or ans == ".hist(pets[\"Species\"])":
+            correct_answer()
+            display(plt.hist(pets['Species']))
+            # make a custom histogram
+            def plthst():
+                plthst = str(input(rover("Do you want to try using a different column? (y/n)")))
+                if plthst == "y" or plthst == "yes" or plthst == "Yes":
+                    clear_output(wait = True)
+                    xcol = str(input("Please enter a valid column for x: ", check = True))
+                    ycol = str(input("Please enter a valid column for y: ", check = True))
+                    plthst_plt = plt.hist(xcol, ycol)
+                    display(plthst_plt)
+                    #recursive try again
+                    def plthst_retry(): 
+                        rtry = str(input("Do you want to try again? (y/n)"))
+                        if rtry == "y" or rtry == "yes" or rtry == "Yes": 
+                            plthst()
+                        else:
+                            print(task("Continue to the next question", check = True))
+                    #execute
+                    plthst_retry
+                    clear_output(wait = True)
+                else:
+                    print(task("Continue to the next question", check = True))
+            #execute
+            plthst()    
+        else: 
+            print(tryagain("Hmm, not quite. How about trying "), code("plt.hist(pets['Species'])"))
+            Q5C()
+    #execute
+    Q5C()
 
 
 #line graph

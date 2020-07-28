@@ -9,6 +9,7 @@ Created on Mon Jul 13 07:44:25 2020
 # libraries
 import random
 import pandas as pandas
+import matplotlib.pyplot as plt 
 from IPython.display import clear_output, display
 
 # import data - MAKE SURE THIS IS CORRECT!
@@ -51,7 +52,7 @@ def tryagain(text, exclaim = True): # red with default emoji
 
 # positive feedback for correct answers
 def correct_answer(): # random positive reinforcement
-    compliment = ["Amazing work!", "Nice job!", "Right on!", "You rock!", "I wish I was this good!", "What a rockstar coder!", "Correct!", "Glad we have you around!", "That was great!", "You're picking up on this really well!", "Even Rover is impressed!"]
+    compliment = ["Amazing work!", "Nice job!", "Right on!", "Awesome possum!", "You're out of this world!", "Great stuff!", "What a quick learner!", "You rock!", "I wish I was this good!", "What a rockstar coder!", "Correct!", "Glad we have you around!", "That was great!", "You're picking up on this really well!", "Even Rover is impressed!"]
     nice = print(bedazzle(random.choice(compliment)))
     return nice 
 
@@ -82,7 +83,6 @@ def challenge1a(): # import command challenge
             print(tryagain("Hmm.. not quite. Try"), code("pandas"))
             Q1A()
     Q1A()
-    return 
 
 # Question 1 B
 def challenge1b(): # load in dataset challenge
@@ -438,5 +438,85 @@ def challenge4d(): # use basic statistics methods
     Q4D_1()
     Q4D_cont()
 
-################################ CHALLENGE 5
+################################ CHALLENGE 5 ## ----- REQUIRES TEST CASING ---- ##
+# Question 5 A
+def challenge5a(): # import matplotlib's pyplot 
+    print(rover("Because we are using"), code(" matplotlib"), normal(", we should import it!"))
+    def Q5A(): # import pyplot submodule
+        ans1 = str(input(task("Fill in the command below. Because we are using only ", check = True) + code('pyplot') + task(", write ") + code("matplotlib.pyplot\nimport ")))
+        if ans1 == "matplotlib.pyplot": 
+            correct_answer()
+            def Q5A_1(): # assign it as plot
+                ans1A = input(rover("Did you know that you can use ") + code("as") + normal("to assign a library to a variable? \n ") + task("Try typing", check = True) + code("import matplotlib.pyplot as plt") + task("below!\n"))
+                if ans1A == "import matplotlib.pyplot as plot": 
+                    correct_answer()
+                else: 
+                    print(tryagain("Try again! You will have to write the whole command from scratch for this one."))
+                    Q5A_1()
+            Q5A_1()
+        else: 
+            print(tryagain("Try again!"))
+            Q5A()
+    #execute
+    Q5A()
+
+# Question 5 B
+def challenge5b(): 
+    print(rover("Now that we've imported the package. let's try making some graphs! I'm so excited!!"))
+    # make a plot bar
+    def Q5B_1():
+        ans1 = str(input(task("Try making a bar plot of the Species as the x column, and the lets as the Y column. Let's see what we find!\n", check = True) + code(plt)))
+        if ans1 == ".bar(pets['Species'], pets['Legs'])" or ans1 == "plt.bar(pets[\"Species\"], pets[\"Legs\"])":
+            correct_answer()
+            # custom plotting function
+            def pltbr():
+                pltbr = str(input(rover("Do you want to try using different columns? (y/n)")))
+                if pltbr == "y": 
+                    xcol = str(input("Please enter a valid column for x: ", check = True))
+                    ycol = str(input("Please enter a valid column for y: ", check = True))
+                    pltbr_plt = plt.bar(xcol, ycol)
+                    display(pltbr_plt)
+                    #recursive try again
+                    def pltbr_retry(): 
+                        rtry = str(input("Do you want to try again? (y/n)"))
+                        if rtry == "y": 
+                            pltbr()
+                        else:
+                            Q5B_2()
+                    #execute
+                    pltbr_retry
+                    clear_output(wait = True)
+                else:
+                    Q5B_2()
+            #execute
+            pltbr()         
+        else: 
+            print(tryagain("Hmm, not quite. How about trying "), code("plt.bar(pets['Species'], pets['Legs'])"))
+            Q5B_1()
+            
+    # make a histogram        
+    def Q5B_2(): 
+        ans2 = str(input(task("Let's try making a histogram now! Can you fill in this command to create a histogram of the Species column? \n", check = True) + code("plt")))
+        if ans2 == ".hist(pets['Species'])" or ans2 == ".hist(pets[\"Species\"])":
+            correct_answer()
+        
+    
+    
+        
+    #execute
+    Q5B_1()
+    
+    
+    
+# bar plot
+plt.bar(pets['Species'], pets['Legs'])
+#histogram 
+plt.hist(pets['Age (years)'])
+plt.hist(pets['Species'])
+
+
+#line graph
+plt.plot(pets['Time to Adoption (weeks)'])
+#scatterplot
+plt.scatter(pets['Age (years)'], pets['Weight (lbs)'])
     

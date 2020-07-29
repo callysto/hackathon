@@ -192,7 +192,7 @@ def challenge2b(): # view data columns
     print(rover("First, we will need to know what columns are in the data. We can do this by either looking at the dataset again, or use "), code("dataset_variable_name.columns"))
     def Q2B(): # view columns
         ans = str(input(task("Try filling in the command: \n", check = True) + code("pets")))
-        if ans == "columns": 
+        if ans == ".columns": 
             correct_answer() 
         else: 
             print(tryagain("Hmm, not quite. Make sure you have the right spelling!"))
@@ -442,7 +442,7 @@ def challenge4d(): # use basic statistics methods
     Q4D_1()
     Q4D_cont()
 
-################################ CHALLENGE 5 ## ----- REQUIRES TEST CASING ---- ##
+################################ CHALLENGE 5
 # Question 5 A
 def challenge5a(): # import matplotlib's pyplot 
     print(rover("Because we are using"), code(" matplotlib"), normal(", we should import it!"))
@@ -501,7 +501,8 @@ def challenge5b(): # make a bar plot
             Q5B_1()
     #execute
     Q5B_1()
-            
+      
+################################ CHALLENGE 5     
 
 # Challenge 5 C       
 def challenge5c(): # make a histogram 
@@ -572,4 +573,4 @@ def challenge5e():
     #execute
     Q5E()
                
-    
+################################ BONUS CHALLENGE 

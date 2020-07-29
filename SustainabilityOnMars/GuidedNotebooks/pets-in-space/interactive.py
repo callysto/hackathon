@@ -300,7 +300,6 @@ def challenge3d(): # advanced basic operators and logical operators
         else: 
             print(tryagain("Try "), code("[(pets[\"column_name\"] > number_of_lbs)] "), tryagain("where the column is 'Weight (lbs)' and number of lbs is 100 Remember: spelling and spaces matter!", exclaim = False))
             Q3D_2()
-        clear_output(wait = True)
   
     def Q3D_3(): # get all dogs over 100lbs 
         print(rover("Wow! You're really good. I always had trouble with doing that stuff. How about we try to do both at once? I think the format was "), code("pets.loc[(operator1) & (operator2)]"))

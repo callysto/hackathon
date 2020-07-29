@@ -552,7 +552,7 @@ def challenge5d(): # make a scatterplot
             plt.scatter(pets['Age (years)'], pets['Weight (lbs)'])
             plt.show()
         else: 
-            print(tryagain("Hmm, not quite. How about trying "), code("plot.scatter(pets['Age (years)'], pets['Weight (lbs)'])"))
+            print(tryagain("Hmm, not quite. How about trying "), code("plt.scatter(pets['Age (years)'], pets['Weight (lbs)'])"))
             Q5D()
     #execute
     Q5D()

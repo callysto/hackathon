@@ -192,7 +192,7 @@ def challenge2b(): # view data columns
     print(rover("First, we will need to know what columns are in the data. We can do this by either looking at the dataset again, or use "), code("dataset_variable_name.columns"))
     def Q2B(): # view columns
         ans = str(input(task("Try filling in the command: \n", check = True) + code("pets")))
-        if ans == "columns": 
+        if ans == ".columns": 
             correct_answer() 
         else: 
             print(tryagain("Hmm, not quite. Make sure you have the right spelling!"))
@@ -284,23 +284,22 @@ def challenge3d(): # advanced basic operators and logical operators
     print(rover("Good work!! Let's try to do some other examples. Since I'm a dog that's over 100lbs, I want to see if there are any other dogs like me! Can you try and find out?"))
     def Q3D_1(): # get all docs 
         ans1 = str(input(task("Try to find the all the dogs with the first operator below!\n", check = True) + code("pets.loc")))
-        if ans1 == "[(pets[\"Species\"] == \"dog\")]" or ans1 == "[(pets['Species'] == 'dog')]":
+        if ans1 == "[pets[\"Species\"] == \"dog\"]" or ans1 == "[pets['Species'] == 'dog']":
             correct_answer()
-            return display(pets.loc[(pets["Species"] == "dog")])
+            return display(pets.loc[pets["Species"] == "dog"])
         else:
-            print(tryagain("Very close! Why don't you try "), code("[(pets[\"column_name\"] == \"filter_word\")] "), tryagain("where the column is 'Species' and filter is 'dog'? Remember: capitalization matters!", exclaim = False))
+            print(tryagain("Very close! Why don't you try "), code("[pets[\"column_name\"] == \"filter_word\"] "), tryagain("where the column is 'Species' and filter is 'dog'? Remember: capitalization matters!", exclaim = False))
             Q3D_1()
         clear_output(wait = True)
  
     def Q3D_2(): # get all pets over 100lbs
         ans2 = str(input(task("Awesome! Now try to write an operator that can find all animals over 100 pounds!\n", check = True) + code("pets.loc")))
-        if ans2 == "[(pets['Weight (lbs)'] > 100)]" or ans2 == "[(pets[\"Weight (lbs)\"] > 100)]":
+        if ans2 == "[pets['Weight (lbs)'] > 100]" or ans2 == "[pets[\"Weight (lbs)\"] > 100]":
             correct_answer()
-            return display(pets.loc[(pets["Weight (lbs)"] > 100)])
+            return display(pets.loc[pets["Weight (lbs)"] > 100])
         else: 
-            print(tryagain("Try "), code("[(pets[\"column_name\"] > number_of_lbs)] "), tryagain("where the column is 'Weight (lbs)' and number of lbs is 100 Remember: spelling and spaces matter!", exclaim = False))
+            print(tryagain("Try "), code("[pets[\"column_name\"] > number_of_lbs] "), tryagain("where the column is 'Weight (lbs)' and number of lbs is 100 Remember: spelling and spaces matter!", exclaim = False))
             Q3D_2()
-        clear_output(wait = True)
   
     def Q3D_3(): # get all dogs over 100lbs 
         print(rover("Wow! You're really good. I always had trouble with doing that stuff. How about we try to do both at once? I think the format was "), code("pets.loc[(operator1) & (operator2)]"))
@@ -311,7 +310,7 @@ def challenge3d(): # advanced basic operators and logical operators
                 correct_answer()
                 return display(pets.loc[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')])
             else:
-                print(tryagain("This one is definitely tricky! Try seeing what you may have missed by comparing your answer to this: \n"), code("pets.loc[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')] "))
+                print(tryagain("This one is definitely tricky! Try seeing what you may have missed by comparing your answer to this: \n"), code("pets.loc[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')] "), tryagain("\nNote that when we have 2 or more, we need to separate them by putting each one in ", exclaim = False), code("( )"))
                 Q3D_3A()
         Q3D_3A()
     #execute
@@ -442,7 +441,7 @@ def challenge4d(): # use basic statistics methods
     Q4D_1()
     Q4D_cont()
 
-################################ CHALLENGE 5 ## ----- REQUIRES TEST CASING ---- ##
+################################ CHALLENGE 5
 # Question 5 A
 def challenge5a(): # import matplotlib's pyplot 
     print(rover("Because we are using"), code(" matplotlib"), normal(", we should import it!"))
@@ -501,7 +500,8 @@ def challenge5b(): # make a bar plot
             Q5B_1()
     #execute
     Q5B_1()
-            
+      
+################################ CHALLENGE 5     
 
 # Challenge 5 C       
 def challenge5c(): # make a histogram 
@@ -552,7 +552,7 @@ def challenge5d(): # make a scatterplot
             plt.scatter(pets['Age (years)'], pets['Weight (lbs)'])
             plt.show()
         else: 
-            print(tryagain("Hmm, not quite. How about trying "), code("plot.scatter(pets['Age (years)'], pets['Weight (lbs)'])"))
+            print(tryagain("Hmm, not quite. How about trying "), code("plt.scatter(pets['Age (years)'], pets['Weight (lbs)'])"))
             Q5D()
     #execute
     Q5D()
@@ -572,4 +572,4 @@ def challenge5e():
     #execute
     Q5E()
                
-    
+################################ BONUS CHALLENGE 

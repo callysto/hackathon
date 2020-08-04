@@ -1,13 +1,41 @@
 # Links to Important Resources
 
-## Tutorials: Pandas DataFrames, Matplotlib, and Cufflinks
+## Tutorials
 
-<a href="http://tinyurl.com/ya3jgsd7" target="_blank"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a> Press this button to get started with reading, parsing, and formatting data using Pandas DataFrames, as well as visualizing using Cufflinks and Matplotlib. 
+### Python and Pandas
 
-## Accessing Data using Jupyter Notebooks
+<a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=PrepMaterials/python-and-pandas-basics-solutions.ipynb&depth=1" target="_blank"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
 
-<a href="http://tinyurl.com/y84e5hvh" target="_blank"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a> Press this button to explore multiple ways you can access open data from sites such as Statistics Canada, Google search trends, Gapminder, NASA API, and the Canadian Space Agency open data portal. 
+Get started with reading, parsing, and formatting data using Pandas DataFrames.
+
+<a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=SustainabilityOnMars/Tutorials/pandas-dataframes.ipynb&depth=1" target="_blank"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
+
+Pandas commands "cheatsheet".
+
+### Visualizations
+
+<a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=SustainabilityOnMars/Tutorials/graphing-with-cufflinks.ipynb&depth=1" target="_blank"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
+
+Create interactive visualizations with `cufflinks`.
+
+<a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=SustainabilityOnMars/Tutorials/graphing-with-matplotlib.ipynb&depth=1" target="_blank"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
+
+Create visulizations with `matplotlib`.
+
+### Accessing Data using Jupyter Notebooks
+
+<a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=SustainabilityOnMars/Tutorials/accessing-open-data.ipynb&depth=1" target="_blank"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
+
+Explore ways to access open data from sites such as Statistics Canada, Google search trends, Gapminder, NASA, and the Canadian Space Agency open data portal. 
+
+### Formatting Text
+
+<a href="https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=SustainabilityOnMars/Tutorials/markdown-text-formatting.ipynb&depth=1" target="_blank"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
+
+Formatting text using markdown.
 
 ## Challenges
 
-<a href="http://tinyurl.com/ya84r4vc" target="_blank"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a> Press this button to get started with the challenges.
+<a href="" target="_blank"><img src="https://raw.githubusercontent.com/callysto/curriculum-notebooks/master/open-in-callysto-button.svg?sanitize=true" width="123" height="24" alt="Open in Callysto"/></a>
+
+Get started with the challenges.

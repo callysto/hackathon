@@ -1,3 +1,7 @@
+## Are you here for JupyterCon 2020 Sprint? 
+
+Access information on our sprint [here](https://github.com/callysto/hackathon/issues/34).
+
 # Hackathon Challenges and Resources
 
 These are notebooks and other resources to use as challenges for Callysto hackathons or related events. You're also welcome to use them for other non-commercial purposes.

@@ -2,6 +2,11 @@
 
 Access information on our sprint [here](https://github.com/callysto/hackathon/issues/34).
 
+Join the Mattermost forum:
+
+- Create an account on https://academy.numfocus.org
+- After you validate your account, you can [join the sprints Mattermost team](https://forum.numfocus.org/signup_user_complete/?id=j14hr8f3hbnspbsjrafcjyqxoc) using the same account.
+
 # Hackathon Challenges and Resources
 
 These are notebooks and other resources to use as challenges for [Callysto](https://callysto.ca) hackathons or related events. You're also welcome to use them for other non-commercial purposes.

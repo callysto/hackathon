@@ -1,11 +1,3 @@
-## Are you here for JupyterCon 2020 Sprint? 
-
-Access information on our sprint [here](https://github.com/callysto/hackathon/issues/34).
-
-Join the Mattermost forum:
-
-- Create an account on https://academy.numfocus.org
-- After you validate your account, you can [join the sprints Mattermost team](https://forum.numfocus.org/signup_user_complete/?id=j14hr8f3hbnspbsjrafcjyqxoc) using the same account.
 
 # Hackathon Challenges and Resources
 

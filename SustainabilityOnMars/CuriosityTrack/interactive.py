@@ -67,9 +67,9 @@ def greet(): # get user's name
     
 def userinfo(): # get other info
     name = greet()
-    email = str(input(rover("Cool! Is it okay if I have your email address? ")))
+    #email = str(input(rover("Cool! Is it okay if I have your email address? ")))
     confidence = str(input(rover("How confident would you say you are in Python or Data Science? ")))
-    userinfo = {"Name" : name, "Email": email, "Python Confidence Level": confidence}
+    userinfo = {"Name" : name, "Python Confidence Level": confidence}
     return print(rover("Cool! I'll remember "), userinfo, normal(" for the future!"))
     
 

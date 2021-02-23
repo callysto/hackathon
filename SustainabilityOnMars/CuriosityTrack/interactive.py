@@ -54,29 +54,24 @@ def tryagain(text, exclaim = True): # red with default emoji
 
 # positive feedback for correct answers
 def correct_answer(): # random positive reinforcement
-    compliment = ["Amazing work!", "Nice job!", "Right on!", "Awesome possum!", "You're out of this world!", "Great stuff!", "What a quick learner!", "You rock!", "I wish I was this good!", "What a rockstar coder!", "Correct!", "Glad we have you around!", "That was great!", "You're picking up on this really well!", "Even Rover is impressed!"]
+    compliment = ["Amazing work!", "Nice job!", "Right on!", "Awesome possum!", "You're out of this world!", "Great stuff!", "You rock!", "I wish I were this good!", "What a rockstar coder!", "Correct!", "Glad we have you around!", "That was great!", "You're picking up on this really well!", "Even Rover is impressed!"]
     nice = print(bedazzle(random.choice(compliment)))
     return nice 
 
 ################################ USERINFO
 
 def greet(): # get user's name
-    name = input(rover("Heya! I guess we'll be working together from now on! What's your name? "))
-    print(rover("Nice to meet you, "),name,"!")
+    name = input(rover(" Heya! I guess we'll be working together from now on! What's your name? Press the 'enter' key (or 'return' on a Mac) when you're done. "))
+    print(rover(" Nice to meet you, "),name,"!")
     return name
     
 def userinfo(): # get other info
     name = greet()
-    #email = str(input(rover("Cool! Is it okay if I have your email address? ")))
-    confidence = str(input(rover("How confident would you say you are in Python or Data Science? ")))
-    userinfo = {"Name" : name, "Python Confidence Level": confidence}
-    return print(rover("Cool! I'll remember "), userinfo, normal(" for the future!"))
-    
 
 ################################ CHALLENGE 1
 # Question 1 A
 def challenge1a(): # import command challenge
-    print(rover("According to the documents, if we want to use the commands we need to bring in a library called"), code("pandas"), normal("into the notebook using some code.\n"), task("Try to fill in the", check = True), code("import"), task("command."))
+    print(rover(" If we want to use commands in Python, we need to bring in a library called"), code("pandas"), normal("into the notebook using some code.\n"), task("Try to fill in the", check = True), code("import"), task("command."))
     def Q1A(): 
         ans = str(input(code("import ")))
         if ans == "pandas":
@@ -92,20 +87,20 @@ def challenge1b(): # load in dataset challenge
     print(task("Answer the questions correctly to check your understanding.\n", check = True))
     
     def Q1B_1(): # What is the file name?
-        ans1 = str(input(rover("The file we want to use the ") + code("read_csv() ") + normal("function on is: ")))
+        ans1 = str(input(rover(" The file we want to use the ") + code("read_csv() ") + normal("function on is: ")))
         if ans1 == "pets_from_bootstrap_world.csv" or ans1 == "\"pets_from_bootstrap_world.csv\"": 
             correct_answer()
         else: 
-            print(tryagain("Try again. Make sure you spelled everything correctly and includes the file extension"))
+            print(tryagain("Try again. Make sure you spelled everything correctly and included the file extension"))
             Q1B_1()
         clear_output(wait = True)
         
     def Q1B_2(): # What is the library?
-        ans2 = str(input(rover("The library we want to use that contains the ") + code("read_csv() ") + normal("function is: ")))
+        ans2 = str(input(rover(" The library we want to use that contains the ") + code("read_csv() ") + normal("function is: ")))
         if ans2 == "pandas":
             correct_answer()
         else: 
-            print(tryagain("Try again. Remember it is case sensitive."))
+            print(tryagain("Try again. Remember that it is case sensitive."))
             Q1B_2()
         clear_output(wait = True)
         
@@ -124,26 +119,26 @@ def challenge1b(): # load in dataset challenge
 
 # Question 1 C
 def challenge1c(): # variables challenge 
-    codeword = input(task("Enter a codeword (also known as a variable name):\n", check = True) + rover("It can be anything! "))
+    codeword = input(task("Enter a code word (also known as a variable name):\n", check = True) + rover(" It can be anything! "))
     value = input(task("Now, enter a value for the variable, it can also be anything!\n ", check = True) + code(str(codeword)) + code(" = "))
     pets = pandas.read_csv("pets_from_bootstrap_world.csv") 
     def Q1C_1(): # quick variable demonstration
-        code = str(input(task("Now, enter your codeword again ", check = True)))
+        code = str(input(task("Now, enter your code word again ", check = True)))
         if code == str(codeword) :
             print(value)
             correct_answer()
-            print(rover("Notice how when you entered the variable name, it gave you the value instead? This is handy for saving time by making long pieces of code short!"))
+            print(rover(" Notice how when you entered the variable name, it gave you the value instead? This is handy for saving time by making long pieces of code short!"))
         else:
-            print(tryagain("Try typing the codeword from above, remember to make sure your spelling and capitalization is the same too. "))
+            print(tryagain("Try typing the code word from above. Remember to make sure your spelling and capitalization are the same, too. "))
             Q1C_1()
         clear_output(wait = True)
             
     def Q1C_2(): # assign the dataset to a variable 
-        ans = str(input(task("Now, let's try assigning the dataset to as a variable!\n", check = True) + code("pets =  ")))
+        ans = str(input(task("Now, let's try assigning the dataset as a variable! Write the code to access the Pets Archives from Earth.\n", check = True) + code("pets =  ")))
         if ans == "pandas.read_csv(\"pets_from_bootstrap_world.csv\")" or ans == "pandas.read_csv('pets_from_bootstrap_world.csv')":
             correct_answer() 
         else:
-            print(tryagain("Try the code from the last question!", exclaim = True))
+            print(tryagain("Try library.function(\"file.csv\") from the last question to access the Pets Archives!", exclaim = True))
             Q1C_2()
         clear_output(wait = True)
         
@@ -166,7 +161,7 @@ def challenge1c(): # variables challenge
 # Question 2 A
 def challenge2a(): #heads and tails challenge
     def Q2A_1(): # view head
-        ans = str(input(rover("If I only wanted to see the top of the dataset I would write: \n") + code("pets")))
+        ans = str(input(rover(" If I only wanted to see the top of the dataset, I would write: \n") + code("pets")))
         if ans == ".head()": 
             correct_answer() 
         else: 
@@ -175,7 +170,7 @@ def challenge2a(): #heads and tails challenge
         clear_output(wait = True)
         return display(pets.head())
     def Q2A_2(): # view tails
-        ans2 = str(input(rover("If I only wanted to see the bottom of a dataset I would write: \n") + code("pets")))
+        ans2 = str(input(rover(" If I only wanted to see the bottom of a dataset, I would write: \n") + code("pets")))
         if ans2 == ".tail()": 
             correct_answer()
         else: 
@@ -189,7 +184,7 @@ def challenge2a(): #heads and tails challenge
     
 # Question 2 B
 def challenge2b(): # view data columns
-    print(rover("First, we will need to know what columns are in the data. We can do this by either looking at the dataset again, or use "), code("dataset_variable_name.columns"))
+    print(rover(" First, we will need to know what columns are in the data. We can do this by either looking at the dataset again, or use "), code("dataset_variable_name.columns"))
     def Q2B(): # view columns
         ans = str(input(task("Try filling in the command: \n", check = True) + code("pets")))
         if ans == ".columns": 
@@ -203,13 +198,13 @@ def challenge2b(): # view data columns
     
 # Question 2 C 
 def challenge2c(): # selecting columns
-    print(rover("Now that we have all the column names, let's choose a couple to look at. How about the "), code("'Name' "), normal("column?\n"), task("Select the column using ", check = True), code("dataset_variable_name[\"column_name\"]"))
+    print(rover(" Now that we have all the column names, let's choose a couple to look at. How about the "), code("'Name' "), normal("column?\n"), task("Select the column using ", check = True), code("dataset_variable_name[\"column_name\"]"))
     def Q2C(): # select name column
         ans = str(input(code("pets")))
         if ans == "['Name']" or ans == "[\"Name\"]":
             correct_answer()
         else: 
-            print(rover("Remember, it has to be the exact same spelling and case as in the list. Did you double check to use "), code("[ ] "), normal("instead of "), code("( )"), normal("?"))
+            print(rover(" Remember, it has to be the exact same spelling and case as in the list. Did you double check to use "), code("[ ] "), normal("instead of "), code("( )"), normal("?"))
             Q2C()
     #execute
     Q2C()
@@ -219,12 +214,12 @@ def challenge2c(): # selecting columns
 
 # plot example 
 def challengeplotall(): # demonstrate messy plot
-    print(rover("Before we start, we should try just plotting the data! I wonder what we will find?"))
+    print(rover(" Before we start, we should try just plotting the data! I wonder what we will find?"))
     def QPlot(): # plot all data 
         ans = str(input(task("Try adding ", check = True) + code(".plot()") + task(" to the end of the following command\n") + code("pets")))
         if ans == ".plot()": 
             pets.plot()
-            print(rover("That seems really hard to read! Let's build our skills through these notebooks to make something we can actually understand!"))
+            print(rover(" Now, let's build our skills through these challenges to make more data visualizations!"))
         else: 
             print(tryagain("Make sure you type the code exactly like in the instructions!"))
             QPlot()
@@ -235,7 +230,7 @@ def challengeplotall(): # demonstrate messy plot
 
 # Question 3 A
 def challenge3a(): # get unique values 
-    print(rover("Now, because all the pet names are unique we should try using another column of data.\nHmm, how about animal types? Or better yet, the number of legs on each animal!"))
+    print(rover(" Now, because all the pet names are unique, we should try using another column of data.\nHmm, how about animal types? Or better yet, the number of legs on each animal!"))
     def Q3A(): # get unique leg values 
         ans = str(input(task("Fill in the command to get the unique values for the number of legs in the pets data\n", check = True) + code("petlegs = pets[\"Legs\"]")))
         if ans == ".unique()": 
@@ -250,8 +245,8 @@ def challenge3a(): # get unique values
     
 # Question 3 B
 def challenge3b(): # using basic operators 
-    print(rover("Based on the last challenge, it seems we have a 3 legged animal! Do you know any reason why that might be?\nLet's try and find out which animals are 3 legged."))
-    print(rover("First, we'll need to use a basic operator on the 'Legs' column to find the ones that equal to 3."))
+    print(rover(" Based on the last challenge, it seems we have a 3 legged animal! Do you know any reason why that might be?\nLet's try and find out which animals are 3 legged."))
+    print(rover(" First, we'll need to use a basic operator on the 'Legs' column to find the ones that equal to 3."))
     def Q3B(): # select legs that equal 3
         ans = str(input(task("Try filling in the command\n", check = True) + code("pets['Legs'] == ")))
         if ans == "3": 
@@ -265,7 +260,7 @@ def challenge3b(): # using basic operators
   
 # Question 3 C
 def challenge3c(): # access a row using loc
-    print(rover("Looks like there's only one row that returns "), code("True "), normal("can you use "), code(".loc"), normal(" to find out more?"))
+    print(rover(" Looks like there's only one row that returns "), code("True "), normal("can you use "), code(".loc"), normal(" to find out more?"))
     def Q3B(): # view row 19 from 3 legged pet 
         ans = str(input(task("Fill in the command:\n", check = True) + code("pets")))
         if ans == ".loc[19]":
@@ -281,14 +276,14 @@ def challenge3c(): # access a row using loc
 
 # Question 3 D
 def challenge3d(): # advanced basic operators and logical operators 
-    print(rover("Good work!! Let's try to do some other examples. Since I'm a dog that's over 100lbs, I want to see if there are any other dogs like me! Can you try and find out?"))
+    print(rover(" Good work!! Let's try to do some other examples. Since I'm a dog that's over 100lbs, I want to see if there are any other dogs like me! Can you try and find out?"))
     def Q3D_1(): # get all docs 
-        ans1 = str(input(task("Try to find the all the dogs with the first operator below!\n", check = True) + code("pets.loc")))
+        ans1 = str(input(task("Try to find all the dogs with the first operator below!\n", check = True) + code("pets.loc")))
         if ans1 == "[pets[\"Species\"] == \"dog\"]" or ans1 == "[pets['Species'] == 'dog']":
             correct_answer()
             return display(pets.loc[pets["Species"] == "dog"])
         else:
-            print(tryagain("Very close! Why don't you try "), code("[pets[\"column_name\"] == \"filter_word\"] "), tryagain("where the column is 'Species' and filter is 'dog'? Remember: capitalization matters!", exclaim = False))
+            print(tryagain("Very close! Why don't you try "), code("[pets[\"column_name\"] == \"filter_word\"] "), tryagain("where the column is 'Species' and filter is 'dog'? Remember that capitalization matters!", exclaim = False))
             Q3D_1()
         clear_output(wait = True)
  
@@ -298,11 +293,11 @@ def challenge3d(): # advanced basic operators and logical operators
             correct_answer()
             return display(pets.loc[pets["Weight (lbs)"] > 100])
         else: 
-            print(tryagain("Try "), code("[pets[\"column_name\"] > number_of_lbs] "), tryagain("where the column is 'Weight (lbs)' and number of lbs is 100 Remember: spelling and spaces matter!", exclaim = False))
+            print(tryagain("Try "), code("[pets[\"column_name\"] > number_of_lbs] "), tryagain("where the column is 'Weight (lbs)' and number of lbs is 100 Remember that spelling and spaces matter!", exclaim = False))
             Q3D_2()
   
     def Q3D_3(): # get all dogs over 100lbs 
-        print(rover("Wow! You're really good. I always had trouble with doing that stuff. How about we try to do both at once? I think the format was "), code("pets.loc[(operator1) & (operator2)]"))
+        print(rover(" Wow! You're really good. How about we try to do both at once? I think the format was "), code("pets.loc[(operator1) & (operator2)]"))
         def Q3D_3A():# combine two operators 
             ans3 = str(input(task("Try to combine the two operators you wrote previously. Remember to always have matching brackets!\n", check = True) + code("pets.loc")))
             #alternatively can potentially use regex to parse this?
@@ -321,14 +316,14 @@ def challenge3d(): # advanced basic operators and logical operators
 ################################ CHALLENGE 4
 # Question 4 A
 def challenge4a(): # sort values 
-    print(rover("I wonder how many pets are planning to be adopted soon! Should that be considered?"))
+    print(rover(" I wonder how many pets are planning to be adopted soon! Should that be considered?"))
     print(task("Try filling in the command to sort values by", check = True), code("'Time to Adoption (weeks)'"))
     def Q4A(): # sort by time to adoption 
         ans = str(input(code("pets")))
         if ans == ".sort_values(by='Time to Adoption (weeks)')" or ans == ".sort_values(by=\"Time to Adoption (weeks)\")":
             correct_answer()
         else: 
-            print(rover("Better than I could have done!\n"), tryagain("Try .sort_values(by='Time to Adoption (weeks)')"))
+            print(rover(" Better than I could have done!\n"), tryagain("Try .sort_values(by='Time to Adoption (weeks)')"))
             Q4A()
     #execute
     Q4A()
@@ -336,8 +331,8 @@ def challenge4a(): # sort values
 
 # Question 4 B
 def challenge4b():
-    print(rover("Wow! We've done so much so far. I'm really learning a lot, I can't wait till we make some graphs after these challenges are done!"))
-    print(rover("I'm really excited to try some of those subsetting techniques though, let's try them out together!"))
+    print(rover(" Wow! We've done so much so far. I'm really learning a lot and I can't wait until we make some graphs after these challenges are done!"))
+    print(rover(" I'm really excited to try some of those subsetting techniques though. Let's try them out together!"))
     pets_subset = pets[["Name", "Species", "Gender", "Age (years)"]]
 
     def Q4B_1(): # column subset and nested sort
@@ -345,7 +340,7 @@ def challenge4b():
         if ans1 == "[['Name', 'Species', 'Gender', 'Age (years)']]" or ans1 == "[[\"Name\", \"Species\", \"Gender\", \"Age (years)\"]]":
             correct_answer()
         else: 
-            print(tryagain("Make sure it looks something like "), code("[['Name', 'Species', 'Gender', 'Age (years)']]"), tryagain("Remember case and spacing matters!", exclaim=False))
+            print(tryagain("Make sure it looks something like "), code("[['Name', 'Species', 'Gender', 'Age (years)']]"), tryagain("Remember that case and spacing matter!", exclaim=False))
             Q4B_1()
         clear_output(wait = True)
             
@@ -408,7 +403,7 @@ def challenge4d(): # use basic statistics methods
         # case handling 
         if ans == ".max()":
             correct_answer()
-            return display(pets['Weight (lbs)'].max()), print(rover("That's pretty heavy!"))
+            return display(pets['Weight (lbs)'].max()), print(rover(" That's pretty heavy!"))
         elif ans == ".min()":
             correct_answer()
             return display(pets['Weight (lbs)'].min())
@@ -444,13 +439,13 @@ def challenge4d(): # use basic statistics methods
 ################################ CHALLENGE 5
 # Question 5 A
 def challenge5a(): # import matplotlib's pyplot 
-    print(rover("Because we are using"), code(" matplotlib"), normal(", we should import it!"))
+    print(rover(" Because we are using"), code(" matplotlib"), normal(", we should import it!"))
     def Q5A(): # import pyplot submodule
         ans1 = str(input(task("Fill in the command below. Because we are using only ", check = True) + code('pyplot') + task(", write ") + code("matplotlib.pyplot\nimport ")))
         if ans1 == "matplotlib.pyplot": 
             correct_answer()
             def Q5A_1(): # assign it as plot
-                ans1A = input(rover("Did you know that you can use ") + code("as ") + normal("to assign a library to a variable? \n ") + task("Try typing ", check = True) + code("import matplotlib.pyplot as plt ") + task("below!\n"))
+                ans1A = input(rover(" Did you know that you can use ") + code("as ") + normal("to assign a library to a variable? \n ") + task("Try typing ", check = True) + code("import matplotlib.pyplot as plt ") + task("below!\n"))
                 if ans1A == "import matplotlib.pyplot as plt": 
                     correct_answer()
                 else: 
@@ -465,7 +460,7 @@ def challenge5a(): # import matplotlib's pyplot
 
 # Question 5 B
 def challenge5b(): # make a bar plot
-    print(rover("Now that we've imported the package. let's try making some graphs! I'm so excited!!"))
+    print(rover(" Now that we've imported the package. let's try making some graphs! I'm so excited!!"))
     def Q5B_1():
         ans = str(input(task("Try making a bar plot of the Species as the x column, and the legs as the Y column. Let's see what we find!\n", check = True) + code("plt")))
         if ans == ".bar(pets['Species'], pets['Legs'])" or ans == "bar(pets[\"Species\"], pets[\"Legs\"])":
@@ -505,7 +500,7 @@ def challenge5b(): # make a bar plot
 
 # Challenge 5 C       
 def challenge5c(): # make a histogram 
-    print(rover("Let's try making a histogram now! "))
+    print(rover(" Let's try making a histogram now! "))
     def Q5C():
         ans = str(input(task("Let's try making a histogram now! Can you fill in this command to create a histogram of the Species column? \n", check = True) + code("plt")))
         if ans == ".hist(pets['Species'])" or ans == ".hist(pets[\"Species\"])":
@@ -544,7 +539,7 @@ def challenge5c(): # make a histogram
 
 # Challenge 5 D
 def challenge5d(): # make a scatterplot   
-    print(rover("Let's try making a scatterplot now! These are my favourite!"))
+    print(rover(" Let's try making a scatterplot now! These are my favourite!"))
     def Q5D():
         ans = str(input(task("Can you fill in this command to create a scatterplot using Age as the x column and y as the Weight column? \n", check = True) + code("plt")))
         if ans == ".scatter(pets['Age (years)'], pets['Weight (lbs)'])" or ans == ".scatter(pets[\"Age (years)\"], pets[\"Weight (lbs)\"])":
@@ -559,7 +554,7 @@ def challenge5d(): # make a scatterplot
     
 # Challenge 5 E # make a line plot
 def challenge5e(): 
-    print(rover("Let's try making a line plot now! "))
+    print(rover(" Let's try making a line plot now! "))
     def Q5E():
         ans = str(input(task("Can you fill in this command to create a line plot with the Time to Adoption (weeks) column? \n", check = True) + code("plt")))
         if ans == ".plot(pets['Time to Adoption (weeks)'])" or ans == ".plot(pets[\"Time to Adoption (weeks)\"])":

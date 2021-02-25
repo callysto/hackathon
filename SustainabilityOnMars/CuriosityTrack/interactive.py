@@ -119,8 +119,8 @@ def challenge1b(): # load in dataset challenge
 
 # Question 1 C
 def challenge1c(): # variables challenge 
-    codeword = input(task("Enter a code word (also known as a variable name):\n", check = True) + rover(" It can be anything! "))
-    value = input(task("Now, enter a value for the variable, it can also be anything!\n ", check = True) + code(str(codeword)) + code(" = "))
+    codeword = input(task("Enter a code word (also known as a variable name):\n", check = True) + rover(" It can be any name! "))
+    value = input(task("Now, enter a value for the variable, it can also be any name!\n ", check = True) + code(str(codeword)) + code(" = "))
     pets = pandas.read_csv("pets_from_bootstrap_world.csv") 
     def Q1C_1(): # quick variable demonstration
         code = str(input(task("Now, enter your code word again ", check = True)))
@@ -186,7 +186,7 @@ def challenge2a(): #heads and tails challenge
 def challenge2b(): # view data columns
     print(rover(" First, we will need to know what columns are in the data. We can do this by either looking at the dataset again, or use "), code("dataset_variable_name.columns"))
     def Q2B(): # view columns
-        ans = str(input(task("Try filling in the command: \n", check = True) + code("pets")))
+        ans = str(input(task("Try filling in the command to list all the columns: \n", check = True) + code("pets")))
         if ans == ".columns": 
             correct_answer() 
         else: 
@@ -209,7 +209,8 @@ def challenge2c(): # selecting columns
     #execute
     Q2C()
     return pets['Name']
-    
+
+          
 ################################ CHALLENGE 3
 
 # plot example 
@@ -232,7 +233,7 @@ def challengeplotall(): # demonstrate messy plot
 def challenge3a(): # get unique values 
     print(rover(" Now, because all the pet names are unique, we should try using another column of data.\nHmm, how about animal types? Or better yet, the number of legs on each animal!"))
     def Q3A(): # get unique leg values 
-        ans = str(input(task("Fill in the command to get the unique values for the number of legs in the pets data\n", check = True) + code("petlegs = pets[\"Legs\"]")))
+        ans = str(input(task("Fill in the command to get the unique values for the number of legs in the pets data.\n", check = True) + code("petlegs = pets[\"Legs\"]")))
         if ans == ".unique()": 
             correct_answer()
         else: 
@@ -260,7 +261,7 @@ def challenge3b(): # using basic operators
   
 # Question 3 C
 def challenge3c(): # access a row using loc
-    print(rover(" Looks like there's only one row that returns "), code("True "), normal("can you use "), code(".loc"), normal(" to find out more?"))
+    print(rover(" Looks like there's only one row that returns "), code("True"), normal(". Can you use "), code(".loc"), normal(" to find out more?"))
     def Q3B(): # view row 19 from 3 legged pet 
         ans = str(input(task("Fill in the command:\n", check = True) + code("pets")))
         if ans == ".loc[19]":
@@ -283,7 +284,7 @@ def challenge3d(): # advanced basic operators and logical operators
             correct_answer()
             return display(pets.loc[pets["Species"] == "dog"])
         else:
-            print(tryagain("Very close! Why don't you try "), code("[pets[\"column_name\"] == \"filter_word\"] "), tryagain("where the column is 'Species' and filter is 'dog'? Remember that capitalization matters!", exclaim = False))
+            print(tryagain("Very close! Why don't you try "), code("[pets[\'column_name\'] == \'filter_word\'] "), tryagain("where the column is 'Species' and filter is 'dog'? Remember that capitalization matters!", exclaim = False))
             Q3D_1()
         clear_output(wait = True)
  

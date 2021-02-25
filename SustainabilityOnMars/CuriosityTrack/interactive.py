@@ -463,7 +463,7 @@ def challenge5a(): # import matplotlib's pyplot
 def challenge5b(): # make a bar plot
     print(rover(" Now that we've imported the package. let's try making some graphs! I'm so excited!!"))
     def Q5B_1():
-        ans = str(input(task("Try making a bar plot of the Species as the x column, and the legs as the Y column. Let's see what we find!\n", check = True) + code("plt")))
+        ans = str(input(task("Try making a bar plot of 'Species' as the x column, and 'Legs' as the y column. Let's see what we find!\n", check = True) + code("plt")))
         if ans == ".bar(pets['Species'], pets['Legs'])" or ans == "bar(pets[\"Species\"], pets[\"Legs\"])":
             correct_answer()
             plt.bar(pets['Species'], pets['Legs'])
@@ -503,7 +503,7 @@ def challenge5b(): # make a bar plot
 def challenge5c(): # make a histogram 
     print(rover(" Let's try making a histogram now! "))
     def Q5C():
-        ans = str(input(task("Let's try making a histogram now! Can you fill in this command to create a histogram of the Species column? \n", check = True) + code("plt")))
+        ans = str(input(task("Let's try making a histogram now! Can you fill in this command to create a histogram of the 'Species' column? \n", check = True) + code("plt")))
         if ans == ".hist(pets['Species'])" or ans == ".hist(pets[\"Species\"])":
             correct_answer()
             plt.hist(pets['Species'])
@@ -542,7 +542,7 @@ def challenge5c(): # make a histogram
 def challenge5d(): # make a scatterplot   
     print(rover(" Let's try making a scatterplot now! These are my favourite!"))
     def Q5D():
-        ans = str(input(task("Can you fill in this command to create a scatterplot using Age as the x column and y as the Weight column? \n", check = True) + code("plt")))
+        ans = str(input(task("Can you fill in this command to create a scatterplot using 'Age (years)' as the x column and y as the 'Weight (lbs)' column? \n", check = True) + code("plt")))
         if ans == ".scatter(pets['Age (years)'], pets['Weight (lbs)'])" or ans == ".scatter(pets[\"Age (years)\"], pets[\"Weight (lbs)\"])":
             correct_answer()
             plt.scatter(pets['Age (years)'], pets['Weight (lbs)'])
@@ -557,7 +557,7 @@ def challenge5d(): # make a scatterplot
 def challenge5e(): 
     print(rover(" Let's try making a line plot now! "))
     def Q5E():
-        ans = str(input(task("Can you fill in this command to create a line plot with the Time to Adoption (weeks) column? \n", check = True) + code("plt")))
+        ans = str(input(task("Can you fill in this command to create a line plot with the 'Time to Adoption (weeks)' column? \n", check = True) + code("plt")))
         if ans == ".plot(pets['Time to Adoption (weeks)'])" or ans == ".plot(pets[\"Time to Adoption (weeks)\"])":
             correct_answer()
             plt.plot(pets['Time to Adoption (weeks)'])

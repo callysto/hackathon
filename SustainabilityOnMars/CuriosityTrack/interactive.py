@@ -3,7 +3,7 @@
 """
 Created on Mon Jul 13 07:44:25 2020
 
-@author: lisacao
+@author: lisacao, Laura G.F., Tina Leard
 """
 
 
@@ -209,6 +209,20 @@ def challenge2c(): # selecting columns
     #execute
     Q2C()
     return pets['Name']
+
+
+# Question 2 D 
+def challenge2d(): # finding the longest pet name
+    print(rover(" Take a look at the table we generated with the "), code("'Name' "), normal("of the pet.\n"), task("Type the longest name in the list ", check = True))
+    def Q2D(): # select name column
+        ans = str(input(normal("The longest pet name is: ")))
+        if ans == "Mr. Peanutbutter" or ans=="'Mr. Peanutbutter'" or ans=="'Mr.' 'Peanutbutter'" or ans=="'Mr.' Peanutbutter":
+            correct_answer()
+        else: 
+            print(rover(" Almost there. Hint, the name starts with Mr."))
+            Q2D()
+    #execute
+    Q2D()
 
           
 ################################ CHALLENGE 3

@@ -106,8 +106,9 @@ def challenge1b(): # load in dataset challenge
         
     def Q1B_3(): # write read in function 
         ans3 = str(input(task("Try writing code to access the Pets Archives from Earth: ", check = True)))
-        if ans3 == "pandas.read_csv(\"pets_from_bootstrap_world.csv\")":
+        if ans3 == "pandas.read_csv(\"pets_from_bootstrap_world.csv\")" or ans3 == "pandas.read_csv('pets_from_bootstrap_world.csv')":
             correct_answer()
+            print(rover(" Notice there are eight columns for each animal: Name, Species, Gender, Age (years), Fixed, Legs, Weight (lbs), and Time to Adoption (weeks)."))
         else:
             print(tryagain("Hmm, not quite. Try following the format"), code("library.function(\"file.csv\")"), tryagain("or double check your spelling.", exclaim = False))
             Q1B_3()
@@ -136,7 +137,7 @@ def challenge1c(): # variables challenge
     def Q1C_2(): # assign the dataset to a variable 
         ans = str(input(task("Now, let's try assigning the dataset as a variable! Write the code to access the Pets Archives from Earth.\n", check = True) + code("pets =  ")))
         if ans == "pandas.read_csv(\"pets_from_bootstrap_world.csv\")" or ans == "pandas.read_csv('pets_from_bootstrap_world.csv')":
-            correct_answer() 
+            correct_answer()
         else:
             print(tryagain("Try library.function(\"file.csv\") from the last question to access the Pets Archives!", exclaim = True))
             Q1C_2()
@@ -146,6 +147,7 @@ def challenge1c(): # variables challenge
         ans2 = input(task("Now, type ", check = True) + code("pets ") + task(" to access the data\n"))
         if ans2 == "pets": 
             correct_answer()
+            print(rover(" Notice the 0 in the first row. In Python, we start counting from zero."))
         else:
             print(tryagain("Try typing ", exclaim = True) + code("pets "))
             Q1C_3()
@@ -273,7 +275,7 @@ def challenge3b(): # using basic operators
     #execute 
     Q3B()
   
-# Question 3 C
+    # Question 3 C
 def challenge3c(): # access a row using loc
     print(rover(" Looks like there's only one row that returns "), code("True"), normal(". Can you use "), code(".loc"), normal(" to find out more?"))
     def Q3B(): # view row 19 from 3 legged pet 
@@ -288,32 +290,45 @@ def challenge3c(): # access a row using loc
             print(tryagain("Try using "), code(".loc[rownumber]"), tryagain(" or ", exclaim = False), code(".loc[[rownumber]]"), tryagain(", the second outputs as a row!", exclaim = False))
             Q3B()
     Q3B()
+    
+# Question 3 D 
+def challenge3d(): # finding the 3 legged pet name
+    print(rover(" Take a look at the table we generated with the "), code("'Name' "), normal("of the pet.\n"), task("Type the name of the pet with three legs ", check = True))
+    def Q3D(): # select name column
+        ans = str(input(normal("The pet with three legs is: ")))
+        if ans == "Lucky":
+            correct_answer()
+        else: 
+            print(rover(" Almost there. Hint, the name starts with L"))
+            Q3D()
+    #execute
+    Q3D()
 
-# Question 3 D
-def challenge3d(): # advanced basic operators and logical operators 
-    print(rover(" Good work!! Let's try to do some other examples. Since I'm a dog that's over 100lbs, I want to see if there are any other dogs like me! Can you try and find out?"))
-    def Q3D_1(): # get all docs 
+# Question 3 E
+def challenge3e(): # advanced basic operators and logical operators 
+    print(rover(" Good work!! Let's try to do some other examples. Since I'm a dog that's over 100 lbs, I want to see if there are any other dogs like me! Can you try and find out?"))
+    def Q3E_1(): # get all docs 
         ans1 = str(input(task("Try to find all the dogs with the first operator below!\n", check = True) + code("pets.loc")))
         if ans1 == "[pets[\"Species\"] == \"dog\"]" or ans1 == "[pets['Species'] == 'dog']":
             correct_answer()
             return display(pets.loc[pets["Species"] == "dog"])
         else:
             print(tryagain("Very close! Why don't you try "), code("[pets[\'column_name\'] == \'filter_word\'] "), tryagain("where the column is 'Species' and filter is 'dog'? Remember that capitalization matters!", exclaim = False))
-            Q3D_1()
+            Q3E_1()
         clear_output(wait = True)
  
-    def Q3D_2(): # get all pets over 100lbs
-        ans2 = str(input(task("Awesome! Now try to write an operator that can find all animals over 100 pounds!\n", check = True) + code("pets.loc")))
+    def Q3E_2(): # get all pets over 100lbs
+        ans2 = str(input(task(" Now try to write an operator that can find all animals over 100 pounds!\n", check = True) + code("pets.loc")))
         if ans2 == "[pets['Weight (lbs)'] > 100]" or ans2 == "[pets[\"Weight (lbs)\"] > 100]":
             correct_answer()
             return display(pets.loc[pets["Weight (lbs)"] > 100])
         else: 
             print(tryagain("Try "), code("[pets[\"column_name\"] > number_of_lbs] "), tryagain("where the column is 'Weight (lbs)' and number of lbs is 100 Remember that spelling and spaces matter!", exclaim = False))
-            Q3D_2()
+            Q3E_2()
   
-    def Q3D_3(): # get all dogs over 100lbs 
+    def Q3E_3(): # get all dogs over 100lbs 
         print(rover(" Wow! You're really good. How about we try to do both at once? I think the format was "), code("pets.loc[(operator1) & (operator2)]"))
-        def Q3D_3A():# combine two operators 
+        def Q3E_3A():# combine two operators 
             ans3 = str(input(task("Try to combine the two operators you wrote previously. Remember to always have matching brackets!\n", check = True) + code("pets.loc")))
             #alternatively can potentially use regex to parse this?
             if ans3 == "[(pets[\"Weight (lbs)\"] > 100) & (pets[\"Species\"] == \"dog\")]" or ans3 == "[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')]": 
@@ -321,12 +336,13 @@ def challenge3d(): # advanced basic operators and logical operators
                 return display(pets.loc[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')])
             else:
                 print(tryagain("This one is definitely tricky! Try seeing what you may have missed by comparing your answer to this: \n"), code("pets.loc[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')] "), tryagain("\nNote that when we have 2 or more, we need to separate them by putting each one in ", exclaim = False), code("( )"))
-                Q3D_3A()
-        Q3D_3A()
+                Q3E_3A()
+        Q3E_3A()
     #execute
-    Q3D_1()
-    Q3D_2()
-    Q3D_3()
+    Q3E_1()
+    Q3E_2()
+    Q3E_3()
+        
     
 ################################ CHALLENGE 4
 # Question 4 A
@@ -371,13 +387,13 @@ def challenge4b():
             
     def Q4B_1B(): # sort subset dataframe by age 
         ans3 = str(input(task("Why don't we try sorting this data by age now? Fill in the command and let's try it!\n", check = True) + code("pets_subset")))
-        if ans3 == ".sort_values(by = 'Age (years)')" or ans3 == ".sort_values(by = \"Age (years)\")":
+        if ans3 == ".sort_values(by='Age (years)')" or ans3 == ".sort_values(by=\"Age (years)\")":
             correct_answer()
         else:             
-            print(tryagain("Try pets_subset"), code(".sort_values(by = 'Age (years)')"))      
+            print(tryagain("Try pets_subset"), code(".sort_values(by='Age (years)')"))      
             Q4B_1B()
         clear_output(wait = True)
-        return display(pets_subset.sort_values(by = 'Age (years)'))
+        return display(pets_subset.sort_values(by='Age (years)'))
     
     #execute
     Q4B_1()
@@ -450,6 +466,20 @@ def challenge4d(): # use basic statistics methods
     #execute 
     Q4D_1()
     Q4D_cont()
+    
+# Question 4 E 
+def challenge4e(): # finding the weight of the heaviest animal
+    print(rover(" Take a look at the table we generated with the "), code("Time to Adoption (weeks) "), normal("of the pets.\n"), task("Type the name of the pet with the heaviest weight ", check = True))
+    def Q4E(): # select weight column
+        ans = str(input(normal("The pet with the heaviest weight is: ")))
+        if ans == "Kujo":
+            correct_answer()
+        else: 
+            print(rover(" Almost there. Hint, the name starts with K"))
+            Q4E()
+    #execute
+    Q4E()
+
 
 ################################ CHALLENGE 5
 # Question 5 A
@@ -582,4 +612,18 @@ def challenge5e():
     #execute
     Q5E()
                
-################################ BONUS CHALLENGE 
+################################ CHALLENGE 7 BONUS 
+
+# Question 7 A 
+def challenge7a(): # selecting columns
+    print(rover(" Now that we have all the column names, let's choose a couple to look at. How about the "), code("'Name' "), normal("column?\n"), task("Select the column using ", check = True), code("dataset_variable_name[\"column_name\"]"))
+    def Q7A(): # select name column
+        ans = str(input(code("pets")))
+        if ans == "['Name']" or ans == "[\"Name\"]":
+            correct_answer()
+        else: 
+            print(rover(" Remember, it has to be the exact same spelling and case as in the list. Did you double check to use "), code("[ ] "), normal("instead of "), code("( )"), normal("?"))
+            Q7A()
+    #execute
+    Q7A()
+    return pets['Name']

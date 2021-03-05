@@ -611,19 +611,3 @@ def challenge5e():
             Q5E()
     #execute
     Q5E()
-               
-################################ CHALLENGE 7 BONUS 
-
-# Question 7 A 
-def challenge7a(): # selecting columns
-    print(rover(" Now that we have all the column names, let's choose a couple to look at. How about the "), code("'Name' "), normal("column?\n"), task("Select the column using ", check = True), code("dataset_variable_name[\"column_name\"]"))
-    def Q7A(): # select name column
-        ans = str(input(code("pets")))
-        if ans == "['Name']" or ans == "[\"Name\"]":
-            correct_answer()
-        else: 
-            print(rover(" Remember, it has to be the exact same spelling and case as in the list. Did you double check to use "), code("[ ] "), normal("instead of "), code("( )"), normal("?"))
-            Q7A()
-    #execute
-    Q7A()
-    return pets['Name']

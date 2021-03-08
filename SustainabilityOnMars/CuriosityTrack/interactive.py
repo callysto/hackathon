@@ -236,7 +236,7 @@ def challengeplotall(): # demonstrate messy plot
         ans = str(input(task("Try adding ", check = True) + code(".plot()") + task(" to the end of the following command\n") + code("pets")))
         if ans == ".plot()": 
             pets.plot()
-            print(rover(" Now, let's build our skills through these challenges to make more data visualizations!"))
+            print(rover(" The lines in this graph seem really hard to read! Notice how the lines for Age (years), Legs, and Time to Adoption (years) are plotted close together while the values plotted for Weight (lbs) are greater. Let's build our skills through these notebooks to make something we can actually understand!"))
         else: 
             print(tryagain("Make sure you type the code exactly like in the instructions!"))
             QPlot()
@@ -252,6 +252,7 @@ def challenge3a(): # get unique values
         ans = str(input(task("Fill in the command to get the unique values for the number of legs in the pets data.\n", check = True) + code("petlegs = pets[\"Legs\"]")))
         if ans == ".unique()": 
             correct_answer()
+            print(rover(" Notice that the array below organizes the values in a row. The values mean that the pets have 4, 3, or 8 legs."))
         else: 
             print(tryagain("Close! Make sure you remember the period and brackets. Use "), code("dataset['columnname'].unique()"))
             Q3A()
@@ -278,7 +279,7 @@ def challenge3b(): # using basic operators
     # Question 3 C
 def challenge3c(): # access a row using loc
     print(rover(" Looks like there's only one row that returns "), code("True"), normal(". Can you use "), code(".loc"), normal(" to find out more?"))
-    def Q3B(): # view row 19 from 3 legged pet 
+    def Q3C(): # view row 19 from 3 legged pet 
         ans = str(input(task("Fill in the command:\n", check = True) + code("pets")))
         if ans == ".loc[19]":
             correct_answer()
@@ -288,8 +289,8 @@ def challenge3c(): # access a row using loc
             return display(pets.loc[[19]])
         else:
             print(tryagain("Try using "), code(".loc[rownumber]"), tryagain(" or ", exclaim = False), code(".loc[[rownumber]]"), tryagain(", the second outputs as a row!", exclaim = False))
-            Q3B()
-    Q3B()
+            Q3C()
+    Q3C()
     
 # Question 3 D 
 def challenge3d(): # finding the 3 legged pet name
@@ -307,13 +308,13 @@ def challenge3d(): # finding the 3 legged pet name
 # Question 3 E
 def challenge3e(): # advanced basic operators and logical operators 
     print(rover(" Good work!! Let's try to do some other examples. Since I'm a dog that's over 100 lbs, I want to see if there are any other dogs like me! Can you try and find out?"))
-    def Q3E_1(): # get all docs 
-        ans1 = str(input(task("Try to find all the dogs with the first operator below!\n", check = True) + code("pets.loc")))
+    def Q3E_1(): # get all dogs 
+        ans1 = str(input(task("Try to find all the dogs by using the == operator.\n", check = True) + code("pets.loc")))
         if ans1 == "[pets[\"Species\"] == \"dog\"]" or ans1 == "[pets['Species'] == 'dog']":
             correct_answer()
             return display(pets.loc[pets["Species"] == "dog"])
         else:
-            print(tryagain("Very close! Why don't you try "), code("[pets[\'column_name\'] == \'filter_word\'] "), tryagain("where the column is 'Species' and filter is 'dog'? Remember that capitalization matters!", exclaim = False))
+            print(tryagain("Very close! Why don't you try "), code("[pets[\'column_name\'] == \'search_term\'] "), tryagain("where the column is 'Species' and filter is 'dog'? Remember that capitalization matters!", exclaim = False))
             Q3E_1()
         clear_output(wait = True)
  
@@ -323,13 +324,13 @@ def challenge3e(): # advanced basic operators and logical operators
             correct_answer()
             return display(pets.loc[pets["Weight (lbs)"] > 100])
         else: 
-            print(tryagain("Try "), code("[pets[\"column_name\"] > number_of_lbs] "), tryagain("where the column is 'Weight (lbs)' and number of lbs is 100 Remember that spelling and spaces matter!", exclaim = False))
+            print(tryagain("Try "), code("[pets[\"column_name\"] > number_of_lbs] "), tryagain("where the column is 'Weight (lbs)' and number of lbs is 100. Remember that spelling and spaces matter!", exclaim = False))
             Q3E_2()
   
     def Q3E_3(): # get all dogs over 100lbs 
         print(rover(" Wow! You're really good. How about we try to do both at once? I think the format was "), code("pets.loc[(operator1) & (operator2)]"))
         def Q3E_3A():# combine two operators 
-            ans3 = str(input(task("Try to combine the two operators you wrote previously. Remember to always have matching brackets!\n", check = True) + code("pets.loc")))
+            ans3 = str(input(task("Try to combine the two operators you wrote previously to find all dogs over 100 lbs. Remember to always have matching brackets!\n", check = True) + code("pets.loc")))
             #alternatively can potentially use regex to parse this?
             if ans3 == "[(pets[\"Weight (lbs)\"] > 100) & (pets[\"Species\"] == \"dog\")]" or ans3 == "[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')]": 
                 correct_answer()
@@ -504,12 +505,13 @@ def challenge5a(): # import matplotlib's pyplot
     Q5A()
 
 # Question 5 B
-def challenge5b(): # make a bar plot
+def challenge5b(): # make a bar graph
     print(rover(" Now that we've imported the package. let's try making some graphs! I'm so excited!!"))
     def Q5B_1():
-        ans = str(input(task("Try making a bar plot of 'Species' as the x column, and 'Legs' as the y column. Let's see what we find!\n", check = True) + code("plt")))
+        ans = str(input(task("Try making a bar graph of 'Species' as the x column, and 'Legs' as the y column. Let's see what we find!\n", check = True) + code("plt")))
         if ans == ".bar(pets['Species'], pets['Legs'])" or ans == "bar(pets[\"Species\"], pets[\"Legs\"])":
             correct_answer()
+            print(rover(" Notice that the bar graph visualizes into bars to see how many times each value of a category occurs. "))
             plt.bar(pets['Species'], pets['Legs'])
             plt.show()
             # # custom plotting function
@@ -550,6 +552,7 @@ def challenge5c(): # make a histogram
         ans = str(input(task("Let's try making a histogram now! Can you fill in this command to create a histogram of the 'Species' column? \n", check = True) + code("plt")))
         if ans == ".hist(pets['Species'])" or ans == ".hist(pets[\"Species\"])":
             correct_answer()
+            print(rover(" Notice that the histogram groups numerical data into bars to visualize a distribution. The shape of the data is skewed with most of the data points occurring to the left with cats and dogs."))
             plt.hist(pets['Species'])
             plt.show()
             # # make a custom histogram
@@ -589,6 +592,7 @@ def challenge5d(): # make a scatterplot
         ans = str(input(task("Can you fill in this command to create a scatterplot using 'Age (years)' as the x column and y as the 'Weight (lbs)' column? \n", check = True) + code("plt")))
         if ans == ".scatter(pets['Age (years)'], pets['Weight (lbs)'])" or ans == ".scatter(pets[\"Age (years)\"], pets[\"Weight (lbs)\"])":
             correct_answer()
+            print(rover(" Notice that some data points are close while others are far apart. This means that there is not a strong relationship between Age and Weight, even though there is a positive trend. A 16-year-old pet is an outlier."))
             plt.scatter(pets['Age (years)'], pets['Weight (lbs)'])
             plt.show()
         else: 
@@ -596,18 +600,3 @@ def challenge5d(): # make a scatterplot
             Q5D()
     #execute
     Q5D()
-    
-# Challenge 5 E # make a line plot
-def challenge5e(): 
-    print(rover(" Let's try making a line plot now! "))
-    def Q5E():
-        ans = str(input(task("Can you fill in this command to create a line plot with the 'Time to Adoption (weeks)' column? \n", check = True) + code("plt")))
-        if ans == ".plot(pets['Time to Adoption (weeks)'])" or ans == ".plot(pets[\"Time to Adoption (weeks)\"])":
-            correct_answer()
-            plt.plot(pets['Time to Adoption (weeks)'])
-            plt.show()
-        else: 
-            print(tryagain("Hmm, not quite. How about trying "), code("plt.plot(pets['Time to Adoption (weeks)'])"))
-            Q5E()
-    #execute
-    Q5E()

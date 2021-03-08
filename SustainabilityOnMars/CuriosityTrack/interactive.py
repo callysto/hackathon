@@ -511,8 +511,10 @@ def challenge5b(): # make a bar graph
         ans = str(input(task("Try making a bar graph of 'Species' as the x column, and 'Legs' as the y column. Let's see what we find!\n", check = True) + code("plt")))
         if ans == ".bar(pets['Species'], pets['Legs'])" or ans == "bar(pets[\"Species\"], pets[\"Legs\"])":
             correct_answer()
-            print(rover(" Notice that the bar graph visualizes into bars to see how many times each value of a category occurs. "))
+            print(rover(" Notice that the graph visualizes into bars to see how many there are in a category. This bar graph tells us how many legs each category of species has: cat, dog, lizard, and rabbit all have 4 legs, and tarantula has 8 legs. "))
             plt.bar(pets['Species'], pets['Legs'])
+            plt.xlabel("Species")
+            plt.ylabel("Number of Legs")
             plt.show()
             # # custom plotting function
             # def pltbr():
@@ -552,8 +554,10 @@ def challenge5c(): # make a histogram
         ans = str(input(task("Let's try making a histogram now! Can you fill in this command to create a histogram of the 'Species' column? \n", check = True) + code("plt")))
         if ans == ".hist(pets['Species'])" or ans == ".hist(pets[\"Species\"])":
             correct_answer()
-            print(rover(" Notice that the histogram groups numerical data into bars to visualize a distribution. The shape of the data is skewed with most of the data points occurring to the left with cats and dogs."))
+            print(rover(" Notice that the histogram visualizes in bars and counts how many cats, dogs, lizards, and tarantulas appear in the dataset. There are many more cat and dog entries compared to lizard, rabbit, and tarantula entries."))
             plt.hist(pets['Species'])
+            plt.xlabel("Species")
+            plt.ylabel("Count")
             plt.show()
             # # make a custom histogram
             # def plthst():
@@ -592,8 +596,10 @@ def challenge5d(): # make a scatterplot
         ans = str(input(task("Can you fill in this command to create a scatterplot using 'Age (years)' as the x column and y as the 'Weight (lbs)' column? \n", check = True) + code("plt")))
         if ans == ".scatter(pets['Age (years)'], pets['Weight (lbs)'])" or ans == ".scatter(pets[\"Age (years)\"], pets[\"Weight (lbs)\"])":
             correct_answer()
-            print(rover(" Notice that some data points are close while others are far apart. This means that there is not a strong relationship between Age and Weight, even though there is a positive trend. A 16-year-old pet is an outlier."))
+            print(rover(" Notice that some data points are close while others are far apart. This means that the relationship between Age and Weight looks like a positive relationship toward older animals weighing more. Hmm, but a 16-year-old pet weighs the least and is an outlier."))
             plt.scatter(pets['Age (years)'], pets['Weight (lbs)'])
+            plt.xlabel("Age (years)")
+            plt.ylabel("Weight (lbs)")
             plt.show()
         else: 
             print(tryagain("Hmm, not quite. How about trying "), code("plt.scatter(pets['Age (years)'], pets['Weight (lbs)'])"))

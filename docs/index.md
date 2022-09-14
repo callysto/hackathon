@@ -1,19 +1,22 @@
-# Callysto Hackathon
+# Callysto Data Science Student Hackathons
 
-## Getting Started
+If you are participating in a hackathon, [start here](start.md).
 
-1. [Introduction to Python and Dataframes](https://github.com/callysto/hackathon/blob/master/PrepMaterials/python-and-pandas-basics.ipynb)
-1. [Data Visualization in Python](https://github.com/callysto/hackathon/blob/master/PrepMaterials/data-visualization.ipynb)
-1. [Introduction to Markdown](https://github.com/callysto/hackathon/blob/master/PrepMaterials/markdown-basics.ipynb)
+Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada. During our hackathons, students solve a problem by “hacking” or analyzing an open dataset. We offer both online and in-person hackathons.
 
-## Hackathon Materials
+## Online Hackathons
 
-[General](general.md)
+* Students need a secure internet connection to participate.
+* The hackathons typically run for 2-3 days, but may be longer.
+* Students attend a virtual launch event, led by Callysto experts, to get an overview of the hackathon challenges and ask questions.
+* Students work independently (or in groups) on their hackathon challenges.
+* Students attend virtual support sessions, led by Callysto experts, as needed.
+* Students submit their challenges to the Callysto team for judging.
+* Callysto announces the hackathon winner(s).
 
-[Mars](mars.md)
+## Hackathon Offerings
 
-[Strathcona County Open Data](strathcona-county.md)
-
-[Southwest Alberta Open Data](southwest-alberta.md)
-
-[Vancouver Open Data](vancouver.md)
+* School or classroom hackathons
+  * If you're an educator in Canada, you or your school district can ask us to lead a hackathon. We handle the event from start-to-finish.
+* Hackathon material creation
+  * if you're an educator in Canada and need help making hackathon materials, we can support you. We also have a [hackathon planning guide](https://bit.ly/34yU5un) to help you get started.

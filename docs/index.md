@@ -2,7 +2,7 @@
 
 If you are participating in a hackathon, [start here](start.md).
 
-Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada. During our hackathons, students solve a problem by “hacking” or analyzing an open dataset. We offer both online and in-person hackathons.
+Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada. During our hackathons, students solve a problem by “hacking” or analyzing open datasets. We offer both online and in-person hackathons.
 
 ## Online Hackathons
 

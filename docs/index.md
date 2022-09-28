@@ -20,3 +20,9 @@ Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada.
   * If you're an educator in Canada, you or your school district can ask us to lead a hackathon. We handle the event from start-to-finish.
 * Hackathon material creation
   * if you're an educator in Canada and need help making hackathon materials, we can support you. We also have a [hackathon planning guide](https://bit.ly/34yU5un) to help you get started.
+
+## Hackathon Resources
+
+All resources are available under the [Creative Commons Attribution license](https://github.com/callysto/curriculum-notebooks/blob/master/LICENSE.md).
+
+Notebooks have been developed and tested using the [Callysto Hub](https://hub.callysto.ca/). You can sign in to the Callysto Hub using a Google or Microsoft account (school-provided or personal).

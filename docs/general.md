@@ -1,4 +1,4 @@
-# General
+# Hackathon Challenges
 
 Music
 

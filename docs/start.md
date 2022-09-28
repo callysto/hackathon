@@ -6,7 +6,7 @@
 
 ## Hackathon Materials
 
-[General](general.md)
+[Rocky Mountain House (Wild Rose School Division)](general.md)
 
 [Mars](mars.md)
 
@@ -15,3 +15,5 @@
 [Southwest Alberta Open Data](southwest-alberta.md)
 
 [Vancouver Open Data](vancouver.md)
+
+[General](general.md)

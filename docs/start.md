@@ -6,9 +6,7 @@
 
 ## Hackathon Materials
 
-[Rocky Mountain House (Wild Rose School Division)](general.md)
-
-[Mars](mars.md)
+[Rocky Mountain House (Wild Rose School Division)](rmh.md)
 
 [Strathcona County Open Data](strathcona-county.md)
 
@@ -17,3 +15,5 @@
 [Vancouver Open Data](vancouver.md)
 
 [General](general.md)
+
+[Mars](mars.md)

@@ -14,6 +14,4 @@
 
 [Vancouver Open Data](vancouver.md)
 
-[General](general.md)
-
 [Mars](mars.md)

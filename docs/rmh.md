@@ -9,6 +9,5 @@
 1. [Music]()
 1. [Books]()
 1. [Pokémon]()
-1. [Countries]()
-1. [Olympics]()
+1. [Baseball]()
 1. [Python Turtles]()

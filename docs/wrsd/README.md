@@ -1,4 +1,4 @@
-# Rocky Mountain House Hackathon
+# Wild Rose School Division Hackathon
 
 ## Introduction
 

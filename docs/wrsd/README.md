@@ -17,4 +17,4 @@
 
 ## Hackathon Feedback
 
-Before you go, please complete this anonymous hackathon feedback [SURVEY](http://bit.ly/CallystoHackathonFeedback).
+Before you go, please complete this anonymous hackathon feedback [survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform?usp=pp_url&entry.1760849759=2022-12-16&entry.975699384=Rocky+Mountain+House,+AB).

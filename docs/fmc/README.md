@@ -1,4 +1,4 @@
-# Fort McMurray Public Schools Hackathon
+# Fort McMurray Catholic Schools Hackathon
 
 ## Introduction
 

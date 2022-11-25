@@ -18,6 +18,10 @@
 |[Baseball](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Baseball/baseball-introduction.ipynb&depth=1)|⭐⭐⭐|
 |[Python Turtles](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/python-turtles.ipynb&depth=1)|⭐|
 
+## Hackathon Submission
+
+Use [this form](https://docs.google.com/forms/d/e/1FAIpQLSc_w1a6d0VQ6kF7o9lww2ovE2YbsvBMJj5HpnuFkTRnOaDWFQ/viewform?usp=sf_link) to submit your challenge entry.
+
 ## Hackathon Feedback
 
 Before you go, please complete this anonymous hackathon feedback [survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform?usp=pp_url&entry.1760849759=2022-11-25&entry.975699384=Fort+McMurray,+AB).

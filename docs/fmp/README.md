@@ -21,7 +21,7 @@
 
 ## Hackathon Submission
 
-Use [this form](https://docs.google.com/forms/d/e/1FAIpQLSc_w1a6d0VQ6kF7o9lww2ovE2YbsvBMJj5HpnuFkTRnOaDWFQ/viewform?usp=sf_link) to submit your challenge entry.
+download your notebooks and email it to the provided address.
 
 ## Hackathon Feedback
 

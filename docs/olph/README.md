@@ -17,6 +17,9 @@
 |[Books](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Books/books-intro.ipynb&depth=1)|⭐⭐⭐|
 |[Baseball](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Baseball/baseball-introduction.ipynb&depth=1)|⭐⭐⭐|
 |[Python Turtles](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/python-turtles.ipynb&depth=1)|⭐|
+|[Santa](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Santa/santa-intro.ipynb&depth=1)|⭐⭐|
+|[Trees](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Trees/trees-intro.ipynb&depth=1)|⭐⭐|
+|[Strathcona County Library](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Library/library-intro.ipynb&depth=1)|⭐⭐|
 
 ## Hackathon Feedback
 

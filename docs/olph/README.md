@@ -22,7 +22,7 @@
 
 ## Submitting Your Entry
 
-Please use [this form](https://docs.google.com/forms/d/e/1FAIpQLSc_w1a6d0VQ6kF7o9lww2ovE2YbsvBMJj5HpnuFkTRnOaDWFQ/viewform) to submit your notebook file(s). Make your your name is in the notebook.
+Please use [this form](https://docs.google.com/forms/d/e/1FAIpQLSc_w1a6d0VQ6kF7o9lww2ovE2YbsvBMJj5HpnuFkTRnOaDWFQ/viewform) to submit your notebook file(s). Make sure your name is in the notebook.
 
 ## Hackathon Feedback
 

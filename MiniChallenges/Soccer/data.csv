@@ -1,0 +1,23 @@
+Player,Nationality,Gender,Year of Birth,Living,Primary Position,Secondary Position,Club Appearances,Club Goals,Int. Appearances,Int. Goals
+Cristiano Ronaldo,Portugal,M,1985,True,FW,,651,498,194,118
+Lionel Messi,Argentina,M,1987,True,FW,,559,487,169,94
+Abby Wambach,USA,F,1980,True,FW,,119,70,255,184
+Marta,Brazil,F,1986,True,MF,FW,73,27,68,34
+Roberto Carlos,Brazil,M,1973,True,DF,MF,756,97,127,11
+Zinedine Zidane,France,M,1972,True,MF,,689,125,108,31
+Pelé,Brazil,M,1940,True,FW,MF,659,643,92,77
+Diego Maradona,Argentina,M,1960,False,MF,FW,343,159,90,34
+Johan Cruyff,Netherlands,M,1947,False,MF,FW,512,269,48,33
+Ronaldo,Brazil,M,1976,True,FW,,452,295,99,62
+Paolo Maldini,Italy,M,1968,True,DF,,901,33,126,7
+Alfredo di Stéfano,Spain,M,1926,False,FW,,408,282,41,29
+Ferenc Puskás,Hungary,M,1927,False,FW,,235,205,94,88
+Christine Sinclair,Canada,F,1983,True,FW,MF,243,100,319,190
+Franz Beckenbauer,Germany,M,1945,True,DF,MF,620,74,109,17
+Roberto Baggio,Italy,M,1967,True,FW,MF,604,277,61,30
+Michel Platini,France,M,1955,True,MF,,369,188,78,44
+Franco Baresi,Italy,M,1960,True,DF,,716,33,96,3
+Alexia Putellas,Spain,F,1994,True,MF,FW,461,187,100,27
+Cafu,Brazil,M,1970,True,DF,MF,426,16,143,5
+Ronaldinho,Brazil,M,1980,True,MF,FW,543,197,128,51
+Alphonso Davies,Canada,M,2000,True,DF,MF,24,4,37,13

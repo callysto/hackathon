@@ -263,30 +263,30 @@ def challenge3a(): # get unique values
     
 # Question 3 B
 def challenge3b(): # using basic operators 
-    print(cbot(" Based on the last challenge, it seems we have a 3 legged animal! Do you know any reason why that might be?\nLet's try and find out which animals are 3 legged."))
-    print(cbot(" First, we'll need to use a basic operator on the 'Legs' column to find the ones that equal to 3."))
-    def Q3B(): # select legs that equal 3
-        ans = str(input(task("Try filling in the command\n", check = True) + code("pets['Legs'] == ")))
-        if ans == "3": 
+    print(cbot(" The unique values we found in our last step are interesting, but let's see what we can do with a column that contains numbers!"))
+    print(cbot(f" First, we'll need to use a basic operator on the {df.columns[-1]} column to find the ones that are greater than 4."))
+    def Q3B(): # select international goals greater than 4
+        ans = str(input(task("Try filling in the command\n", check = True) + code(f"dataset[{df.columns[-1]}] > ")))
+        if ans == "4": 
             correct_answer()
-            return display(pets['Legs'] == 3)
+            return display(df[df.columns[-1]] >4)
         else: 
-            print(tryagain("Try the number of legs"))
+            print(tryagain("Try the number of International Goals"))
             Q3B()
     #execute 
     Q3B()
   
     # Question 3 C
 def challenge3c(): # access a row using loc
-    print(cbot(" Looks like there's only one row that returns "), code("True"), normal(". Can you use "), code(".loc"), normal(" to find out more?"))
+    print(cbot(" Looks like there's only one row that returns "), code("False"), normal(". Can you use "), code(".loc"), normal(" to find out more?"))
     def Q3C(): # view row 19 from 3 legged pet 
-        ans = str(input(task("Fill in the command:\n", check = True) + code("pets")))
-        if ans == ".loc[19]":
+        ans = str(input(task("Fill in the command:\n", check = True) + code("dataset")))
+        if ans == ".loc[17]":
             correct_answer()
-            return display(pets.loc[19])
-        elif ans == ".loc[[19]]":
+            return display(df.loc[17])
+        elif ans == ".loc[[17]]":
             correct_answer()
-            return display(pets.loc[[19]])
+            return display(df.loc[[17]])
         else:
             print(tryagain("Try using "), code(".loc[rownumber]"), tryagain(" or ", exclaim = False), code(".loc[[rownumber]]"), tryagain(", the second outputs as a row!", exclaim = False))
             Q3C()
@@ -294,41 +294,44 @@ def challenge3c(): # access a row using loc
     
 # Question 3 D 
 def challenge3d(): # finding the 3 legged pet name
-    print(cbot(" Take a look at the table we generated with the "), code("'Name' "), normal("of the pet.\n"), task("Type the name of the pet with three legs ", check = True))
+    print(cbot(" Take a look at the table we generated with the "), code(f"{df.columns[-1]}\n"), task(f"Type the {df.columns[0]} with less than 4 {df.columns[-1]} ", check = True))
     def Q3D(): # select name column
-        ans = str(input(normal("The pet with three legs is: ")))
-        if ans == "Lucky":
+        ans = str(input(normal(f"The {df.columns[0]} with less than 4 {df.columns[-1]} is: ")))
+        if ans == df.iloc[17][0]:
             correct_answer()
         else: 
-            print(cbot(" Almost there. Hint, the name starts with L"))
+            print(cbot(" Almost there. Check the previous answer!"))
             Q3D()
     #execute
     Q3D()
 
 # Question 3 E
 def challenge3e(): # advanced basic operators and logical operators 
-    print(cbot(" Good work!! Let's try to do some other examples. Since I'm a dog that's over 100 lbs, I want to see if there are any other dogs like me! Can you try and find out?"))
-    def Q3E_1(): # get all dogs 
-        ans1 = str(input(task("Try to find all the dogs by using the == operator.\n", check = True) + code("pets.loc")))
-        ans1 = ans1.replace(" ", "")
-        if ans1 == '[pets["Species"]=="dog"]' or ans1 == "[pets['Species']=='dog']":
+    print(cbot(" Good work!! Let's try to do some other examples. Since I'm a robot from Canada, I want to see if there are any other robots like me! Can you try and find out?"))
+    def Q3E_1(): # get all Canadians
+        ans1 = str(input(task("Try to find all the Canadians by using the == operator.\n", check = True) + code("dataset.loc")))
+        ans1 = ans1.replace(" ","")
+        if ans1 == f'[dataset["{df.columns[1]}"]=="Canada"]' or ans1 == f"[dataset['{df.columns[1]}']=='Canada']":
             correct_answer()
-            return display(pets.loc[pets["Species"] == "dog"])
+            return display(df[df[df.columns[1]] == "Canada"])
         else:
-            print(tryagain("Very close! Why don't you try "), code("[pets[\'column_name\'] == \'search_term\'] "), tryagain("where the column is 'Species' and filter is 'dog'? Remember that capitalization matters!", exclaim = False))
+            print(tryagain("Very close! Why don't you try "), code(f"[dataset[\'column_name\'] == \'search_term\'] "), tryagain(f"where the column is '{df.columns[1]}' and filter is 'Canada'? Remember that capitalization matters!", exclaim = False))
             Q3E_1()
         clear_output(wait = True)
  
-    def Q3E_2(): # get all pets over 100lbs
-        ans2 = str(input(task(" Now try to write an operator that can find all animals over 100 pounds!\n", check = True) + code("pets.loc")))
-        if ans2 == "[pets['Weight (lbs)'] > 100]" or ans2 == '[pets["Weight (lbs)"] > 100]':
+    def Q3E_2(): # get all players with over 100 International Appearances
+        ans2 = str(input(task(f" Now try to write an operator that can find all values of {df.columns[0]}s with over 100 {df.columns[-2]}!\n", check = True) + code("dataset.loc")))
+        if ans2 == f'[dataset["{df.columns[-2]}"]>100]' or ans2 == f"[dataset['{df.columns[-2]}']>100]":
             correct_answer()
-            return display(pets.loc[pets["Weight (lbs)"] > 100])
+            return display(df[df[df.columns[-2]] > 100])
+        elif ans2 == f'[dataset["{df.columns[-2]}"] > 100]' or ans2 == f"[dataset['{df.columns[-2]}'] > 100]":
+            correct_answer()
+            return display(df[df[df.columns[-2]] > 100])
         else: 
-            print(tryagain("Try "), code("[pets[\"column_name\"] > number_of_lbs] "), tryagain("where the column is 'Weight (lbs)' and number of lbs is 100. Remember that spelling and spaces matter!", exclaim = False))
+            print(tryagain("Try "), code(f"[dataset[\"column_name\"] > {df.columns[-2]} "), tryagain(f"where the column is {df.columns[-2]} and {df.columns[-2]} is > 100. Remember that spelling and spaces matter!", exclaim = False))
             Q3E_2()
   
-    def Q3E_3(): # get all dogs over 100lbs 
+    def Q3E_3(): # get all Canadians with over 100 appearances
         print(cbot(" Wow! You're really good. How about we try to do both at once? I think the format was "), code("pets.loc[(operator1) & (operator2)]"))
         def Q3E_3A():# combine two operators 
             ans3 = str(input(task("Try to combine the two operators you wrote previously to find all dogs over 100 lbs. Remember to always have matching brackets!\n", check = True) + code("pets.loc")))

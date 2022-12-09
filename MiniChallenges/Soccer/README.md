@@ -7,8 +7,7 @@ The goal is to fit a theme into the 7-part notebook challenge series where the s
 Required to implement a new theme:
 
 1. Data (named `data.csv`) in same folder as `interactive.py`
-    - The third ([2]) column should be some form of numerical data 
+    - The last ([-1]) column should be some form of numerical data to do math operations on
 <br>
 1. Design changes to all the slides
-    - With emphasis on slides 1, and 5/6
     - Feel free to modify the images in the notebooks (`images`)

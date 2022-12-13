@@ -332,20 +332,29 @@ def challenge3e(): # advanced basic operators and logical operators
             Q3E_2()
   
     def Q3E_3(): # get all Canadians with over 100 appearances
-        print(cbot(" Wow! You're really good. How about we try to do both at once? I think the format was "), code("pets.loc[(operator1) & (operator2)]"))
+        print(cbot(" Wow! You're really good. How about we try to do both at once? I think the format was "), code("dataset.loc[(operator1) & (operator2)]"))
         def Q3E_3A():# combine two operators 
-            ans3 = str(input(task("Try to combine the two operators you wrote previously to find all dogs over 100 lbs. Remember to always have matching brackets!\n", check = True) + code("pets.loc")))
-            #alternatively can potentially use regex to parse this?
-            if ans3 == "[(pets[\"Weight (lbs)\"] > 100) & (pets[\"Species\"] == \"dog\")]" or ans3 == "[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')]": 
+            ans3 = str(input(task(f"Try to combine the two operators you wrote previously to find all Canadian {df.columns[0]}s with over 100 {df.columns[-2]}. Remember to always have matching brackets!\n", check = True) + code("dataset.loc")))
+            # alternatively can potentially use regex to parse this?
+            if ans3 == f"[(dataset['{df.columns[-2]}'] > 100) & (dataset['{df.columns[1]}'] == 'Canada')]" or ans3 == f'[(dataset["{df.columns[-2]}"] > 100) & (dataset["{df.columns[1]}"] == "Canada")]': 
                 correct_answer()
-                return display(pets.loc[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')])
+                return display(df.loc[(df[df.columns[-2]] > 100) & (df[df.columns[1]] == 'Canada')])
+            elif ans3 == f"[(dataset['{df.columns[1]}'] == 'Canada') & (dataset['{df.columns[-2]}'] > 100)]" or ans3 == f'[(dataset["{df.columns[1]}"] == "Canada") & (dataset["{df.columns[-2]}"] > 100)]': 
+                correct_answer()
+            elif ans3 == f"[(dataset['{df.columns[-2]}']>100)&(dataset['{df.columns[1]}']=='Canada')]" or ans3 == f'[(dataset["{df.columns[-2]}"]>100)&(dataset["{df.columns[1]}"]=="Canada")]': 
+                correct_answer()
+                return display(df.loc[(df[df.columns[-2]] > 100) & (df[df.columns[1]] == 'Canada')])
+            elif ans3 == f"[(dataset['{df.columns[1]}']=='Canada') & (dataset['{df.columns[-2]}']>100)]" or ans3 == f'[(dataset["{df.columns[1]}"]=="Canada") & (dataset["{df.columns[-2]}"]>100)]': 
+                correct_answer()
+                return display(df.loc[(df[df.columns[-2]] > 100) & (df[df.columns[1]] == 'Canada')])
             else:
-                print(tryagain("This one is definitely tricky! Try seeing what you may have missed by comparing your answer to this: \n"), code("pets.loc[(pets['Weight (lbs)'] > 100) & (pets['Species'] == 'dog')] "), tryagain("\nNote that when we have 2 or more, we need to separate them by putting each one in ", exclaim = False), code("( )"))
+                print(tryagain("This one is definitely tricky! Try seeing what you may have missed by comparing your answer to this: \n"), code(f"dataset.loc[(dataset['{df.columns[-2]}'] > 100) & (dataset['{df.columns[1]}'] == 'Canada')] "), tryagain("\nNote that when we have 2 or more, we need to separate them by putting each one in ", exclaim = False), code("( )"))
                 Q3E_3A()
         Q3E_3A()
     #execute
     Q3E_1()
     Q3E_2()
+    Q3E_3()
         
     
 ################################ CHALLENGE 4

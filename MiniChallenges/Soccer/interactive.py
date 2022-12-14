@@ -360,15 +360,15 @@ def challenge3e(): # advanced basic operators and logical operators
 ################################ CHALLENGE 4
 # Question 4 A
 def challenge4a(): # sort values 
-    print(cbot(" I wonder how many pets are planning to be adopted soon! Should that be considered?"))
-    print(task("Try filling in the command to sort values by", check = True), code("'Time to Adoption (weeks)'"))
+    print(cbot(" I wonder how many goals these players have scored! Should that be considered?"))
+    print(task("Try filling in the command to sort values by", check = True), code(f"'{df.columns[7]}'"))
     def Q4A(): # sort by time to adoption 
-        ans = str(input(code("pets")))
-        if ans == ".sort_values(by='Time to Adoption (weeks)')" or ans == ".sort_values(by=\"Time to Adoption (weeks)\")":
+        ans = str(input(code("dataset")))
+        if ans == f".sort_values(by='{df.columns[7]}')" or ans == f'.sort_values(by="{df.columns[7]}")':
             correct_answer()
-            display(pets.sort_values(by = 'Time to Adoption (weeks)'))
+            display(df.sort_values(by=df.columns[7]))
         else: 
-            print(cbot(" Better than I could have done!\n"), tryagain("Try .sort_values(by='Time to Adoption (weeks)')"))
+            print(cbot(" Better than I could have done!\n"), tryagain(f"Try .sort_values(by='{df.columns[7]}')"))
             Q4A()
     #execute
     Q4A() 
@@ -377,34 +377,35 @@ def challenge4a(): # sort values
 def challenge4b():
     print(cbot(" Wow! We've done so much so far. I'm really learning a lot and I can't wait until we make some graphs after these challenges are done!"))
     print(cbot(" I'm really excited to try some of those subsetting techniques though. Let's try them out together!"))
-    pets_subset = pets[["Name", "Species", "Gender", "Age (years)"]]
+    # Modify this to match the dataset
+    subset = df[df.columns[0:6]]
 
     def Q4B_1(): # column subset and nested sort
-        ans1 = str(input(task("Try filling in this command to make a new dataframe out of the ", check = True) + code("'Name', 'Species', 'Gender',") + task(" and ") + code("'Age (years)'") + task(" columns! - In that order.\n") + code("pets_subset = pets")))
-        if ans1 == "[['Name', 'Species', 'Gender', 'Age (years)']]" or ans1 == "[[\"Name\", \"Species\", \"Gender\", \"Age (years)\"]]":
+        ans1 = str(input(task("Try filling in this command to make a new dataframe out of the ", check = True) + code(f"{list(df.columns[0:5])}") + task(" and ") + code(f"{df.columns[5]}") + task(" columns! - In that order.\n") + code("subset = dataset")))
+        if ans1 == f"[{list(df.columns[0:6])}]":
             correct_answer()
         else: 
-            print(tryagain("Make sure it looks something like "), code("[['Name', 'Species', 'Gender', 'Age (years)']]"), tryagain("Remember that case and spacing matter!", exclaim=False))
+            print(tryagain("Make sure it looks something like "), code(f"[{list(df.columns[0:6])}]"), tryagain("Remember that case and spacing matter!", exclaim=False))
             Q4B_1()
         
             
     def Q4B_1A(): # question to access with variable name
-        ans2 = str(input(task("Now try typing pets_subset to see the dataframe! :)\n", check = True)))
-        if ans2 == "pets_subset":
+        ans2 = str(input(task("Now try typing") + code('subset') + task("subset to see the dataframe! :)\n")))
+        if ans2 == "subset":
             correct_answer()
-            display(pets_subset)
+            display(subset)
         else: 
             print(tryagain("Try again!"))
             Q4B_1A()
         
             
     def Q4B_1B(): # sort subset dataframe by age 
-        ans3 = str(input(task("Why don't we try sorting this data by age now? Fill in the command and let's try it!\n", check = True) + code("pets_subset")))
-        if ans3 == ".sort_values(by='Age (years)')" or ans3 == ".sort_values(by=\"Age (years)\")":
+        ans3 = str(input(task(f"Why don't we try sorting this data by {df.columns[3]} now? Fill in the command and let's try it!\n", check = True) + code("subset")))
+        if ans3 == f".sort_values(by='{df.columns[3]}')" or ans3 == f'.sort_values(by=\"{df.columns[3]}")':
             correct_answer()
-            display(pets_subset.sort_values(by='Age (years)'))
+            display(subset.sort_values(by=df.columns[3]))
         else:             
-            print(tryagain("Try pets_subset"), code(".sort_values(by='Age (years)')"))      
+            print(tryagain("Try subset"), code(f".sort_values(by='{df.columns[3]}')"))      
             Q4B_1B()
         
          
@@ -417,22 +418,22 @@ def challenge4b():
 
 # Question 4 C
 def challenge4c(): # slice dataframe 
-    pets_subset = pets[["Name", "Species", "Gender", "Age (years)"]]
-    def Q4C_1(): #slice pets to rows 6 - 17
-        ans = str(input(task("Now, let's try getting some rows! Fill in the command and try to access rows 6 - 17! \n", check = True) + code("pets")))
+    subset = df[df.columns[0:6]]
+    def Q4C_1(): #slice dataframe to rows 6 - 17
+        ans = str(input(task("Now, let's try getting some rows! Fill in the command and try to access rows 6 - 17! \n", check = True) + code("subset")))
         if ans == ".loc[6:17]":
             correct_answer()
-            return display(pets.loc[6:17])
+            return display(df.loc[6:17])
         else: 
             print(tryagain("Try again! Remember we are using "), code(".loc[1:2]"))
             Q4C_1() 
         clear_output(wait = True)
             
-    def Q4C_2(): # slicepets_subset to rows 5 - 12
-        ans2 = str(input(task("Now let's try getting rows 5-12 from the data we subsetted in the last question!\n", check = True) + code("pets_subset")))
+    def Q4C_2(): # slice subset to rows 5 - 12
+        ans2 = str(input(task("Now let's try getting rows 5-12 from the data we subsetted in the last question!\n", check = True) + code("subset")))
         if ans2 == ".loc[5:12]":
             correct_answer()
-            return display(pets_subset.loc[5:12])
+            return display(subset.loc[5:12])
         else:
             print(tryagain("Try again! Remember we are using "), code(".loc[1:2]"))
             Q4C_2()
@@ -444,20 +445,20 @@ def challenge4c(): # slice dataframe
 # Question 4 D
 def challenge4d(): # use basic statistics methods
     def Q4D_1(): # try out commands on weight column
-        ans = str(input(task("Try out the different statistics methods on the Weight column!\n", check = True) + code("pets['Weight (lbs)']")))
+        ans = str(input(task(F"Try out the different statistics methods on the {df.columns[-2]} column!\n", check = True) + code(f"dataset[{df.columns[-2]}]")))
         # case handling 
         if ans == ".max()":
             correct_answer()
-            return display(pets['Weight (lbs)'].max()), print(cbot(" That's pretty heavy!"))
+            return display(df[df.columns[-2]].max()), print(cbot(" That's a lot of appearances!"))
         elif ans == ".min()":
             correct_answer()
-            return display(pets['Weight (lbs)'].min())
+            return display(df[df.columns[-2]].min())
         elif ans == ".mean()": 
             correct_answer()
-            return display(pets['Weight (lbs)'].mean())
+            return display(df[df.columns[-2]].mean())
         elif ans == ".describe()": 
             correct_answer()
-            return display(pets['Weight (lbs)'].describe())
+            return display(df[df.columns[-2]].describe())
         else: 
             print(tryagain("That doesn't seem to be a valid method!"))
             Q4D_1()  
@@ -468,10 +469,10 @@ def challenge4d(): # use basic statistics methods
             challenge4d()
         else: 
             def Q4D_2(): # nested describe function
-                ans2 = str(input(task("Try to use ", check = True) + code(".describe()") + task(" on the dataset now!\n") + code("pets")))
+                ans2 = str(input(task("Try to use ", check = True) + code(".describe()") + task(" on the dataset now!\n") + code("dataset")))
                 if ans2 == ".describe()": 
                     correct_answer()
-                    return display(pets.describe())
+                    return display(df.describe())
                 else:
                     print(tryagain("Try again!"))
             Q4D_2()
@@ -481,13 +482,14 @@ def challenge4d(): # use basic statistics methods
     
 # Question 4 E 
 def challenge4e(): # finding the weight of the heaviest animal
-    print(cbot(" Take a look at the table we generated with the "), code("Time to Adoption (weeks) "), normal("of the pets.\n"), task("Type the name of the pet with the heaviest weight ", check = True))
+    print(cbot(" Take a look at the table we generated with the "), code(f"{df.columns[-2]}"), normal("of the dataset.\n"), task(f"Type the name of the youngest {df.columns[0]}", check = True))
     def Q4E(): # select weight column
-        ans = str(input(normal("The pet with the heaviest weight is: ")))
-        if ans == "Kujo":
+        ans = str(input(normal("The youngest player is: ")))
+        ans.replace('Stefano', 'Stéfano')
+        if ans == df.loc[21][0]:
             correct_answer()
         else: 
-            print(cbot(" Almost there. Hint, the name starts with K"))
+            print(cbot(" Almost there. Hint, the name starts with A"))
             Q4E()
     #execute
     Q4E()

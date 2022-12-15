@@ -11,3 +11,4 @@ Required to implement a new theme:
 <br>
 1. Design changes to all the slides
     - Feel free to modify the images in the notebooks (`images`)
+1. Though the `interactive.py` file is designedto be fairly universal, it will still require some modification to make it fit each theme.

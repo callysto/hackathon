@@ -521,13 +521,14 @@ def challenge5a(): # import matplotlib's pyplot
 def challenge5b(): # make a bar graph
     print(cbot(" Now that we've imported the package. let's try making some graphs! I'm so excited!!"))
     def Q5B_1():
-        ans = str(input(task("Try making a bar graph of 'Species' as the x column, and 'Legs' as the y column. Let's see what we find!\n", check = True) + code("plt")))
-        if ans == ".bar(pets['Species'], pets['Legs'])" or ans == "bar(pets[\"Species\"], pets[\"Legs\"])":
+        ans = str(input(task(f"Try making a bar graph of {df.columns[5]} as the x column, and {df.columns[8]} as the y column. Let's see what we find!\n", check = True) + code("plt")))
+        if ans == f".bar(dataset['{df.columns[5]}'], dataset['{df.columns[8]}'])" or ans == f'.bar(dataset["{df.columns[5]}"], dataset["{df.columns[8]}"])':
             correct_answer()
-            print(cbot(" Notice that the graph visualizes into bars to see how many there are in a category. This bar graph tells us how many legs each category of species has: cat, dog, lizard, and rabbit all have 4 legs, and tarantula has 8 legs. "))
-            plt.bar(pets['Species'], pets['Legs'])
-            plt.xlabel("Species")
-            plt.ylabel("Number of Legs")
+            print(cbot(f" Notice that the graph visualizes into bars to see how many there are in a category. This bar graph tells us how many {df.columns[8]} each category of {df.columns[5]} has."))
+            plt.bar(df[df.columns[5]], df[df.columns[8]])
+            plt.title(f'{df.columns[8]} by {df.columns[5]}')
+            plt.xlabel(df.columns[5])
+            plt.ylabel(df.columns[8])
             plt.show()
             # # custom plotting function
             # def pltbr():
@@ -553,7 +554,7 @@ def challenge5b(): # make a bar graph
             # #execute
             # pltbr()         
         else: 
-            print(tryagain("Hmm, not quite. How about trying "), code("plt.bar(pets['Species'], pets['Legs'])"))
+            print(tryagain("Hmm, not quite. How about trying "), code(f"plt.bar(dataset[{df.columns[5]}], dataset[{df.columns[8]}])"))
             Q5B_1()
     #execute
     Q5B_1()
@@ -564,13 +565,17 @@ def challenge5b(): # make a bar graph
 def challenge5c(): # make a histogram 
     print(cbot(" Let's try making a histogram now! "))
     def Q5C():
-        ans = str(input(task("Let's try making a histogram now! Can you fill in this command to create a histogram of the 'Species' column? \n", check = True) + code("plt")))
-        if ans == ".hist(pets['Species'])" or ans == ".hist(pets[\"Species\"])":
+        import numpy as np
+        ans = str(input(task(f"Let's try making a histogram now! Can you fill in this command to create a histogram of the {df.columns[1]} column? \n", check = True) + code("plt")))
+        if ans == f".hist(dataset['{df.columns[1]}'])" or ans == f'.hist(dataset["{df.columns[1]}"])':
             correct_answer()
-            print(cbot(" Notice that the histogram visualizes in bars and counts how many cats, dogs, lizards, and tarantulas appear in the dataset. There are many more cat and dog entries compared to lizard, rabbit, and tarantula entries."))
-            plt.hist(pets['Species'])
-            plt.xlabel("Species")
+            print(cbot(f" Notice that the histogram visualizes in bars and counts how many different values for {df.columns[1]} exist in the dataset. There are many more from {df[df.columns[1]].value_counts().index.tolist()[0]} compared to {df[df.columns[1]].value_counts().index.tolist()[-1]}, {df[df.columns[1]].value_counts().index.tolist()[-2]}, and {df[df.columns[1]].value_counts().index.tolist()[-3]}."))
+            nc = len(df[df.columns[1]].unique())
+            plt.hist(df[df.columns[1]], bins=nc)
+            plt.xlabel(df.columns[1])
+            plt.xticks(np.linspace(0, nc-1, 2*nc+1)[1::2])
             plt.ylabel("Count")
+            plt.xticks(rotation=90)
             plt.show()
             # # make a custom histogram
             # def plthst():
@@ -597,7 +602,7 @@ def challenge5c(): # make a histogram
             # #execute
             # plthst()    
         else: 
-            print(tryagain("Hmm, not quite. How about trying "), code("plt.hist(pets['Species'])"))
+            print(tryagain("Hmm, not quite. How about trying "), code(f"plt.hist(dataset['{df.columns[1]}'])"))
             Q5C()
     #execute
     Q5C()
@@ -606,16 +611,16 @@ def challenge5c(): # make a histogram
 def challenge5d(): # make a scatterplot   
     print(cbot(" Let's try making a scatterplot now! These are my favourite!"))
     def Q5D():
-        ans = str(input(task("Can you fill in this command to create a scatterplot using 'Age (years)' as the x column and y as the 'Weight (lbs)' column? \n", check = True) + code("plt")))
-        if ans == ".scatter(pets['Age (years)'], pets['Weight (lbs)'])" or ans == ".scatter(pets[\"Age (years)\"], pets[\"Weight (lbs)\"])":
+        ans = str(input(task(f"Can you fill in this command to create a scatterplot using '{df.columns[7]}' as the x column and y as the '{df.columns[9]}' column? \n", check = True) + code("plt")))
+        if ans == f".scatter(dataset['{df.columns[7]}'], dataset['{df.columns[9]}'])" or ans == f'.scatter(dataset["{df.columns[7]}"], dataset["{df.columns[9]}"])':
             correct_answer()
-            print(cbot(" Notice that some data points are close while others are far apart. This means that the relationship between Age and Weight looks like a positive relationship toward older animals weighing more. Hmm, but a 16-year-old pet weighs the least and is an outlier."))
-            plt.scatter(pets['Age (years)'], pets['Weight (lbs)'])
-            plt.xlabel("Age (years)")
-            plt.ylabel("Weight (lbs)")
+            print(cbot(f" Notice that some data points are close while others are far apart. This means that the relationship between {df.columns[7]} and {df.columns[9]} looks like a positive relationship where more {df.columns[7]} means more {df.columns[9]}. Hmm, but there are two players that have significant numbers of {df.columns[9]} yet not many {df.columns[7]}. These would be what we can consider outliers."))
+            plt.scatter(df[df.columns[7]], df[df.columns[9]])
+            plt.xlabel(df.columns[7])
+            plt.ylabel(df.columns[9])
             plt.show()
         else: 
-            print(tryagain("Hmm, not quite. How about trying "), code("plt.scatter(pets['Age (years)'], pets['Weight (lbs)'])"))
+            print(tryagain("Hmm, not quite. How about trying "), code(f"plt.scatter(dataset['{df.columns[7]}'], dataset['{df.columns[9]}'])"))
             Q5D()
     #execute
     Q5D()

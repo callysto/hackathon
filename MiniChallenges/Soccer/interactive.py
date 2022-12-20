@@ -56,7 +56,7 @@ def tryagain(text, exclaim = True): # red with default emoji
 
 # positive feedback for correct answers
 def correct_answer(): # random positive reinforcement
-    compliment = ["Amazing work!", "Nice job!", "Right on!", "Awesome possum!", "You're out of this world!", "Great stuff!", "You rock!", "I wish I were this good!", "What a rockstar coder!", "Correct!", "Glad we have you around!", "That was great!", "You're picking up on this really well!", "Even CallystoBot is impressed!"]
+    compliment = ["Amazing work!", "Nice job!", "Right on!", "Awesome possum!", "You're out of this world!", "Great stuff!", "You rock!", "I wish I were this good!", "What a rockstar coder!", "Correct!", "Glad we have you around!", "That was great!", "You're picking up on this really well!", "Even CallystoBot is impressed!", "Keep it up!", "Impressive work!"]
     nice = print(bedazzle(random.choice(compliment)))
     return nice 
 
@@ -187,7 +187,7 @@ def challenge2a(): #heads and tails challenge
     
 # Question 2 B
 def challenge2b(): # view data columns
-    print(cbot(" First, we will need to know what columns are in the data. We can do this by either looking at the dataset again, or use "), code("dataset_variable_name.columns"))
+    print(cbot(" First, we will need to know what columns are in the data. We can do this by either looking at the dataset again, or use "), code("data.columns"))
     def Q2B(): # view columns
         ans = str(input(task("Try filling in the command to list all the columns: \n", check = True) + code("data")))
         if ans == ".columns": 
@@ -201,7 +201,7 @@ def challenge2b(): # view data columns
     
 # Question 2 C 
 def challenge2c(): # selecting columns
-    print(cbot(f" Now that we have all the column names, let's choose a couple to look at. How about the "), code(df.columns[0]), normal("column?\n"), task("Select the column using ", check = True), code("dataset_variable_name[\"column_name\"]"))
+    print(cbot(f" Now that we have all the column names, let's choose a couple to look at. How about the "), code(df.columns[0]), normal("column?\n"), task("Select the column using ", check = True), code("data[\"column_name\"]"))
     def Q2C(): # select name column
         ans = str(input(code("data")))
         if ans == f"['{df.columns[0]}']" or f'["{df.columns[0]}"]':
@@ -256,7 +256,7 @@ def challenge3a(): # get unique values
             correct_answer()
             print(cbot(f" Notice that the array below organizes the values in a row. The column of {df.columns[1]} has the unique values of \n{df.iloc[:,1].unique().tolist()}"))
         else: 
-            print(tryagain("Close! Make sure you remember the period and brackets. Use "), code("dataset['columnname'].unique()"))
+            print(tryagain("Close! Make sure you remember the period and brackets. Use "), code("data['columnname'].unique()"))
             Q3A()
     #execute
     Q3A()
@@ -266,12 +266,12 @@ def challenge3b(): # using basic operators
     print(cbot(" The unique values we found in our last step are interesting, but let's see what we can do with a column that contains numbers!"))
     print(cbot(f" First, we'll need to use a basic operator on the {df.columns[-1]} column to find the ones that are greater than 4."))
     def Q3B(): # select international goals greater than 4
-        ans = str(input(task("Try filling in the command\n", check = True) + code(f"dataset[{df.columns[-1]}] > ")))
+        ans = str(input(task("Try filling in the command\n", check = True) + code(f"data[{df.columns[-1]}] > ")))
         if ans == "4": 
             correct_answer()
             return display(df[df.columns[-1]] >4)
         else: 
-            print(tryagain("Try the number of International Goals"))
+            print(tryagain(f"Try the number of {df.columns[-1]}"))
             Q3B()
     #execute 
     Q3B()
@@ -280,7 +280,7 @@ def challenge3b(): # using basic operators
 def challenge3c(): # access a row using loc
     print(cbot(" Looks like there's only one row that returns "), code("False"), normal(". Can you use "), code(".loc"), normal(" to find out more?"))
     def Q3C(): # view row 19 from 3 legged pet 
-        ans = str(input(task("Fill in the command:\n", check = True) + code("dataset")))
+        ans = str(input(task("Fill in the command:\n", check = True) + code("data")))
         if ans == ".loc[17]":
             correct_answer()
             return display(df.loc[17])
@@ -309,46 +309,46 @@ def challenge3d(): # finding the 3 legged pet name
 def challenge3e(): # advanced basic operators and logical operators 
     print(cbot(" Good work!! Let's try to do some other examples. Since I'm a robot from Canada, I want to see if there are any other robots like me! Can you try and find out?"))
     def Q3E_1(): # get all Canadians
-        ans1 = str(input(task("Try to find all the Canadians by using the == operator.\n", check = True) + code("dataset.loc")))
+        ans1 = str(input(task("Try to find all the Canadians by using the == operator.\n", check = True) + code("data.loc")))
         ans1 = ans1.replace(" ","")
-        if ans1 == f'[dataset["{df.columns[1]}"]=="Canada"]' or ans1 == f"[dataset['{df.columns[1]}']=='Canada']":
+        if ans1 == f'[data["{df.columns[1]}"]=="Canada"]' or ans1 == f"[data['{df.columns[1]}']=='Canada']":
             correct_answer()
             return display(df[df[df.columns[1]] == "Canada"])
         else:
-            print(tryagain("Very close! Why don't you try "), code(f"[dataset[\'column_name\'] == \'search_term\'] "), tryagain(f"where the column is '{df.columns[1]}' and filter is 'Canada'? Remember that capitalization matters!", exclaim = False))
+            print(tryagain("Very close! Why don't you try "), code(f"[data[\'column_name\'] == \'search_term\'] "), tryagain(f"where the column is '{df.columns[1]}' and filter is 'Canada'? Remember that capitalization matters!", exclaim = False))
             Q3E_1()
         clear_output(wait = True)
  
     def Q3E_2(): # get all players with over 100 International Appearances
-        ans2 = str(input(task(f" Now try to write an operator that can find all values of {df.columns[0]}s with over 100 {df.columns[-2]}!\n", check = True) + code("dataset.loc")))
-        if ans2 == f'[dataset["{df.columns[-2]}"]>100]' or ans2 == f"[dataset['{df.columns[-2]}']>100]":
+        ans2 = str(input(task(f" Now try to write an operator that can find all values of {df.columns[0]}s with over 100 {df.columns[-2]}!\n", check = True) + code("data.loc")))
+        if ans2 == f'[data["{df.columns[-2]}"]>100]' or ans2 == f"[data['{df.columns[-2]}']>100]":
             correct_answer()
             return display(df[df[df.columns[-2]] > 100])
-        elif ans2 == f'[dataset["{df.columns[-2]}"] > 100]' or ans2 == f"[dataset['{df.columns[-2]}'] > 100]":
+        elif ans2 == f'[data["{df.columns[-2]}"] > 100]' or ans2 == f"[data['{df.columns[-2]}'] > 100]":
             correct_answer()
             return display(df[df[df.columns[-2]] > 100])
         else: 
-            print(tryagain("Try "), code(f"[dataset[\"column_name\"] > {df.columns[-2]} "), tryagain(f"where the column is {df.columns[-2]} and {df.columns[-2]} is > 100. Remember that spelling and spaces matter!", exclaim = False))
+            print(tryagain("Try "), code(f"[data[\"column_name\"] > {df.columns[-2]} "), tryagain(f"where the column is {df.columns[-2]} and {df.columns[-2]} is > 100. Remember that spelling and spaces matter!", exclaim = False))
             Q3E_2()
   
     def Q3E_3(): # get all Canadians with over 100 appearances
-        print(cbot(" Wow! You're really good. How about we try to do both at once? I think the format was "), code("dataset.loc[(operator1) & (operator2)]"))
+        print(cbot(" Wow! You're really good. How about we try to do both at once? I think the format was "), code("data.loc[(operator1) & (operator2)]"))
         def Q3E_3A():# combine two operators 
-            ans3 = str(input(task(f"Try to combine the two operators you wrote previously to find all Canadian {df.columns[0]}s with over 100 {df.columns[-2]}. Remember to always have matching brackets!\n", check = True) + code("dataset.loc")))
+            ans3 = str(input(task(f"Try to combine the two operators you wrote previously to find all Canadian {df.columns[0]}s with over 100 {df.columns[-2]}. Remember to always have matching brackets!\n", check = True) + code("data.loc")))
             # alternatively can potentially use regex to parse this?
-            if ans3 == f"[(dataset['{df.columns[-2]}'] > 100) & (dataset['{df.columns[1]}'] == 'Canada')]" or ans3 == f'[(dataset["{df.columns[-2]}"] > 100) & (dataset["{df.columns[1]}"] == "Canada")]': 
+            if ans3 == f"[(data['{df.columns[-2]}'] > 100) & (data['{df.columns[1]}'] == 'Canada')]" or ans3 == f'[(data["{df.columns[-2]}"] > 100) & (data["{df.columns[1]}"] == "Canada")]': 
                 correct_answer()
                 return display(df.loc[(df[df.columns[-2]] > 100) & (df[df.columns[1]] == 'Canada')])
-            elif ans3 == f"[(dataset['{df.columns[1]}'] == 'Canada') & (dataset['{df.columns[-2]}'] > 100)]" or ans3 == f'[(dataset["{df.columns[1]}"] == "Canada") & (dataset["{df.columns[-2]}"] > 100)]': 
+            elif ans3 == f"[(data['{df.columns[1]}'] == 'Canada') & (data['{df.columns[-2]}'] > 100)]" or ans3 == f'[(data["{df.columns[1]}"] == "Canada") & (data["{df.columns[-2]}"] > 100)]': 
                 correct_answer()
-            elif ans3 == f"[(dataset['{df.columns[-2]}']>100)&(dataset['{df.columns[1]}']=='Canada')]" or ans3 == f'[(dataset["{df.columns[-2]}"]>100)&(dataset["{df.columns[1]}"]=="Canada")]': 
+            elif ans3 == f"[(data['{df.columns[-2]}']>100)&(data['{df.columns[1]}']=='Canada')]" or ans3 == f'[(data["{df.columns[-2]}"]>100)&(data["{df.columns[1]}"]=="Canada")]': 
                 correct_answer()
                 return display(df.loc[(df[df.columns[-2]] > 100) & (df[df.columns[1]] == 'Canada')])
-            elif ans3 == f"[(dataset['{df.columns[1]}']=='Canada') & (dataset['{df.columns[-2]}']>100)]" or ans3 == f'[(dataset["{df.columns[1]}"]=="Canada") & (dataset["{df.columns[-2]}"]>100)]': 
+            elif ans3 == f"[(data['{df.columns[1]}']=='Canada') & (data['{df.columns[-2]}']>100)]" or ans3 == f'[(data["{df.columns[1]}"]=="Canada") & (data["{df.columns[-2]}"]>100)]': 
                 correct_answer()
                 return display(df.loc[(df[df.columns[-2]] > 100) & (df[df.columns[1]] == 'Canada')])
             else:
-                print(tryagain("This one is definitely tricky! Try seeing what you may have missed by comparing your answer to this: \n"), code(f"dataset.loc[(dataset['{df.columns[-2]}'] > 100) & (dataset['{df.columns[1]}'] == 'Canada')] "), tryagain("\nNote that when we have 2 or more, we need to separate them by putting each one in ", exclaim = False), code("( )"))
+                print(tryagain("This one is definitely tricky! Try seeing what you may have missed by comparing your answer to this: \n"), code(f"data.loc[(data['{df.columns[-2]}'] > 100) & (data['{df.columns[1]}'] == 'Canada')] "), tryagain("\nNote that when we have 2 or more, we need to separate them by putting each one in ", exclaim = False), code("( )"))
                 Q3E_3A()
         Q3E_3A()
     #execute
@@ -361,14 +361,14 @@ def challenge3e(): # advanced basic operators and logical operators
 # Question 4 A
 def challenge4a(): # sort values 
     print(cbot(" I wonder how many goals these players have scored! Should that be considered?"))
-    print(task("Try filling in the command to sort values by", check = True), code(f"'{df.columns[7]}'"))
+    print(task("Try filling in the command to sort values by", check = True), code(f"'{df.columns[8]}'"))
     def Q4A(): # sort by time to adoption 
-        ans = str(input(code("dataset")))
-        if ans == f".sort_values(by='{df.columns[7]}')" or ans == f'.sort_values(by="{df.columns[7]}")':
+        ans = str(input(code("data")))
+        if ans == f".sort_values(by='{df.columns[8]}')" or ans == f'.sort_values(by="{df.columns[8]}")':
             correct_answer()
-            display(df.sort_values(by=df.columns[7]))
+            display(df.sort_values(by=df.columns[8]))
         else: 
-            print(cbot(" Better than I could have done!\n"), tryagain(f"Try .sort_values(by='{df.columns[7]}')"))
+            print(cbot(" Better than I could have done!\n"), tryagain(f"Try .sort_values(by='{df.columns[8]}')"))
             Q4A()
     #execute
     Q4A() 
@@ -381,7 +381,7 @@ def challenge4b():
     subset = df[df.columns[0:6]]
 
     def Q4B_1(): # column subset and nested sort
-        ans1 = str(input(task("Try filling in this command to make a new dataframe out of the ", check = True) + code(f"{list(df.columns[0:5])}") + task(" and ") + code(f"{df.columns[5]}") + task(" columns! - In that order.\n") + code("subset = dataset")))
+        ans1 = str(input(task("Try filling in this command to make a new dataframe out of the ", check = True) + code(f"{list(df.columns[0:5])}") + task(" and ") + code(f"{df.columns[5]}") + task(" columns! - In that order.\n") + code("subset = data")))
         if ans1 == f"[{list(df.columns[0:6])}]":
             correct_answer()
         else: 
@@ -445,7 +445,7 @@ def challenge4c(): # slice dataframe
 # Question 4 D
 def challenge4d(): # use basic statistics methods
     def Q4D_1(): # try out commands on weight column
-        ans = str(input(task(F"Try out the different statistics methods on the {df.columns[-2]} column!\n", check = True) + code(f"dataset[{df.columns[-2]}]")))
+        ans = str(input(task(F"Try out the different statistics methods on the {df.columns[-2]} column!\n", check = True) + code(f"data[{df.columns[-2]}]")))
         # case handling 
         if ans == ".max()":
             correct_answer()
@@ -469,7 +469,7 @@ def challenge4d(): # use basic statistics methods
             challenge4d()
         else: 
             def Q4D_2(): # nested describe function
-                ans2 = str(input(task("Try to use ", check = True) + code(".describe()") + task(" on the dataset now!\n") + code("dataset")))
+                ans2 = str(input(task("Try to use ", check = True) + code(".describe()") + task(" on the data now!\n") + code("data")))
                 if ans2 == ".describe()": 
                     correct_answer()
                     return display(df.describe())
@@ -482,7 +482,7 @@ def challenge4d(): # use basic statistics methods
     
 # Question 4 E 
 def challenge4e(): # finding the weight of the heaviest animal
-    print(cbot(" Take a look at the table we generated with the "), code(f"{df.columns[-2]}"), normal("of the dataset.\n"), task(f"Type the name of the youngest {df.columns[0]}", check = True))
+    print(cbot(" Take a look at the table we generated with the "), code(f"{df.columns[-2]}"), normal("of the data.\n"), task(f"Type the name of the youngest {df.columns[0]}", check = True))
     def Q4E(): # select weight column
         ans = str(input(normal("The youngest player is: ")))
         ans.replace('Stefano', 'Stéfano')
@@ -522,7 +522,7 @@ def challenge5b(): # make a bar graph
     print(cbot(" Now that we've imported the package. let's try making some graphs! I'm so excited!!"))
     def Q5B_1():
         ans = str(input(task(f"Try making a bar graph of {df.columns[5]} as the x column, and {df.columns[8]} as the y column. Let's see what we find!\n", check = True) + code("plt")))
-        if ans == f".bar(dataset['{df.columns[5]}'], dataset['{df.columns[8]}'])" or ans == f'.bar(dataset["{df.columns[5]}"], dataset["{df.columns[8]}"])':
+        if ans == f".bar(data['{df.columns[5]}'], data['{df.columns[8]}'])" or ans == f'.bar(data["{df.columns[5]}"], data["{df.columns[8]}"])':
             correct_answer()
             print(cbot(f" Notice that the graph visualizes into bars to see how many there are in a category. This bar graph tells us how many {df.columns[8]} each category of {df.columns[5]} has."))
             plt.bar(df[df.columns[5]], df[df.columns[8]])
@@ -554,7 +554,7 @@ def challenge5b(): # make a bar graph
             # #execute
             # pltbr()         
         else: 
-            print(tryagain("Hmm, not quite. How about trying "), code(f"plt.bar(dataset[{df.columns[5]}], dataset[{df.columns[8]}])"))
+            print(tryagain("Hmm, not quite. How about trying "), code(f"plt.bar(data[{df.columns[5]}], data[{df.columns[8]}])"))
             Q5B_1()
     #execute
     Q5B_1()
@@ -567,9 +567,9 @@ def challenge5c(): # make a histogram
     def Q5C():
         import numpy as np
         ans = str(input(task(f"Let's try making a histogram now! Can you fill in this command to create a histogram of the {df.columns[1]} column? \n", check = True) + code("plt")))
-        if ans == f".hist(dataset['{df.columns[1]}'])" or ans == f'.hist(dataset["{df.columns[1]}"])':
+        if ans == f".hist(data['{df.columns[1]}'])" or ans == f'.hist(data["{df.columns[1]}"])':
             correct_answer()
-            print(cbot(f" Notice that the histogram visualizes in bars and counts how many different values for {df.columns[1]} exist in the dataset. There are many more from {df[df.columns[1]].value_counts().index.tolist()[0]} compared to {df[df.columns[1]].value_counts().index.tolist()[-1]}, {df[df.columns[1]].value_counts().index.tolist()[-2]}, and {df[df.columns[1]].value_counts().index.tolist()[-3]}."))
+            print(cbot(f" Notice that the histogram visualizes in bars and counts how many different values for {df.columns[1]} exist in the data. There are many more from {df[df.columns[1]].value_counts().index.tolist()[0]} compared to {df[df.columns[1]].value_counts().index.tolist()[-1]}, {df[df.columns[1]].value_counts().index.tolist()[-2]}, and {df[df.columns[1]].value_counts().index.tolist()[-3]}."))
             nc = len(df[df.columns[1]].unique())
             plt.hist(df[df.columns[1]], bins=nc)
             plt.xlabel(df.columns[1])
@@ -602,7 +602,7 @@ def challenge5c(): # make a histogram
             # #execute
             # plthst()    
         else: 
-            print(tryagain("Hmm, not quite. How about trying "), code(f"plt.hist(dataset['{df.columns[1]}'])"))
+            print(tryagain("Hmm, not quite. How about trying "), code(f"plt.hist(data['{df.columns[1]}'])"))
             Q5C()
     #execute
     Q5C()
@@ -612,7 +612,7 @@ def challenge5d(): # make a scatterplot
     print(cbot(" Let's try making a scatterplot now! These are my favourite!"))
     def Q5D():
         ans = str(input(task(f"Can you fill in this command to create a scatterplot using '{df.columns[7]}' as the x column and y as the '{df.columns[9]}' column? \n", check = True) + code("plt")))
-        if ans == f".scatter(dataset['{df.columns[7]}'], dataset['{df.columns[9]}'])" or ans == f'.scatter(dataset["{df.columns[7]}"], dataset["{df.columns[9]}"])':
+        if ans == f".scatter(data['{df.columns[7]}'], data['{df.columns[9]}'])" or ans == f'.scatter(data["{df.columns[7]}"], data["{df.columns[9]}"])':
             correct_answer()
             print(cbot(f" Notice that some data points are close while others are far apart. This means that the relationship between {df.columns[7]} and {df.columns[9]} looks like a positive relationship where more {df.columns[7]} means more {df.columns[9]}. Hmm, but there are two players that have significant numbers of {df.columns[9]} yet not many {df.columns[7]}. These would be what we can consider outliers."))
             plt.scatter(df[df.columns[7]], df[df.columns[9]])
@@ -620,7 +620,7 @@ def challenge5d(): # make a scatterplot
             plt.ylabel(df.columns[9])
             plt.show()
         else: 
-            print(tryagain("Hmm, not quite. How about trying "), code(f"plt.scatter(dataset['{df.columns[7]}'], dataset['{df.columns[9]}'])"))
+            print(tryagain("Hmm, not quite. How about trying "), code(f"plt.scatter(data['{df.columns[7]}'], data['{df.columns[9]}'])"))
             Q5D()
     #execute
     Q5D()

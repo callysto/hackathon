@@ -24,4 +24,4 @@ Before you go, please complete this anonymous hackathon feedback [survey](https:
 
 ## Hackathon Submission
 
-Submit your notebook...
+Submit your notebook [here](https://forms.gle/snRz9Ewgfh1viK3GA)

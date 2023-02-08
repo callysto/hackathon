@@ -1,4 +1,4 @@
-# Wild Rose School Division Hackathon
+# [school name] Hackathon
 
 ## Introduction
 

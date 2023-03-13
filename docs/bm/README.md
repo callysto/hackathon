@@ -1,4 +1,4 @@
-# [school name] Hackathon
+# Blair McPherson Hackathon
 
 ## Introduction
 
@@ -25,4 +25,4 @@ Before you go, please complete this anonymous hackathon feedback [survey](https:
 
 ## Hackathon Submission
 
-Submit your notebook using [this form](https://docs.google.com/forms/d/e/1FAIpQLSfLO2cpFewMLaGFhZ3X0pjwhyw9qdfF1gkEnlO5rUGCDRlE3w/viewform)
+Submit your notebook using [this form](https://forms.gle/ksZzz3R9ABo7DpQz6)

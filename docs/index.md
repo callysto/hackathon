@@ -8,7 +8,7 @@ Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada.
 * [Fort McMurray Catholic Schools](fmc)
 * [Fort McMurray Public Schools](fmp)
 * [Elk Island Public Schools](eips)
-* [OLPH School](olph)
+* [Blair McPherson School](bm)
 
 ## Online Hackathons
 

@@ -21,7 +21,7 @@
 
 ## Hackathon Feedback
 
-Before you go, please complete this anonymous hackathon feedback [survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform?usp=pp_url&entry.1760849759=2022-12-25&entry.975699384=Location,+Province).
+Before you go, please complete this anonymous hackathon feedback [survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform?usp=pp_url&entry.1760849759=2023-03-28&entry.975699384=Location,+Province).
 
 ## Hackathon Submission
 

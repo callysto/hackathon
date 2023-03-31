@@ -1,0 +1,80 @@
+# Turtles Hackathon
+
+## Introduction
+
+We are going to introduce some Python programming using Turtles.
+
+[Turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics) have been used for learning about programming and computational thinking. We will use them as a fun way to learn about Python programming and Jupyter notebooks.
+
+---
+
+## Turtle Commands
+
+The code you need to run will import the [Turtle drawing code library](https://github.com/takluyver/mobilechelonian) then create a new turtle drawing canvas.
+
+```
+from mobilechelonian import Turtle
+t = Turtle()
+```
+
+Assuming that your turtle is now named `t`, here are the possible commands you can use.
+
+|Command|Description|Example|
+|-|-|-|
+|`t.speed(integer)`|speed of your turtle, from 1 to 10|`t.speed(10)`|
+|`t.right(degrees)`|turn turtle right a certain number of degrees|`t.right(90)`|
+|`t.left(degrees)`|turn turtle left a certain number of degrees|`t.left(45)`|
+|`t.forward(units)`|move your turtle forward a certain number of pixels|`t.forward(100)`|
+|`t.backward(units)`|move your turtle forward a certain number of pixels|`t.backward(20)`|
+|`t.penup()`|now your turtle can move without drawing lines|`t.penup()`|
+|`t.pendown()`|make your turtle draw lines again|`t.pendown()`|
+|`t.pencolor('color')`|color of your turtle’s line using a [color names](https://www.w3schools.com/colors/colors_names.asp)|`t.pencolor('blue')`|
+|`t.pencolor('rgb(R, G, B)')`|color of your turtle’s line using red, green, and blue values from 0 to 255|`t.pencolor('rgb(0, 255, 100)')`|
+|`t.setposition(x, y)`|move the turtle to a specific position. (0,0) is the top left and (400, 400) is the bottom right|`t.setposition(100, 250)`|
+|`t.circle(r, degrees)`|have your turtle draw a piece of a circle of radius r, through some number of degrees|`t.circle(40, 360)`|
+
+For some inspiration, check out [this example](https://github.com/callysto/TMTeachingTurtles/blob/jupyter-turtles-art-contest/turtles-cool-art-demo.ipynb).
+
+---
+
+## Hackathon Challenges
+
+These challenges do not need to be completed in a particular order. Notify a supervisor when you have accomplished one so they can award you points.
+
+### Beginner
+
+These challenges are worth 2 points each.
+
+1. draw a rectangle
+1. draw a triangle
+1. draw a circle
+1. draw a pentagon
+1. draw a star
+1. draw an arrow
+1. draw a parallelogram
+
+### Intermediate
+
+These challenges are worth 5 points each.
+
+1. draw a heart
+1. draw a Venn diagram
+1. draw [Pac-Man](https://en.wikipedia.org/wiki/Pac-Man)
+1. draw a [house](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-house.png)
+1. draw a house with a door, a window, and a chimney
+1. draw a [simple black flower](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-simple-black-flower.png)
+1. draw a [black flower](https://github.com/callysto/hackathon/blob/master/HackathonNotebooks/Turtles/images/turtle-black-flower.png)
+1. use loops in a drawing
+1. use [nested loops](https://www.w3schools.com/python/gloss_python_for_nested.asp) in a drawing
+1. draw a green tree with a brown stem
+
+### Advanced
+
+These challenges are worth 15 points each.
+
+1. draw a [pointy coloured flower](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-pointy-flower.png)
+1. draw a full [maple leaf](https://github.com/callysto/TMTeachingTurtles/blob/jupyter-turtles-art-contest/turtles-cool-art-demo.ipynb)
+
+## Hackathon Feedback
+
+Before you go, please complete this anonymous hackathon feedback [survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform?usp=pp_url&entry.1760849759=2028-12-31&entry.975699384=Turtles,+AB).

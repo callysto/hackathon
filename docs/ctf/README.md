@@ -45,20 +45,24 @@ These challenges do not need to be completed in a particular order. Notify a sup
 
 These challenges are worth 2 points each.
 
-1. draw a rectangle
-1. draw a triangle
-1. draw a circle
-1. draw a pentagon
-1. draw a star
-1. draw an arrow
-1. draw a parallelogram
+1. draw a red rectangle
+1. draw a green triangle
+1. draw a blue circle
+1. draw a purple pentagon
+1. draw a yellow star
+1. draw a cyan arrow
+1. draw an orange parallelogram
+1. draw a magenta hexagon
 
 ### Intermediate
 
 These challenges are worth 5 points each.
 
-1. draw a heart
+1. draw a pink heart
 1. draw a Venn diagram
+1. draw a right angle triangle with the RGB color `(205, 133, 63)`
+1. draw a semi-circle with two different colors
+1. draw a silver crescent
 1. draw [Pac-Man](https://en.wikipedia.org/wiki/Pac-Man)
 1. draw a [house](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-house.png)
 1. draw a house with a door, a window, and a chimney

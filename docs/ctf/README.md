@@ -53,6 +53,8 @@ These challenges are worth 2 points each.
 1. draw a cyan arrow
 1. draw an orange parallelogram
 1. draw a magenta hexagon
+1. draw a face
+1. draw the symbol π
 
 ### Intermediate
 
@@ -61,6 +63,7 @@ These challenges are worth 5 points each.
 1. draw a pink heart
 1. draw a Venn diagram
 1. draw a right angle triangle with the RGB color `(205, 133, 63)`
+1. draw an equilateral triangle with a perimter of 90 pixels
 1. draw a semi-circle with two different colors
 1. draw a silver crescent
 1. draw [Pac-Man](https://en.wikipedia.org/wiki/Pac-Man)
@@ -71,6 +74,7 @@ These challenges are worth 5 points each.
 1. use loops in a drawing
 1. use [nested loops](https://www.w3schools.com/python/gloss_python_for_nested.asp) in a drawing
 1. draw a green tree with a brown stem
+1. draw an emoji
 
 ### Advanced
 
@@ -78,7 +82,11 @@ These challenges are worth 15 points each.
 
 1. draw a [pointy coloured flower](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-pointy-flower.png)
 1. draw a full [maple leaf](https://github.com/callysto/TMTeachingTurtles/blob/jupyter-turtles-art-contest/turtles-cool-art-demo.ipynb)
-
-## Hackathon Feedback
-
-Before you go, please complete this anonymous hackathon feedback [survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform?usp=pp_url&entry.1760849759=2028-12-31&entry.975699384=Turtles,+AB).
+1. draw a landscape scene with mutliple colours
+1. write your name with a turtle
+1. draw a one-octave piano keyboard
+1. use a [dataframe to create a turtle drawing](https://github.com/callysto/TMTeachingTurtles/blob/master/TMDataTurtles/turtles-and-data-student.ipynb)
+1. create a function that accepts an integer parameter and draws a shape with that many sides
+1. create a 15-second promo video introducing Python turtles to people your age
+1. write a note about your experiences today to share with your grownups or friends
+1. **near the end of the day, complete this anonymous hackathon feedback [survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform?usp=pp_url&entry.1760849759=2028-12-31&entry.975699384=Turtles,+AB).**

@@ -1,8 +1,6 @@
-# Turtles Hackathon
+# Turtle Hackathon
 
 ## Introduction
-
-We are going to introduce some Python programming using Turtles.
 
 [Turtle graphics](https://en.wikipedia.org/wiki/Turtle_graphics) have been used for learning about programming and computational thinking. We will use them as a fun way to learn about Python programming and Jupyter notebooks.
 

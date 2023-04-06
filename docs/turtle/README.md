@@ -41,6 +41,8 @@ For some inspiration, check out [this example](https://github.com/callysto/TMTea
 
 These challenges do not need to be completed in a particular order. Notify a supervisor when you have accomplished one so they can award you points.
 
+You can complete the challenges on [the Callysto Hub](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/turtle.ipynb&depth=1) or [the 2i2c Hub](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/turtle.ipynb&depth=1).
+
 ### Beginner
 
 These challenges are worth 2 points each.
@@ -70,10 +72,10 @@ These challenges are worth 5 points each.
 1. draw a [house](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-house.png)
 1. draw a house with a door, a window, and a chimney
 1. draw a [simple black flower](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-simple-black-flower.png)
-1. draw a [black flower](https://github.com/callysto/hackathon/blob/master/HackathonNotebooks/Turtles/images/turtle-black-flower.png)
-1. use loops in a drawing
+1. draw a [black flower](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-black-flower.png)
+1. use [loops](https://www.w3schools.com/python/python_for_loops.asp) in a drawing
 1. use [nested loops](https://www.w3schools.com/python/gloss_python_for_nested.asp) in a drawing
-1. draw a green tree with a brown stem
+1. use [functions](https://www.w3schools.com/python/python_functions.asp) in a drawing
 1. draw an emoji
 
 ### Advanced

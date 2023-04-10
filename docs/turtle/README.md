@@ -90,3 +90,14 @@ These challenges are worth 15 points each.
 1. create a 15-second promo video introducing Python turtles to people your age
 1. write a note about your experiences today to share with your grownups or friends
 1. **near the end of the day, complete this anonymous hackathon feedback [survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform?usp=pp_url&entry.1760849759=2028-12-31&entry.975699384=Turtles,+AB).**
+
+## Submit
+Use [this form](https://docs.google.com/forms/d/e/1FAIpQLSeEc161W1hYPaR1g1mNH0Y0QGhO1VsygXSxwCqhLkAzusiJ8w/viewform?usp=sf_link) to submit your:
+- Team name
+- Team members
+- Answers to the reflection questions:
+    1. What are two things you've learned so far?
+    1. What has been your favourite part of this activity?
+    1. Are there other things you would like to create with Python turtles?
+    
+Note: **If you do not submit answers to the reflection questions, your team will not be considered for any prizes**

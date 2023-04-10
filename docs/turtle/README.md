@@ -92,7 +92,7 @@ These challenges are worth 15 points each.
 1. **near the end of the day, complete this anonymous hackathon feedback [survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform?usp=pp_url&entry.1760849759=2028-12-31&entry.975699384=Turtles,+AB).**
 
 ## Submit
-Use [this form](https://docs.google.com/forms/d/e/1FAIpQLSeEc161W1hYPaR1g1mNH0Y0QGhO1VsygXSxwCqhLkAzusiJ8w/viewform?usp=sf_link) to submit your:
+Use [this form](https://forms.gle/fUwREoMutHLWdwb47) to submit your:
 - Team name
 - Team members
 - Answers to the reflection questions:

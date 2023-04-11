@@ -1,4 +1,4 @@
-# Turtle Hackathon
+guy# Turtle Hackathon
 
 ## Introduction
 
@@ -83,7 +83,7 @@ These challenges are worth 15 points each.
 1. draw a [pointy coloured flower](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-pointy-flower.png)
 1. draw a full [maple leaf](https://github.com/callysto/TMTeachingTurtles/blob/jupyter-turtles-art-contest/turtles-cool-art-demo.ipynb)
 1. draw a landscape scene with mutliple colours
-1. write your name with a turtle
+1. write your name or nickname with a turtle
 1. draw a one-octave piano keyboard
 1. draw your assigned Pokémon
 1. use a [dataframe to create a turtle drawing](https://github.com/callysto/TMTeachingTurtles/blob/master/TMDataTurtles/turtles-and-data-student.ipynb)

@@ -85,6 +85,7 @@ These challenges are worth 15 points each.
 1. draw a landscape scene with mutliple colours
 1. write your name with a turtle
 1. draw a one-octave piano keyboard
+1. draw your assigned Pokémon
 1. use a [dataframe to create a turtle drawing](https://github.com/callysto/TMTeachingTurtles/blob/master/TMDataTurtles/turtles-and-data-student.ipynb)
 1. create a function that accepts an integer parameter and draws a shape with that many sides
 1. create a 15-second promo video introducing Python turtles to people your age

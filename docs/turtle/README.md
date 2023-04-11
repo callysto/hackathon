@@ -63,7 +63,7 @@ These challenges are worth 5 points each.
 1. draw a pink heart
 1. draw a Venn diagram
 1. draw a right angle triangle with the RGB color `(205, 133, 63)`
-1. draw an equilateral triangle with a perimter of 90 pixels
+1. draw an equilateral triangle with a perimeter of 90 pixels
 1. draw a semi-circle with two different colors
 1. draw a silver crescent
 1. draw [Pac-Man](https://en.wikipedia.org/wiki/Pac-Man)

@@ -1,4 +1,4 @@
-guy# Turtle Hackathon
+# Turtle Hackathon
 
 ## Introduction
 
@@ -93,9 +93,10 @@ These challenges are worth 15 points each.
 
 ## Submit
 Use [this form](https://forms.gle/fUwREoMutHLWdwb47) to submit your:
-- Team name
-- Team members
-- Answers to the reflection questions:
+
+* Team name
+* Team members
+* Answers to the reflection questions:
     1. What are two things you've learned so far?
     1. What has been your favourite part of this activity?
     1. Are there other things you would like to create with Python turtles?

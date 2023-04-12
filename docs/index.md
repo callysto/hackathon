@@ -5,6 +5,8 @@ Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada.
 ## In-Person Hackathons
 
 * [Turtle Hackathon](turtle)
+* [McNally School](mn)
+* [Jasper Place School](jp)
 
 ## Online Hackathons
 

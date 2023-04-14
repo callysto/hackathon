@@ -24,13 +24,15 @@ Assuming that your turtle is now named `t`, here are the possible commands you c
 |`t.right(degrees)`|turn turtle right a certain number of degrees|`t.right(90)`|
 |`t.left(degrees)`|turn turtle left a certain number of degrees|`t.left(45)`|
 |`t.forward(units)`|move your turtle forward a certain number of pixels|`t.forward(100)`|
-|`t.backward(units)`|move your turtle forward a certain number of pixels|`t.backward(20)`|
+|`t.backward(units)`|move your turtle backward a certain number of pixels|`t.backward(20)`|
+|`t.circle(r, degrees)`|have your turtle draw a piece of a circle of radius r, through some number of degrees|`t.circle(40, 360)`|
 |`t.penup()`|now your turtle can move without drawing lines|`t.penup()`|
 |`t.pendown()`|make your turtle draw lines again|`t.pendown()`|
 |`t.pencolor('color')`|color of your turtle’s line using a [color names](https://www.w3schools.com/colors/colors_names.asp)|`t.pencolor('blue')`|
 |`t.pencolor('rgb(R, G, B)')`|color of your turtle’s line using red, green, and blue values from 0 to 255|`t.pencolor('rgb(0, 255, 100)')`|
 |`t.setposition(x, y)`|move the turtle to a specific position. (0,0) is the top left and (400, 400) is the bottom right|`t.setposition(100, 250)`|
-|`t.circle(r, degrees)`|have your turtle draw a piece of a circle of radius r, through some number of degrees|`t.circle(40, 360)`|
+|`t.home()`|move the turtle back to the center of the screen|`t.home()`|
+|`t.setbearing(degrees)`|set the turtle’s heading to a specific number of degrees|`t.setheading(90)`|
 
 For some inspiration, check out [this example](https://github.com/callysto/TMTeachingTurtles/blob/jupyter-turtles-art-contest/turtles-cool-art-demo.ipynb).
 

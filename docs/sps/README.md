@@ -1,4 +1,4 @@
-# Southpointe School Hackathon
+# EIPS Hackathon at Southpointe School
 
 ## Introduction
 

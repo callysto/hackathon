@@ -1,6 +1,6 @@
 # Turtle Hackathon
 
-### [callysto.github.io/hackathon/turtle](https://callysto.github.io/hackathon/turtle/)
+### [callysto.github.io/hackathon/turtle](https://callysto.github.io/hackathon/turtle-ds/)
 
 ## Introduction
 
@@ -43,7 +43,7 @@ For some inspiration, check out [this example](https://github.com/callysto/TMTea
 
 These challenges do not need to be completed in a particular order. Notify a supervisor when you have accomplished one so they can award you points.
 
-Complete the challenges on [the Callysto Hub](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/turtle.ipynb&depth=1).
+Complete the challenges on [the Callysto Hub](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/turtle-ds.ipynb&depth=1).
 
 ### Beginner
 
@@ -93,18 +93,16 @@ These challenges are worth 15 points each.
 1. draw a one-octave piano keyboard
 1. draw your assigned Pokémon
 1. use a [dataframe to create a turtle drawing](https://github.com/callysto/TMTeachingTurtles/blob/master/TMDataTurtles/turtles-and-data-student.ipynb)
-1. Pets Data Science challenge: basic operations
-1. Pets Data Science challenge: conditions
-1. Pets Data Science challenge: sorting
-1. Pets Data Science challenge: Bar Graph
-1. Pets Data Science challenge: Line Graph
-1. Pets Data Science challenge: Pie Chart
-1. Pets Data Science challenge: Scatter Plot
 1. create a function that accepts an integer parameter and draws a shape with that many sides
+1. pets data science challenge: basic operations
+1. pets data science challenge: conditions
+1. pets data science challenge: sorting
+1. pets data science challenge: bar graph
+1. pets data science challenge: line graph
+1. pets data science challenge: pie chart
+1. pets data science challenge: scatter plot
 1. create a 15-second promo video introducing Python turtles to people your age
 1. write a descriptive paragraph or two about your experiences today to share with your grownups or friends
-
-
 
 ## Submit
 

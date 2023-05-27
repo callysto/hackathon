@@ -1,6 +1,6 @@
 # Turtle Hackathon
 
-### [callysto.github.io/hackathon/turtle](https://callysto.github.io/hackathon/turtle-ds/)
+### [callysto.github.io/hackathon/turtle-ds](https://callysto.github.io/hackathon/turtle-ds/)
 
 ## Introduction
 

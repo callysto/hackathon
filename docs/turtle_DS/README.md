@@ -70,11 +70,11 @@ These challenges are worth 5 points each.
 1. draw an equilateral triangle with a perimeter of 90 pixels
 1. draw a semi-circle with two different colors
 1. draw a silver crescent
-1. draw [Pac-Man](https://en.wikipedia.org/wiki/Pac-Man)
-1. draw a [house](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-house.png)
-1. draw a house with a door, a window, and a chimney
-1. draw a [simple black flower](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-simple-black-flower.png)
-1. draw a [black flower](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-black-flower.png)
+1. draw a Pac-Man: [click here](https://en.wikipedia.org/wiki/Pac-Man)
+1. draw a house: [click here](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-house.png)
+1. draw a house with a door, a window, chimney and backdrop scene 
+1. draw a simple black flower: [click here](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-simple-black-flower.png)
+1. draw a black flower: [click here](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-black-flower.png)
 1. use [loops](https://www.w3schools.com/python/python_for_loops.asp) in a drawing. 
 1. use [nested loops](https://www.w3schools.com/python/gloss_python_for_nested.asp) in a drawing     *It will be a loop code followed by another loop code.*
 1. use [functions](https://www.w3schools.com/python/python_functions.asp) in a drawing
@@ -86,8 +86,8 @@ These challenges are worth 5 points each.
 
 These challenges are worth 15 points each.
 
-1. draw a [pointy coloured flower](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-pointy-flower.png)
-1. draw a full [maple leaf](https://github.com/callysto/TMTeachingTurtles/blob/jupyter-turtles-art-contest/turtles-cool-art-demo.ipynb)
+1. draw a pointy coloured flower: [click here](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-pointy-flower.png)
+1. draw a full maple leaf: [click here](https://github.com/callysto/TMTeachingTurtles/blob/jupyter-turtles-art-contest/turtles-cool-art-demo.ipynb)
 1. draw a landscape scene with multiple colours
 1. write your own initials with a turtle
 1. draw a one-octave piano keyboard

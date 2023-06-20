@@ -111,8 +111,8 @@ Use [this form](https://forms.gle/fUwREoMutHLWdwb47) to submit your:
 * Team name
 * Team members
 * Answers to the reflection questions:
-    1. What are two things you've learned so far?
     1. What has been your favourite part of this activity?
-    1. Are there other things you would like to create with Python turtles?
+    1. Explain something you found challenging and how you solved it or overcame it. 
+    1. If you could grab a data set from anywhere and create a visualization, why? Explain why you chose that data set.
     
 Note: **If you do not submit answers to the reflection questions, your team will not be considered for any prizes**

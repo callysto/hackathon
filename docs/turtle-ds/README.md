@@ -43,7 +43,7 @@ For some inspiration, check out [this example](https://github.com/callysto/TMTea
 
 These challenges do not need to be completed in a particular order. Notify a supervisor when you have accomplished one so they can award you points.
 
-Complete the challenges on [the Callysto Hub](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/turtle-ds.ipynb&depth=1).
+🏁 [Click on this link to start the challenges](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/turtle-ds.ipynb&depth=1)
 
 ### Beginner
 
@@ -70,37 +70,36 @@ These challenges are worth 5 points each.
 1. draw an equilateral triangle with a perimeter of 90 pixels
 1. draw a semi-circle with two different colors
 1. draw a silver crescent
-1. draw [Pac-Man](https://en.wikipedia.org/wiki/Pac-Man)
-1. draw a [house](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-house.png)
-1. draw a house with a door, a window, and a chimney
-1. draw a [simple black flower](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-simple-black-flower.png)
-1. draw a [black flower](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-black-flower.png)
+1. draw Pac-Man: [click here](https://en.wikipedia.org/wiki/Pac-Man)
+1. draw a house: [click here](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-house.png)
+1. draw a house with a door, a window, chimney and background scene 
+1. draw a simple black flower: [click here](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-simple-black-flower.png)
+1. draw a black flower: [click here](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-black-flower.png)
 1. use [loops](https://www.w3schools.com/python/python_for_loops.asp) in a drawing. 
-1. use [nested loops](https://www.w3schools.com/python/gloss_python_for_nested.asp) in a drawing     *It will be a loop code followed by another loop code.*
+1. use [nested loops](https://www.w3schools.com/python/gloss_python_for_nested.asp) in a drawing *It will be loop code within another loop.*
 1. use [functions](https://www.w3schools.com/python/python_functions.asp) in a drawing
 1. draw an emoji
-1. complete this [Callysto survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform)-show the submit button 
-  
+1. complete this [Callysto survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform)-show the submit button
 
 ### Advanced
 
 These challenges are worth 15 points each.
 
-1. draw a [pointy coloured flower](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-pointy-flower.png)
-1. draw a full [maple leaf](https://github.com/callysto/TMTeachingTurtles/blob/jupyter-turtles-art-contest/turtles-cool-art-demo.ipynb)
+1. draw a pointy coloured flower: [click here](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-pointy-flower.png)
+1. draw a full maple leaf: [click here](https://github.com/callysto/TMTeachingTurtles/blob/jupyter-turtles-art-contest/turtles-cool-art-demo.ipynb)
 1. draw a landscape scene with multiple colours
 1. write your own initials with a turtle
 1. draw a one-octave piano keyboard
 1. draw your assigned Pokémon
 1. use a [dataframe to create a turtle drawing](https://github.com/callysto/TMTeachingTurtles/blob/master/TMDataTurtles/turtles-and-data-student.ipynb)
+1. Pets Data Science challenge: basic operations
+1. Pets Data Science challenge: conditions
+1. Pets Data Science challenge: sorting
+1. Pets Data Science challenge: Bar Graph
+1. Pets Data Science challenge: Line Graph
+1. Pets Data Science challenge: Pie Chart
+1. Pets Data Science challenge: Scatter Plot
 1. create a function that accepts an integer parameter and draws a shape with that many sides
-1. pets data science challenge: basic operations
-1. pets data science challenge: conditions
-1. pets data science challenge: sorting
-1. pets data science challenge: bar graph
-1. pets data science challenge: line graph
-1. pets data science challenge: pie chart
-1. pets data science challenge: scatter plot
 1. create a 15-second promo video introducing Python turtles to people your age
 1. write a descriptive paragraph or two about your experiences today to share with your grownups or friends
 
@@ -111,8 +110,8 @@ Use [this form](https://forms.gle/fUwREoMutHLWdwb47) to submit your:
 * Team name
 * Team members
 * Answers to the reflection questions:
+    1. What are two things you've learned so far?
     1. What has been your favourite part of this activity?
-    1. Explain something you found challenging and how you solved it or overcame it. 
-    1. If you could grab a data set from anywhere and create a visualization, why? Explain why you chose that data set.
+    1. Are there other things you would like to create with Python turtles?
     
 Note: **If you do not submit answers to the reflection questions, your team will not be considered for any prizes**

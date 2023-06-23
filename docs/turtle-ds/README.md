@@ -43,7 +43,8 @@ For some inspiration, check out [this example](https://github.com/callysto/TMTea
 
 These challenges do not need to be completed in a particular order. Notify a supervisor when you have accomplished one so they can award you points.
 
-Complete the challenges on [the Callysto Hub](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/turtle.ipynb&depth=1).
+
+🏁 [START CHALLENGES HERE-Click on this link](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/turtle.ipynb&depth=1)
 
 ### Beginner
 

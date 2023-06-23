@@ -1,6 +1,6 @@
 # Turtle Hackathon
 
-### [callysto.github.io/hackathon/turtle](https://callysto.github.io/hackathon/turtle/)
+### [callysto.github.io/hackathon/turtle-ds](https://callysto.github.io/hackathon/turtle-ds/)
 
 ## Introduction
 
@@ -44,7 +44,7 @@ For some inspiration, check out [this example](https://github.com/callysto/TMTea
 These challenges do not need to be completed in a particular order. Notify a supervisor when you have accomplished one so they can award you points.
 
 
-🏁 [START CHALLENGES HERE-Click on this link](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/turtle.ipynb&depth=1)
+🏁 [Click on this link to start the challenges](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/turtle-ds.ipynb&depth=1)
 
 ### Beginner
 
@@ -71,17 +71,16 @@ These challenges are worth 5 points each.
 1. draw an equilateral triangle with a perimeter of 90 pixels
 1. draw a semi-circle with two different colors
 1. draw a silver crescent
-1. draw a Pac-Man: [click here](https://en.wikipedia.org/wiki/Pac-Man)
+1. draw Pac-Man: [click here](https://en.wikipedia.org/wiki/Pac-Man)
 1. draw a house: [click here](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-house.png)
-1. draw a house with a door, a window, chimney and backdrop scene 
+1. draw a house with a door, a window, chimney and background scene 
 1. draw a simple black flower: [click here](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-simple-black-flower.png)
 1. draw a black flower: [click here](https://raw.githubusercontent.com/callysto/hackathon/master/HackathonNotebooks/Turtles/images/turtle-black-flower.png)
 1. use [loops](https://www.w3schools.com/python/python_for_loops.asp) in a drawing. 
-1. use [nested loops](https://www.w3schools.com/python/gloss_python_for_nested.asp) in a drawing     *It will be a loop code followed by another loop code.*
+1. use [nested loops](https://www.w3schools.com/python/gloss_python_for_nested.asp) in a drawing *It will be loop code within another loop.*
 1. use [functions](https://www.w3schools.com/python/python_functions.asp) in a drawing
 1. draw an emoji
-1. complete this [Callysto survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform)-show the submit button 
-  
+1. complete this [Callysto survey](https://docs.google.com/forms/d/e/1FAIpQLSd0Ih8x_dHS1FDfw4WYwcZAirwagfkbqoB9_WO1XoV5WqAi3Q/viewform)-show the submit button
 
 ### Advanced
 
@@ -105,8 +104,6 @@ These challenges are worth 15 points each.
 1. create a 15-second promo video introducing Python turtles to people your age
 1. write a descriptive paragraph or two about your experiences today to share with your grownups or friends
 
-
-
 ## Submit
 
 Use [this form](https://forms.gle/fUwREoMutHLWdwb47) to submit your:
@@ -119,3 +116,4 @@ Use [this form](https://forms.gle/fUwREoMutHLWdwb47) to submit your:
     1. Are there other things you would like to create with Python turtles?
     
 Note: **If you do not submit answers to the reflection questions, your team will not be considered for any prizes**
+

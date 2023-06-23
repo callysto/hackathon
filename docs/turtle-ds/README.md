@@ -43,7 +43,6 @@ For some inspiration, check out [this example](https://github.com/callysto/TMTea
 
 These challenges do not need to be completed in a particular order. Notify a supervisor when you have accomplished one so they can award you points.
 
-
 🏁 [Click on this link to start the challenges](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Turtles/turtle-ds.ipynb&depth=1)
 
 ### Beginner
@@ -116,4 +115,3 @@ Use [this form](https://forms.gle/fUwREoMutHLWdwb47) to submit your:
     1. Are there other things you would like to create with Python turtles?
     
 Note: **If you do not submit answers to the reflection questions, your team will not be considered for any prizes**
-

@@ -21,3 +21,7 @@
 ## Hackathon Submission
 
 Submit your notebook using [this form](https://forms.gle/ksZzz3R9ABo7DpQz6)
+
+### Evaluation Rubric
+
+![rubric](../images/rubric.png)

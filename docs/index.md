@@ -7,6 +7,19 @@ Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada.
 * [Turtle Hackathon](turtle)
 * [Turtle and Data Science Hackathon](turtle-ds)
 
+|Notebook|Challenge Level|
+|-|-|
+|[Baseball](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Baseball/baseball-introduction.ipynb&depth=1)|⭐⭐⭐|
+|[Basketball](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Basketball/basketball-introduction.ipynb&depth=1)|⭐⭐⭐|
+|[Books](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Books/books-intro.ipynb&depth=1)|⭐⭐⭐|
+|[Music](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Music/music-intro.ipynb&depth=1)|⭐⭐|
+|[Open Data](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/OpenData/open-data-intro.ipynb&depth=1)|⭐⭐|
+|[Pets](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Pets/pets-intro.ipynb&depth=1)|⭐|
+|[Pokémon](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Pok%C3%A9mon/pokemon-intro.ipynb&depth=1)|⭐⭐|
+|[Santa](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Santa/santa-intro.ipynb&depth=1)|⭐⭐|
+|[Trees](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Trees/trees-intro.ipynb&depth=1)|⭐⭐|
+|[Zoo](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Zoo/zoo-intro.ipynb&depth=1)|⭐⭐|
+
 ## Online Hackathons
 
 * Students need a secure internet connection to participate.

@@ -4,9 +4,8 @@ Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada.
 
 ## In-Person Hackathons
 
-* [Turtle Hackathon](../HackathonNotebooks/CollabTurtlePlus/colab-turtles-hackathon.ipynb)
-* [Turtle and Data Science Hackathon](turtle-ds)
-* [Data Challenges](../HackathonNotebooks/data.ipynb)
+* [Turtle and Data Science Hackathon](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/CollabTurtlePlus/colab-turtles-hackathon.ipynb&depth=1)
+* [Data Challenges](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/data.ipynb&depth=1)
 * [Data Labyrinths](https://github.com/callysto/data-labyrinth)
 
 |Notebook|Challenge Level|
@@ -21,7 +20,6 @@ Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada.
 |[Santa](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Santa/santa-intro.ipynb&depth=1)|⭐⭐|
 |[Trees](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Trees/trees-intro.ipynb&depth=1)|⭐⭐|
 |[Zoo](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Zoo/zoo-intro.ipynb&depth=1)|⭐⭐|
-
 
 ## Online Hackathons
 

@@ -1,4 +1,5 @@
-# Werklund School of Education 2023 Labyrinth
+# Werklund School of Education 2023 Labyrinth 
+**Thursday, November 30th to Sunday, December 10th**
 
 Callysto is a free, online learning tool that helps Grades 5-12 students and teachers learn and apply in-demand data science skills including data analysis and visualization, coding, and computational thinking. Our mission is to foster computational thinking and data literacy skills in Canadian schools.
 

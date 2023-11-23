@@ -7,11 +7,11 @@ To experience how data can be used as a interdisiplinary approach, you will part
 ## Data Labyrinths
 
 
-|Notebook|Challenge Level|
-|-|-|
-|[Spotify](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=music/music.ipynb&depth=1)|⭐|
-|[Health and Privacy Data](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=health-data-privacy/health-data-privacy.ipynb&depth=1)|⭐⭐|
-|[Weather](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=weather/weather.ipynb&depth=1)|⭐⭐⭐|
+|Notebook|Challenge Level|Key
+|-|-|-|
+|[Music](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=music/music.ipynb&depth=1)|⭐|Spotify
+|[Health and Privacy Data](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=health-data-privacy/health-data-privacy.ipynb&depth=1)|⭐⭐|privacy
+|[Weather](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=weather/weather.ipynb&depth=1)|⭐⭐⭐|API
 
 
 ## Online Support 

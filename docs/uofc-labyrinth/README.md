@@ -1,11 +1,12 @@
-# Werklund School of Education 2023 Labyrinth 
-**Thursday, November 30th to Sunday, December 10th**
+# Werklund School of Education 2023 Labyrinth
+
+### Thursday, November 30th to Sunday, December 10th, 2023
 
 Callysto is a free, online learning tool that helps Grades 5-12 students and teachers learn and apply in-demand data science skills including data analysis and visualization, coding, and computational thinking. Our mission is to foster computational thinking and data literacy skills in Canadian schools.
 
-To experience how data can be used as a interdisiplinary approach, you will participate in a Labyrinth where participants engage in solvlving data science challenges to progress to the next level. 
-## Data Labyrinths
+To experience how data can be used as a interdisiplinary approach, you will participate in a Labyrinth where participants engage in solving data science challenges to progress to the next level.
 
+## Data Labyrinths
 
 |Notebook|Challenge Level|Key
 |-|-|-|
@@ -13,8 +14,7 @@ To experience how data can be used as a interdisiplinary approach, you will part
 |[Health and Privacy Data](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=health-data-privacy/health-data-privacy.ipynb&depth=1)|⭐⭐|privacy
 |[Weather](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=weather/weather.ipynb&depth=1)|⭐⭐⭐|API
 
-
-## Online Support 
+## Online Support
 
 Callysto team members are available to help you with your Labyrinth.
 

@@ -22,9 +22,7 @@ Callysto team members are available to help you with your Labyrinth.
 * Thursday, Dec 7th 6:00PM- 8:00PM MST
 * Friday, Dec 8th 12:00PM- 2:00PM MST
 
-To join the video meeting, click this link: https://meet.google.com/huh-uxim-vuv
-
-To join by phone, dial +1 289-315-9149 and enter this PIN: 924 713 914#
+To join the video meeting, click [here](https://meet.google.com/huh-uxim-vuv)
 
 ## Survey
 

@@ -5,7 +5,7 @@ Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada.
 ## Hackathons Options 
 
 * A.  [Turtle and Data Science Hackathon](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/CollabTurtlePlus/colab-turtles-hackathon.ipynb&depth=1)
-*B. [Data Challenges](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/data.ipynb&depth=1)
+* B. [Data Challenges](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/data.ipynb&depth=1)
 * C. Choose your own challenges-more advanced (see below)
 
 

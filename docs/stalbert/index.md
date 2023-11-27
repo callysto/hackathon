@@ -1,13 +1,12 @@
-# Callysto Data Science Student Hackathons
+# Callysto Data Science Student Hackathon
 
-Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada. During our hackathons, students solve a problem by “hacking” or analyzing open datasets. 
+Welcome to the Callysto Data Science Hackathon.
 
-## Hackathons Options 
+## Hackathon Options
 
 * A.  [Turtle and Data Science Hackathon](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/CollabTurtlePlus/colab-turtles-hackathon.ipynb&depth=1)
 * B. [Data Challenges](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/data.ipynb&depth=1)
-* C. Choose your own challenges-more advanced (see below)
-
+* C. Choose your own challenge notebooks, which are more advanced (see below)
 
 |Notebook|Challenge Level|
 |-|-|
@@ -22,8 +21,6 @@ Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada.
 |[Basketball](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Basketball/basketball-introduction.ipynb&depth=1)|⭐⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Basketball/basketball-introduction.ipynb&depth=1)|
 |[Books](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Books/books-intro.ipynb&depth=1)|⭐⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Books/books-intro.ipynb&depth=1)|
 
-
-
 Students, use [this form](https://docs.google.com/forms/d/e/1FAIpQLSduYlaxpQho6VNtLWlYpUf8zrAFPaQQLvcDBbZzGMzCVEvPPw/viewform) to submit your completed challenge notebooks for judging.
 
 ## Labyrinths
@@ -33,7 +30,6 @@ Students, use [this form](https://docs.google.com/forms/d/e/1FAIpQLSduYlaxpQho6V
 |[Music](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=music/music.ipynb&depth=1)|⭐|Spotify
 |[Health and Privacy Data](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=health-data-privacy/health-data-privacy.ipynb&depth=1)|⭐⭐|privacy
 |[Weather](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=weather/weather.ipynb&depth=1)|⭐⭐⭐|API
-
 
 ## License and Access
 

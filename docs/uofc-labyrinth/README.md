@@ -1,5 +1,5 @@
 # Werklund School of Education 2023 Labyrinth 
-**Thursday, November 30th to Sunday, December 10th**
+**Thursday, November 30th to Sunday, December 18th**
 
 Callysto is a free, online learning tool that helps Grades 5-12 students and teachers learn and apply in-demand data science skills including data analysis and visualization, coding, and computational thinking. Our mission is to foster computational thinking and data literacy skills in Canadian schools.
 
@@ -21,10 +21,12 @@ Callysto team members are available to help you with your Labyrinth.
 * Tuesday, Dec 5th 6:00PM- 8:00PM MST
 * Thursday, Dec 7th 6:00PM- 8:00PM MST
 * Friday, Dec 8th 12:00PM- 2:00PM MST
+* Tuesday, Dec 11th 6:00PM- 8:00PM MST
+* Friday, Dec 14th 6:00PM- 8:00PM MST
 
-To join the video meeting, click this link: https://meet.google.com/huh-uxim-vuv
+To join the video meeting, click this [link](https://meet.google.com/huh-uxim-vuv) 
 
-To join by phone, dial +1 289-315-9149 and enter this PIN: 924 713 914#
+
 
 ## Survey
 

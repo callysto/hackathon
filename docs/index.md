@@ -4,22 +4,22 @@ Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada.
 
 ## In-Person Hackathons
 
-* [Turtle and Data Science Hackathon](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/CollabTurtlePlus/colab-turtles-hackathon.ipynb&depth=1)
-* [Data Challenges](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/data.ipynb&depth=1)
+* [Turtle and Data Science Hackathon](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fturtles-ds.ipynb)
+* [Data Challenges](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fdata.ipynb)
 * [Data Labyrinths](https://github.com/callysto/data-labyrinth)
 
 |Notebook|Challenge Level|
 |-|-|
-|[Baseball](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Baseball/baseball-introduction.ipynb&depth=1)|⭐⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Baseball/baseball-introduction.ipynb&depth=1)|
-|[Basketball](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Basketball/basketball-introduction.ipynb&depth=1)|⭐⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Basketball/basketball-introduction.ipynb&depth=1)|
-|[Books](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Books/books-intro.ipynb&depth=1)|⭐⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Books/books-intro.ipynb&depth=1)|
-|[Music](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Music/music-intro.ipynb&depth=1)|⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Music/music-intro.ipynb&depth=1)|
-|[Open Data](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/OpenData/open-data-intro.ipynb&depth=1)|⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/OpenData/open-data-intro.ipynb&depth=1)|
-|[Pets](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Pets/pets-intro.ipynb&depth=1)|⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Pets/pets-intro.ipynb&depth=1)|
-|[Pokémon](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Pok%C3%A9mon/pokemon-intro.ipynb&depth=1)|⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Pok%C3%A9mon/pokemon-intro.ipynb&depth=1)|
-|[Santa](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Santa/santa-intro.ipynb&depth=1)|⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Santa/santa-intro.ipynb&depth=1)|
-|[Trees](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Trees/trees-intro.ipynb&depth=1)|⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Trees/trees-intro.ipynb&depth=1)|
-|[Zoo](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Zoo/zoo-intro.ipynb&depth=1)|⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Zoo/zoo-intro.ipynb&depth=1)|
+|[Baseball](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FBaseball/baseball-introduction.ipynb)|⭐⭐⭐|
+|[Basketball](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FBasketball/basketball-introduction.ipynb)|⭐⭐⭐|
+|[Books](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FBooks/books-intro.ipynb)|⭐⭐⭐|
+|[Music](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FMusic/music-intro.ipynb)|⭐⭐|
+|[Open Data](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FOpenData/open-data-intro.ipynb)|⭐⭐|
+|[Pets](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FPets/pets-intro.ipynb)|⭐|
+|[Pokémon](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FPok%C3%A9mon/pokemon-intro.ipynb)|⭐⭐|
+|[Santa](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FSanta/santa-intro.ipynb)|⭐⭐|
+|[Trees](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FTrees/trees-intro.ipynb)|⭐⭐|
+|[Zoo](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FZoo/zoo-intro.ipynb)|⭐⭐|
 
 Students, use [this form](https://docs.google.com/forms/d/e/1FAIpQLSduYlaxpQho6VNtLWlYpUf8zrAFPaQQLvcDBbZzGMzCVEvPPw/viewform) to submit your completed challenge notebooks for judging.
 

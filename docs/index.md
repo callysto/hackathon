@@ -1,12 +1,21 @@
 # Callysto Data Science Student Hackathons
 
-Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada. During our hackathons, students solve a problem by “hacking” or analyzing open datasets. We offer both online and in-person hackathons.
+Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada. During our hackathons, students solve a problem by “hacking” or analyzing open datasets.
 
-## In-Person Hackathons
+## Hackathons
 
 1. [Turtle and Data Science](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fturtles-ds.ipynb)
 2. [Data Challenges](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fdata.ipynb)
-3. [Data Labyrinths](https://callysto.github.io/jupyterlite/tree/data-labyrinth)
+3. [Data Labyrinths](https://callysto.github.io/jupyterlite/tree/)
+
+    * [Mini Basketball](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fmini-basketball%2Fmini-basketball.ipynb) WNBA
+    * [Health Data Privacy](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fhealth-data-privacy%2Fhealth-data-privacy.ipynb) privacy
+    * [Music](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fmusic%2Fmusic.ipynb) Spotify
+    * [Gapminder](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fgapminder%2Fgapminder.ipynb) world
+    * [Basketball](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fbasketball%2Fbasketball.ipynb) dunk
+    * [Advanced Basketball](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fadvanced-basketball%2Fadvanced-basketball.ipynb) learning
+    * [Cybersecurity](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fcybersecurity%2Fcybersecurity.ipynb) WESOC
+
 4. Challenge Notebooks
 
 |Notebook|Challenge Level|

@@ -8,7 +8,7 @@ Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada.
 2. [Data Challenges](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fdata.ipynb)
 3. [Data Labyrinths](https://callysto.github.io/jupyterlite/tree/)
 
-    * [Mini Basketball](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fmini-basketball%2Fmini-basketball.ipynb) WNBA
+    * [Mini Basketball](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fmini-basketball%2Fmini-basketball.ipynb) WNBA [alternate link](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=mini-basketball/mini-basketball.ipynb&depth=1)
     * [Health Data Privacy](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fhealth-data-privacy%2Fhealth-data-privacy.ipynb) privacy
     * [Music](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fmusic%2Fmusic.ipynb) Spotify
     * [Gapminder](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fgapminder%2Fgapminder.ipynb) world

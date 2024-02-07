@@ -5,7 +5,7 @@ Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada.
 ## Hackathons
 
 1. [Turtle and Data Science](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fturtles-ds.ipynb) [alternate 2i2c link](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/CollabTurtlePlus/colab-turtles-hackathon.ipynb&depth=1)
-2. [Data Challenges](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fdata.ipynb)
+2. [Data Challenges](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fdata.ipynb) [alternate link](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/data.ipynb&depth=1)
 3. [Data Labyrinths](https://callysto.github.io/jupyterlite/tree/)
 
     * [Mini Basketball](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fmini-basketball%2Fmini-basketball.ipynb) WNBA [alternate link](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=mini-basketball/mini-basketball.ipynb&depth=1)

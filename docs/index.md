@@ -4,9 +4,10 @@ Callysto runs free data science hackathons for Grades 5-12 classrooms in Canada.
 
 ## In-Person Hackathons
 
-* [Turtle and Data Science Hackathon](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fturtles-ds.ipynb)
-* [Data Challenges](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fdata.ipynb)
-* [Data Labyrinths](https://github.com/callysto/data-labyrinth)
+1. [Turtle and Data Science](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fturtles-ds.ipynb)
+2. [Data Challenges](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fdata.ipynb)
+3. [Data Labyrinths](https://callysto.github.io/jupyterlite/tree/data-labyrinth)
+4. Challenge Notebooks
 
 |Notebook|Challenge Level|
 |-|-|

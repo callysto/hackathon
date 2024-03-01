@@ -37,8 +37,8 @@ Click on this Option A link: [Turtle and Data Science Challenges](https://callys
 |[Trees](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FTrees/trees-intro.ipynb)|⭐⭐
 |[Zoo](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FZoo/zoo-intro.ipynb)|⭐⭐
 |[Baseball](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FBaseball/baseball-introduction.ipynb)|⭐⭐⭐
-|[Basketball](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Basketball/basketball-introduction.ipynb&depth=1)|⭐⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Basketball/basketball-introduction.ipynb&depth=1)|
-|[Books](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Books/books-intro.ipynb&depth=1)|⭐⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Books/books-intro.ipynb&depth=1)|
+|[Basketball](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FBasketball/basketball-introduction.ipynb)|⭐⭐⭐
+|[Books](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FBooks/books-intro.ipynb)|⭐⭐⭐
 
 ## Survey
 

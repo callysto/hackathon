@@ -18,10 +18,10 @@ In a data labyrinth, students work with a dataset centered around a specific top
 
 ## Data Science Challenges Options:
 ***Option A:***  In this combined challenge, students will use simple Python to collaborate and create interactive graphics or games with a virtual turtle. Additionally, they will face introductory data science challenges using a straightforward dataset.  
-Click on this Option A link: [Turtle and Data Science Challenges](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/CollabTurtlePlus/colab-turtles-hackathon.ipynb&depth=1)
+Click on this Option A link: [Turtle and Data Science Challenges](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fturtles-ds.ipynb)
 
 ***Option B:***  In this challenge, students will be directed to use immediate Python coding skills as tackle data science tasks with a dataset obtained from an open-source data collection. 
-                                                                                            Click on this Option B Link: [Data Challenges](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/data.ipynb&depth=1)
+                                                                                            Click on this Option B Link: [Data Challenges](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2Fdata.ipynb)
 
 
 ***Option C:*** The following challenges are more advanced; select your own challenge based on the difficulty levels.
@@ -29,14 +29,14 @@ Click on this Option A link: [Turtle and Data Science Challenges](https://hub.ca
 
 |Notebook|Challenge Level|
 |-|-|
-|[Pets](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Pets/pets-intro.ipynb&depth=1)|⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Pets/pets-intro.ipynb&depth=1)|
-|[Music](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Music/music-intro.ipynb&depth=1)|⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Music/music-intro.ipynb&depth=1)|
-|[Open Data](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/OpenData/open-data-intro.ipynb&depth=1)|⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/OpenData/open-data-intro.ipynb&depth=1)|
-|[Pokémon](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Pok%C3%A9mon/pokemon-intro.ipynb&depth=1)|⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Pok%C3%A9mon/pokemon-intro.ipynb&depth=1)|
-|[Santa](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Santa/santa-intro.ipynb&depth=1)|⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Santa/santa-intro.ipynb&depth=1)|
-|[Trees](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Trees/trees-intro.ipynb&depth=1)|⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Trees/trees-intro.ipynb&depth=1)|
-|[Zoo](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Zoo/zoo-intro.ipynb&depth=1)|⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Zoo/zoo-intro.ipynb&depth=1)|
-|[Baseball](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Baseball/baseball-introduction.ipynb&depth=1)|⭐⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Baseball/baseball-introduction.ipynb&depth=1)|
+|[Pets](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FPets/pets-intro.ipynb)|⭐
+|[Music](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FMusic/music-intro.ipynb)|⭐⭐
+|[Open Data](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FOpenData/open-data-intro.ipynb)|⭐⭐
+|[Pokémon](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FPok%C3%A9mon/pokemon-intro.ipynb)|⭐⭐
+|[Santa](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FSanta/santa-intro.ipynb)|⭐⭐
+|[Trees](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FTrees/trees-intro.ipynb)|⭐⭐
+|[Zoo](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FZoo/zoo-intro.ipynb)|⭐⭐
+|[Baseball](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FBaseball/baseball-introduction.ipynb)|⭐⭐⭐
 |[Basketball](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Basketball/basketball-introduction.ipynb&depth=1)|⭐⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Basketball/basketball-introduction.ipynb&depth=1)|
 |[Books](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Books/books-intro.ipynb&depth=1)|⭐⭐⭐|[2i2c](https://2i2c.callysto.ca/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fhackathon&branch=master&subPath=HackathonNotebooks/Books/books-intro.ipynb&depth=1)|
 

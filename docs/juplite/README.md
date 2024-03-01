@@ -8,9 +8,13 @@ In a data labyrinth, students work with a dataset centered around a specific top
 
 |Notebook|Challenge Level|Key
 |-|-|-|
-|[Music](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=music/music.ipynb&depth=1)|⭐|Spotify
-|[Health and Privacy Data](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=health-data-privacy/health-data-privacy.ipynb&depth=1)|⭐⭐|privacy
-|[Weather](https://hub.callysto.ca/jupyter/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fcallysto%2Fdata-labyrinth&branch=main&subPath=weather/weather.ipynb&depth=1)|⭐⭐⭐|API
+|[Mini Basketball](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fmini-basketball%2Fmini-basketball.ipynb)|⭐|WNBA
+|[Music](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fmusic%2Fmusic.ipynb)|⭐|Spotify
+|[Health and Privacy Data](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fhealth-data-privacy%2Fhealth-data-privacy.ipynb)|⭐⭐|privacy
+|[Cybersecurity](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fcybersecurity%2Fcybersecurity.ipynb)|⭐⭐|WESOC
+|STOCK EXCHANGE|⭐⭐|Coming Soon
+|[Weather](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fweather%2Fweather.ipynb)|⭐⭐⭐|API
+|[Advanced Basketball](https://callysto.github.io/jupyterlite/notebooks/?path=data-labyrinth%2Fadvanced-basketball%2Fadvanced-basketball.ipynb)|⭐⭐⭐|learning
 
 ## Data Science Challenges Options:
 ***Option A:***  In this combined challenge, students will use simple Python to collaborate and create interactive graphics or games with a virtual turtle. Additionally, they will face introductory data science challenges using a straightforward dataset.  

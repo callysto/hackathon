@@ -40,10 +40,6 @@ Click on this Option A link: [Turtle and Data Science Challenges](https://callys
 |[Basketball](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FBasketball/basketball-introduction.ipynb)|⭐⭐⭐
 |[Books](https://callysto.github.io/jupyterlite/notebooks/index.html?path=hackathon%2FBooks/books-intro.ipynb)|⭐⭐⭐
 
-## Survey
-
-Please take a few minutes to complete the [survey](https://docs.google.com/forms/d/e/1FAIpQLSf8NgvLfTcap35Ximv3iro5zEbTjUKDm6h07--hPcL2ER4RUg/viewform?usp=sf_link) at the end of your experience.
-
 
 ## License and Access
 
